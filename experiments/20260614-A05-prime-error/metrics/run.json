@@ -1,0 +1,91 @@
+{
+  "experiment": "20260614-A05-prime-error",
+  "rows": [
+    {
+      "x": 100,
+      "pi_x": 25,
+      "li_x": 30.12614158407963,
+      "error_li_minus_pi": 5.12614158407963,
+      "abs_error": 5.12614158407963,
+      "schoenfeld_bound": 1.8323389971985693,
+      "ratio_err_over_bound": 2.7975945455054427,
+      "err_over_sqrtx": 0.512614158407963,
+      "li_greater_pi": true,
+      "ref_pi": 25,
+      "pi_matches_ref": true
+    },
+    {
+      "x": 1000,
+      "pi_x": 168,
+      "li_x": 177.60965799015221,
+      "error_li_minus_pi": 9.609657990152227,
+      "abs_error": 9.609657990152227,
+      "schoenfeld_bound": 8.69154701504455,
+      "ratio_err_over_bound": 1.1056326305913644,
+      "err_over_sqrtx": 0.30388406784116956,
+      "li_greater_pi": true,
+      "ref_pi": 168,
+      "pi_matches_ref": true
+    },
+    {
+      "x": 10000,
+      "pi_x": 1229,
+      "li_x": 1246.1372158993884,
+      "error_li_minus_pi": 17.13721589938846,
+      "abs_error": 17.13721589938846,
+      "schoenfeld_bound": 36.64677994397139,
+      "ratio_err_over_bound": 0.4676322428761612,
+      "err_over_sqrtx": 0.1713721589938846,
+      "li_greater_pi": true,
+      "ref_pi": 1229,
+      "pi_matches_ref": true
+    },
+    {
+      "x": 100000,
+      "pi_x": 9592,
+      "li_x": 9629.809001050799,
+      "error_li_minus_pi": 37.8090010507982,
+      "abs_error": 37.8090010507982,
+      "schoenfeld_bound": 144.85911691740915,
+      "ratio_err_over_bound": 0.26100532610836535,
+      "err_over_sqrtx": 0.11956255937622194,
+      "li_greater_pi": true,
+      "ref_pi": 9592,
+      "pi_matches_ref": true
+    },
+    {
+      "x": 1000000,
+      "pi_x": 78498,
+      "li_x": 78627.54915946219,
+      "error_li_minus_pi": 129.54915946218193,
+      "abs_error": 129.54915946218193,
+      "schoenfeld_bound": 549.7016991595708,
+      "ratio_err_over_bound": 0.23567174644038272,
+      "err_over_sqrtx": 0.12954915946218193,
+      "li_greater_pi": true,
+      "ref_pi": 78498,
+      "pi_matches_ref": true
+    },
+    {
+      "x": 10000000,
+      "pi_x": 664579,
+      "li_x": 664918.405048569,
+      "error_li_minus_pi": 339.4050485689123,
+      "abs_error": 339.4050485689123,
+      "schoenfeld_bound": 2028.0276368437283,
+      "ratio_err_over_bound": 0.16735721072181106,
+      "err_over_sqrtx": 0.10732930028378353,
+      "li_greater_pi": true,
+      "ref_pi": 664579,
+      "pi_matches_ref": true
+    }
+  ],
+  "checks": {
+    "pi_matches_reference": true,
+    "li_greater_pi_on_range": true,
+    "schoenfeld_bound_holds_x_ge_2657": true,
+    "err_over_sqrtx_bounded": true
+  },
+  "verdict": "PASS",
+  "interpretation": "li(x) approximates pi(x) with error well inside the Schoenfeld/von Koch bound — this is WHAT RH buys: the smallest possible error in the prime number theorem, O(sqrt(x) log x). The li>pi bias holds to 10^7 but is NOT universal (Littlewood 1914: infinitely many crossovers, first near Skewes ~10^316). Empirical to 10^7; not a proof of RH."
+}
