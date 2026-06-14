@@ -1,0 +1,42 @@
+{
+  "experiment": "20260614-A12-hilbert-polya",
+  "t_range": [
+    50,
+    2500
+  ],
+  "n_points": 50,
+  "weyl_error_correct_norm": {
+    "at_T50": 0.00013227,
+    "at_T2500": 2.65e-06,
+    "max_weyl_err_times_T": 0.00663,
+    "shrinks_as_1_over_T": true
+  },
+  "weyl_error_wrong_norm_pi": {
+    "at_T50": 5.5309,
+    "at_T2500": 275.8096,
+    "grows_linearly": true
+  },
+  "fluctuation_S": {
+    "mean": 0.0292,
+    "std": 0.3726,
+    "max_abs": 0.9328,
+    "std_first_half": 0.3992,
+    "std_second_half": 0.3439,
+    "centered_near_0": true,
+    "has_nonzero_spread": true,
+    "persists_not_shrinking": true,
+    "max_disagreement_vs_arg_zeta": 0.0,
+    "S_independent_confirmed": true
+  },
+  "checks": {
+    "weyl_shrinks": true,
+    "weyl_is_O(1/T)": true,
+    "wrong_norm_grows": true,
+    "S_centered": true,
+    "S_has_spread": true,
+    "S_persists": true,
+    "S_not_circular": true
+  },
+  "verdict": "PASS",
+  "interpretation": "Berry-Keating xp reproduces the DENSITY of zeros (smooth count) to O(1/T), but the fluctuation S(T) — where RH lives — is NOT reproduced. xp counts HOW MANY zeros, not WHERE. Density match is necessary, NOT sufficient: does NOT prove the operator exists."
+}
