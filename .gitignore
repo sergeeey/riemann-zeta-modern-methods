@@ -1,0 +1,25 @@
+# PDF — external sources, not redistributed
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large files go to separate storage)
+data/raw/
+*.csv
+*.hdf5
+*.pkl
