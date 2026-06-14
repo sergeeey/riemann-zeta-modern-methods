@@ -23,3 +23,6 @@ data/raw/
 *.csv
 *.hdf5
 *.pkl
+
+# Backups
+*.bak

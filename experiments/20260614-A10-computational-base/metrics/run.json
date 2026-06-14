@@ -1,0 +1,37 @@
+{
+  "experiment": "20260614-A10-computational-base",
+  "dps": 30,
+  "n_target": 100,
+  "t_max": 250.0,
+  "scan_step": 0.1,
+  "zeros_found_on_line": 100,
+  "total_zeros_in_strip_turing": 100,
+  "turing_complete_all_on_line": true,
+  "max_err_vs_odlyzko": "9.4247e-19",
+  "max_err_vs_zetazero": "2.8008e-30",
+  "max_residual_abs_zeta": "6.0511e-29",
+  "max_re_deviation_from_half": "0.0",
+  "negative_controls": {
+    "zeta(2)_value": "1.64493406684823",
+    "zeta(2)_equals_pi2_over_6": true,
+    "Z(18)_nonzero": true,
+    "zeta(0.5+14i)_abs": "0.10562627",
+    "zeta(0.5+14i)_nonzero": true
+  },
+  "checks": {
+    "turing_ok": true,
+    "odlyzko_ok": true,
+    "zetazero_ok": true,
+    "residual_ok": true,
+    "negative_controls_ok": true
+  },
+  "verdict": "PASS",
+  "elapsed_seconds": 9.0,
+  "first_5_zeros_t": [
+    "14.1347251417346938",
+    "21.022039638771555",
+    "25.0108575801456888",
+    "30.4248761258595132",
+    "32.9350615877391897"
+  ]
+}
