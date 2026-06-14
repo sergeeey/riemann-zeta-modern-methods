@@ -1,0 +1,200 @@
+{
+  "experiment": "20260614-A06-robin-li",
+  "robin": {
+    "n_max_checked": 10000,
+    "n_exceptions": 26,
+    "max_exception": 5040,
+    "ratio_at_5040": 1.00556,
+    "max_ratio_for_n_ge_5041": 0.97689,
+    "exceptions_all_le_5040": true,
+    "exceptions": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36,
+      48,
+      60,
+      72,
+      84,
+      120,
+      180,
+      240,
+      360,
+      720,
+      840,
+      2520,
+      5040
+    ]
+  },
+  "li": {
+    "n_checked": 20,
+    "lambda_1_independent": 0.023096,
+    "lambda_1_from_zeros": 0.022653,
+    "lambda_1_independent_positive": true,
+    "lambda_1_agreement": true,
+    "all_from_zeros_positive_ILLUSTRATIVE": true,
+    "sign_stable_500_vs_2000": true,
+    "circularity_note": "from-zeros lambda_n ASSUMES Re=1/2 -> positivity is automatic, NOT an independent RH test. Only lambda_1_independent (constants, zero-free) is genuine.",
+    "lambdas": [
+      {
+        "n": 1,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 0.022653,
+        "lambda_n (500 zeros)": 0.021947,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 2,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 0.090576,
+        "lambda_n (500 zeros)": 0.087751,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 3,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 0.203658,
+        "lambda_n (500 zeros)": 0.1973,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 4,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 0.361713,
+        "lambda_n (500 zeros)": 0.35041,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 5,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 0.564484,
+        "lambda_n (500 zeros)": 0.546823,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 6,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 0.811642,
+        "lambda_n (500 zeros)": 0.78621,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 7,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 1.102786,
+        "lambda_n (500 zeros)": 1.06817,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 8,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 1.437446,
+        "lambda_n (500 zeros)": 1.392233,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 9,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 1.815087,
+        "lambda_n (500 zeros)": 1.757864,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 10,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 2.235106,
+        "lambda_n (500 zeros)": 2.164461,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 11,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 2.696838,
+        "lambda_n (500 zeros)": 2.611358,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 12,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 3.199559,
+        "lambda_n (500 zeros)": 3.097831,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 13,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 3.742485,
+        "lambda_n (500 zeros)": 3.623096,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 14,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 4.324779,
+        "lambda_n (500 zeros)": 4.186317,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 15,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 4.945553,
+        "lambda_n (500 zeros)": 4.786604,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 16,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 5.60387,
+        "lambda_n (500 zeros)": 5.423021,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 17,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 6.298747,
+        "lambda_n (500 zeros)": 6.094586,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 18,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 7.029164,
+        "lambda_n (500 zeros)": 6.800278,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 19,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 7.794059,
+        "lambda_n (500 zeros)": 7.539036,
+        "positive": true,
+        "sign_stable": true
+      },
+      {
+        "n": 20,
+        "lambda_n (2000 zeros, assumes Re=1/2)": 8.592342,
+        "lambda_n (500 zeros)": 8.309768,
+        "positive": true,
+        "sign_stable": true
+      }
+    ]
+  },
+  "checks": {
+    "robin_exceptions_bounded_5040": true,
+    "robin_no_exception_above_5040": true,
+    "li_lambda1_independent_positive": true,
+    "li_lambda1_agree_indep_vs_zeros": true,
+    "li_from_zeros_sign_stable": true
+  },
+  "verdict": "PASS",
+  "interpretation": "Robin: inequality holds for all n>=5041 up to N_MAX; exceptions are the 26 known n in [3,5040] (n=2 excluded since ln ln 2<0; literature's '27' counts n=1 or n=2 by convention). GENUINE result, sigma(n) independent of zeros. Li: lambda_1=0.0231 from the zero-free closed form (1+gamma/2-ln(4pi)/2) is a real positive datapoint; the from-zeros lambda_n ASSUME Re=1/2 and are only ILLUSTRATIVE (skeptic: circular as an RH test). Empirical to a finite bound."
+}
