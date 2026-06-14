@@ -1,0 +1,105 @@
+{
+  "experiment": "20260614-A08-zero-free-region",
+  "constants": {
+    "R_classical": 5.558691,
+    "C_vk": 55.241
+  },
+  "rows": [
+    {
+      "log10_t": 2,
+      "sigma_classical": 0.9609355438264825,
+      "sigma_vk": 0.9943209201970322,
+      "gap_classical_to_half": 0.46093554382648255,
+      "vk_wider": false,
+      "ref": 0.9609,
+      "ref_match": true
+    },
+    {
+      "log10_t": 3,
+      "sigma_classical": 0.973957029217655,
+      "sigma_vk": 0.9959932107797246,
+      "gap_classical_to_half": 0.47395702921765503,
+      "vk_wider": false,
+      "ref": null,
+      "ref_match": true
+    },
+    {
+      "log10_t": 4,
+      "sigma_classical": 0.9804677719132413,
+      "sigma_vk": 0.9968419739064108,
+      "gap_classical_to_half": 0.48046777191324125,
+      "vk_wider": false,
+      "ref": null,
+      "ref_match": true
+    },
+    {
+      "log10_t": 6,
+      "sigma_classical": 0.9869785146088275,
+      "sigma_vk": 0.9977210205630599,
+      "gap_classical_to_half": 0.4869785146088275,
+      "vk_wider": false,
+      "ref": 0.987,
+      "ref_match": true
+    },
+    {
+      "log10_t": 12,
+      "sigma_classical": 0.9934892573044137,
+      "sigma_vk": 0.9986721752764931,
+      "gap_classical_to_half": 0.49348925730441373,
+      "vk_wider": false,
+      "ref": null,
+      "ref_match": true
+    },
+    {
+      "log10_t": 30,
+      "sigma_classical": 0.9973957029217655,
+      "sigma_vk": 0.9993354084041196,
+      "gap_classical_to_half": 0.4973957029217655,
+      "vk_wider": false,
+      "ref": 0.9974,
+      "ref_match": true
+    },
+    {
+      "log10_t": 80,
+      "sigma_classical": 0.9990233885956621,
+      "sigma_vk": 0.9996775810813014,
+      "gap_classical_to_half": 0.4990233885956621,
+      "vk_wider": false,
+      "ref": 0.999,
+      "ref_match": true
+    },
+    {
+      "log10_t": 130,
+      "sigma_classical": 0.9993990083665613,
+      "sigma_vk": 0.9997735524118436,
+      "gap_classical_to_half": 0.49939900836656126,
+      "vk_wider": false,
+      "ref": null,
+      "ref_match": true
+    },
+    {
+      "log10_t": 200,
+      "sigma_classical": 0.9996093554382648,
+      "sigma_vk": 0.9998341562770714,
+      "gap_classical_to_half": 0.49960935543826485,
+      "vk_wider": false,
+      "ref": null,
+      "ref_match": true
+    }
+  ],
+  "vk_crossover": {
+    "log10_t": 3877.5,
+    "k_C_over_R_cubed": 981.45,
+    "note": "VK wider than classical only for t > 10^3877 — astronomical"
+  },
+  "checks": {
+    "sigma_zf_monotone_increasing": true,
+    "gap_to_half_grows": true,
+    "matches_reference": true,
+    "boundary_in_critical_strip": true,
+    "vk_crossover_astronomical": true,
+    "classical_wider_below_crossover": true
+  },
+  "verdict": "PASS",
+  "interpretation": "The proven zero-free boundary sigma_zf(t) moves toward Re=1 as t grows; the gap to Re=1/2 GROWS toward 0.5, it does NOT shrink. ZFR gives a sliver near Re=1, never near 1/2. VK beats classical only at t>10^3877. The gap to RH is QUALITATIVE — no better constant closes it; any sigma>1-f(t) with f(t)->0 yields sigma_zf->1. This is the 'wall' seen from the Re=1 side."
+}
