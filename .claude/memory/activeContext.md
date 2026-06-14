@@ -2,11 +2,18 @@
 Обновлено: 2026-06-14
 
 ## Current Focus
-**Phase 1: Фиксация фундамента**
-— Оригинальная формулировка (1859)
-— Что доказано [VERIFIED]
-— Атомизация гипотезы
-— Deep research: все подходы 1859–2026
+**Phase 2: Эксперименты по атомам**
+A-10 ЗАВЕРШЁН (PROMOTE). Следующий: выбрать A-09 / A-04 / A-05.
+
+## A-10 итог (2026-06-14)
+- Toolkit src/zeta/ построен и валидирован (skeptic + reviewer)
+- 100 нулей на Re=½, Turing-полнота до T≈237, off-line детектор (контур) до T≈66
+- Skeptic [WEAKENED]→разобран: 3 caveat RESOLVED/DISMISSED, 3 ACCEPTED
+- Reviewer P0 (findroot) — был latent, исправлен
+- Папка: experiments/20260614-A10-computational-base/
+
+## Phase 1 (завершена ранее)
+— Оригинальная формулировка (1859), что доказано, атомизация, deep research
 
 ## Progress
 - [x] Проект создан, CLAUDE.md написан
@@ -26,3 +33,6 @@
 ## Запрещено делать сейчас
 - Открывать Grant papers как источник истины
 - Начинать эксперименты до финализации atoms.md
+
+## Auto-commit log
+- [2026-06-14 12:43] `bd3736e`: init: H-12 project foundation — atoms, approaches, FL template
