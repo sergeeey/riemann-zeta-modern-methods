@@ -1,0 +1,64 @@
+{
+  "experiment": "20260614-A09-rmt-statistics",
+  "n_zeros": 2000,
+  "height_range": [
+    14.13,
+    2515.29
+  ],
+  "real_zeros": {
+    "label": "zeta zeros (real)",
+    "n_spacings": 1999,
+    "mean_spacing": 0.9994,
+    "second_moment": 1.1465,
+    "frac_below_0.3": 0.014,
+    "ks_to_gue": 0.0413,
+    "ks_to_poisson": 0.3165,
+    "closer_to": "GUE"
+  },
+  "reference_frac_below_0.3": {
+    "gue": 0.0273,
+    "poisson": 0.2592
+  },
+  "reference_second_moment": {
+    "gue_wigner": 1.1781,
+    "poisson": 2.0
+  },
+  "negative_control_synthetic_poisson": {
+    "label": "synthetic Poisson (neg control)",
+    "n_spacings": 1999,
+    "mean_spacing": 1.0153,
+    "second_moment": 2.0851,
+    "frac_below_0.3": 0.2466,
+    "ks_to_gue": 0.2817,
+    "ks_to_poisson": 0.0168,
+    "closer_to": "Poisson"
+  },
+  "sensitivity_halves": {
+    "first": {
+      "label": "first half",
+      "n_spacings": 999,
+      "mean_spacing": 0.9989,
+      "second_moment": 1.1418,
+      "frac_below_0.3": 0.014,
+      "ks_to_gue": 0.0428,
+      "ks_to_poisson": 0.3228,
+      "closer_to": "GUE"
+    },
+    "second": {
+      "label": "second half",
+      "n_spacings": 1000,
+      "mean_spacing": 0.9999,
+      "second_moment": 1.1511,
+      "frac_below_0.3": 0.014,
+      "ks_to_gue": 0.0425,
+      "ks_to_poisson": 0.3146,
+      "closer_to": "GUE"
+    }
+  },
+  "checks": {
+    "real_closer_to_gue": true,
+    "neg_control_is_poisson": true,
+    "unfolding_mean_is_1": true
+  },
+  "verdict": "PASS"
+}
