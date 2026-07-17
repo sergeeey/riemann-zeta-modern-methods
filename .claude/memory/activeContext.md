@@ -1,8 +1,18 @@
 # activeContext — H-12 Гипотеза Римана
-Обновлено: 2026-06-14
+Обновлено: 2026-07-17
 
 ## Current Focus
-**Phase 3: 8 атомов + синтез**
+**[2026-07-17] Действует PLAN-2026H2.md** (корень проекта): Track 0 (гигиена: коммит evolution/+sandbox, ROADMAP sync — он устарел, A-05..A-12 показаны как 0%) → Track C (перенос кейса в skeptic-engine-manuscript, приоритет #1, решение /evolve-solution от 30.06) → Track R (бэклог B-01..B-05; топ: **B-01 репликация Connes arXiv:2602.04022** — квадратичная форма Вейля, p<13, заявленная точность 2.6e-55, статье 5 мес). Внешний каталог 100 направлений (ChatGPT) сохранён и запаркован: `sandbox/20260717-external-100-rh-programs.md`, spot-check ссылок 3/3 PASS, оценка 6/10.
+
+Прежний фокус (Phase 4, 2026-06-14):
+**Phase 4: H-12 → актив для Skeptic Engine (#1)**
+8 атомов + Grant REJECT + SYNTHESIS.md + **SKEPTIC-ENGINE-CASE.md** (PR #8, master 5cf1685).
+H-12 переосмыслен как demo-актив главного проекта: 11 пойманных циркулярностей/завышений
+(2 у Grant + МОЯ A-06 + tautology/overclaim/bug). Headline: скептик поймал собственную
+ошибку автора (A-06 = та же что Grant Doc A). H-12 как research закрыт; ценность = живой
+proof-of-concept Skeptic Engine. Дальше: перенести кейс в E:\skeptic-engine-manuscript ИЛИ пауза.
+
+## История атомов (8, все в master)
 A-10 ✅ · A-09 ✅ · A-12 ✅(calib) · A-04 ✅ SOLID · A-07 ✅ · A-05 ✅ · A-08 ✅ · A-06 ✅ · Grant ✅ REJECT
 
 ## A-06 итог (Robin & Li, 2026-06-14)
@@ -88,6 +98,8 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-06-14 15:37] `cfbf0d5`: docs: Skeptic Engine case study — 11 caught circularities & overclaims on RH
+- [2026-06-14 15:25] `885cede`: chore(A-06): remove unverified skeptic draft script
 - [2026-06-14 15:05] `531c67b`: feat(A-08): zero-free region — the gap to Re=1/2 grows, not shrinks
 - [2026-06-14 14:43] `1e5e3d8`: docs: project synthesis — landscape map across 6 atoms
 - [2026-06-14 14:41] `d1d3e71`: feat(A-05): prime error term — what RH buys

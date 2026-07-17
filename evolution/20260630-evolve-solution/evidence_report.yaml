@@ -1,0 +1,91 @@
+evidence_report:
+  id: "20260630-h12-evolution-report"
+  date: "2026-06-30"
+  project: "H-12 Riemann Hypothesis"
+  decision: "Choose next mutation after RH research closure."
+  baseline: "V0 pause/archive current repository."
+  variants:
+    - id: "V0"
+      name: "pause/archive"
+      mechanism: "Preserve current repository without further work."
+      score: 2.45
+      evidence_label: "[CODE]"
+      verdict: "baseline"
+    - id: "V1"
+      name: "case-study packet"
+      mechanism: "Package 11 caught errors as a traceable Skeptic Engine golden-set seed."
+      score: 4.15
+      evidence_label: "[INFERRED] from [CODE] project artifacts"
+      verdict: "continue"
+    - id: "V2"
+      name: "computational landscape note"
+      mechanism: "Publish honest RH landscape synthesis."
+      score: 3.05
+      evidence_label: "[CODE] plus [NEEDS-REAL-DATA] for publication claims"
+      verdict: "park"
+    - id: "V3"
+      name: "extended proof-paper audit set"
+      mechanism: "Audit 3-5 additional RH proof papers to generalize taxonomy."
+      score: 3.70
+      evidence_label: "[HYPOTHESIS]"
+      verdict: "mutate-next"
+    - id: "V4"
+      name: "continue math attack on strip"
+      mechanism: "Run new experiments around the a/log T critical-line strip."
+      score: 2.35
+      evidence_label: "[HYPOTHESIS]"
+      verdict: "kill-for-now"
+    - id: "V5"
+      name: "cross-model adversarial rerun"
+      mechanism: "Blind-review selected catches with independent model/toolchain."
+      score: 3.55
+      evidence_label: "[HYPOTHESIS]"
+      verdict: "merge-as-review-gate"
+  fitness_function:
+    mode: "learning_value"
+    weights:
+      evidence_gain: 0.25
+      baseline_delta: 0.20
+      falsifiability: 0.15
+      feasibility: 0.15
+      novelty: 0.10
+      reversibility: 0.10
+      reuse_value: 0.05
+    penalties:
+      risk_penalty: "0-5 explicit subtraction"
+  tests_or_reviews:
+    - name: "project context read"
+      artifact: ".claude/memory/activeContext.md; SYNTHESIS.md; SKEPTIC-ENGINE-CASE.md; README.md; ROADMAP.md"
+      result: "H-12 is closed as proof research and valuable as methodology/case-study asset."
+      evidence_label: "[CODE]"
+    - name: "skill validation"
+      artifact: "C:/Users/serge/.agents/skills/evolutionary-search"
+      result: "quick_validate.py passed; YAML templates parsed."
+      evidence_label: "[VERIFIED]"
+    - name: "anti-validation-theater gate"
+      artifact: "variant_tournament.md"
+      result: "Requires traceability matrix before external claims."
+      evidence_label: "[INFERRED]"
+  red_team_findings:
+    - finding: "One-case demo does not establish general engine performance."
+      severity: "HIGH"
+      status: "Mitigated by [NEEDS-REAL-DATA] label and V3 next mutation."
+    - finding: "Context-blind skeptic is not fully independent if model family overlaps."
+      severity: "MEDIUM"
+      status: "Mitigated by V5 as review gate."
+    - finding: "RH readers may interpret artifact as mathematical progress."
+      severity: "HIGH"
+      status: "Mitigated by explicit no-proof/no-novelty framing."
+  null_results:
+    - variant_id: "V4"
+      ledger_path: "evolution/20260630-evolve-solution/null_result_entry_v4.yaml"
+  winner:
+    variant_id: "V1"
+    reason: "Smallest reversible mutation with highest evidence gain and direct reuse value."
+    confidence: "medium; depends on traceability matrix passing."
+  reproduction_path: "Read listed context docs, then inspect evolution/20260630-evolve-solution/variant_tournament.md and hypothesis_card.yaml."
+  remaining_uncertainty:
+    - "Whether downstream Skeptic Engine manuscript is still the active target."
+    - "Whether all 11 catches trace cleanly to artifacts without narrative gaps."
+    - "Whether cross-model review changes severity labels."
+  next_action: "Build catch_traceability_matrix.md before moving artifacts to another repository."

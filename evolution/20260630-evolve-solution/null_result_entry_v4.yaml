@@ -1,0 +1,13 @@
+null_result_entry:
+  date: "2026-06-30"
+  project: "H-12 Riemann Hypothesis"
+  variant_id: "V4"
+  hypothesis: "Continuing direct mathematical experimentation around the a/log T strip is the best next mutation."
+  why_promising: "SYNTHESIS.md identifies the strip near Re=1/2 as the shared barrier across A-07/A-08/A-09/A-12."
+  test_or_review: "Evolutionary variant tournament against pause, case-study packet, landscape note, extended audit set, and cross-model rerun."
+  result: "Lost to V1 on evidence_gain, feasibility, reversibility, and reuse_value."
+  kill_or_park_reason: "No new mechanism was identified; high risk of re-demonstrating known barriers."
+  evidence_label: "[INFERRED] from [CODE] project synthesis and activeContext."
+  reusable_lesson: "Do not continue RH proof-adjacent experiments without a new mechanism and a cheap falsification test."
+  do_not_repeat_trigger: "Prompt asks to 'continue RH' or 'attack the strip' without a mechanism distinct from A-07/A-08/A-12."
+  revisit_condition: "A new peer-reviewed method, collaborator, or concrete falsifiable mechanism changes the fitness function."
