@@ -2,7 +2,7 @@
 Обновлено: 2026-07-17
 
 ## Current Focus
-**[2026-07-17] Действует PLAN-2026H2.md** (корень проекта): Track 0 (гигиена: коммит evolution/+sandbox, ROADMAP sync — он устарел, A-05..A-12 показаны как 0%) → Track C (перенос кейса в skeptic-engine-manuscript, приоритет #1, решение /evolve-solution от 30.06) → Track R (бэклог B-01..B-05; топ: **B-01 репликация Connes arXiv:2602.04022** — квадратичная форма Вейля, p<13, заявленная точность 2.6e-55, статье 5 мес). Внешний каталог 100 направлений (ChatGPT) сохранён и запаркован: `sandbox/20260717-external-100-rh-programs.md`, spot-check ссылок 3/3 PASS, оценка 6/10.
+**[2026-07-17] Действует PLAN-2026H2.md** (корень проекта). Track 0 DONE (коммит `3db6f1f` evolution/+sandbox, PR открыт вручную — gh auth сломан). **Track C-1 (evidence gate) DONE 2026-07-17: 11/11 catches TRACE-OK.** Числовые перепроверки (#8 crossover 10³⁸⁷⁷, #11 Robin 26 exceptions) — PASS. V5 cross-model review (Codex gpt-5.5, независимая модель, Context Asymmetry соблюдён) на 3 критичных circularity-кейсах — 3/3 CONFIRMED (Grant Doc A 9/10, Thm 5.3 10/10, A-06 Li 9/10). Артефакт: `evolution/20260630-evolve-solution/v5_codex_review_20260717.txt`. **Следующий шаг: Track C-2 — перенос пакета в `E:\skeptic-engine-manuscript`.** После — Track R: B-01 репликация Connes arXiv:2602.04022 (форма Вейля, p<13, точность 2.6e-55). Внешний каталог 100 направлений (ChatGPT) запаркован: `sandbox/20260717-external-100-rh-programs.md` (6/10). D-H negative-control идея тоже parked (revival: после Track C).
 
 Прежний фокус (Phase 4, 2026-06-14):
 **Phase 4: H-12 → актив для Skeptic Engine (#1)**
@@ -98,6 +98,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-17 05:27] `3db6f1f`: chore(H-12): Track 0 hygiene — commit evolution/ + sandbox recon, sync PLAN-2026H2
 - [2026-06-14 15:37] `cfbf0d5`: docs: Skeptic Engine case study — 11 caught circularities & overclaims on RH
 - [2026-06-14 15:25] `885cede`: chore(A-06): remove unverified skeptic draft script
 - [2026-06-14 15:05] `531c67b`: feat(A-08): zero-free region — the gap to Re=1/2 grows, not shrinks
