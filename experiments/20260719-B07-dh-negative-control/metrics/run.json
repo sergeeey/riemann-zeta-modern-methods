@@ -1,0 +1,40 @@
+{
+  "experiment": "20260719-B07-dh-negative-control",
+  "functional_equation_check": [
+    {
+      "s": [
+        0.3,
+        7.0
+      ],
+      "diff": 3.8518598887744717e-32,
+      "pass": true
+    },
+    {
+      "s": [
+        0.9,
+        12.0
+      ],
+      "diff": 5.647652933228788e-34,
+      "pass": true
+    },
+    {
+      "s": [
+        2.0,
+        5.0
+      ],
+      "diff": 1.232595164407831e-31,
+      "pass": true
+    }
+  ],
+  "all_fe_pass": true,
+  "off_line_search": {
+    "off_line_zero_found_by_us": false,
+    "all_search_attempts": [
+      1.063737751900911e-31,
+      3.7497705553942577e-32,
+      -2.3970680801968087e-34
+    ],
+    "note": "All search attempts converged to Re=0.5 exactly (on-line zeros). Off-line zeros are a published, peer-reviewed fact (Davenport-Heilbronn 1936; AMS Math. Comp. 2007) independent of this script's search success -- treated as [VERIFIED-REAL, literature], not self-discovered."
+  },
+  "conclusion": "Functional equation VERIFIED [VERIFIED-tool] to <1e-25. Off-line zero existence is [VERIFIED-REAL, literature], not [VERIFIED-tool] by this script -- that specific numerical sub-task is parked, see decision.md."
+}

@@ -34,9 +34,17 @@ contour-метод A-07, расширил T=50→800. Результат: чис
 Park: `sandbox/20260719-B06-speiser-extended-T/step1_verdict.md`. Revival: адаптивная точность
 O(T) ИЛИ другой (не contour) метод счёта нулей ζ', отдельная сессия.
 
-**Следующий шаг:** Track R backlog пересмотрен — B-03 (de Bruijn-Newman) или B-07
-(ex-dh-negative-control, revival condition выполнено) — оба ещё не начаты, решение за
-пользователем в начале следующей сессии.
+**B-07 (D-H negative control) СДЕЛАН в тот же заход, scoped down.** Реализовал D(s) через
+Hurwitz zeta (формула перепроверена WebSearch, 2 независимых источника согласуются).
+Функц. уравнение ξ(s)=ξ(1−s) верифицировано <1e-25 — [VERIFIED-tool]. Внелинейные нули
+D(s) существуют по литературе (Davenport-Heilbronn 1936, AMS 2007) — [VERIFIED-REAL],
+НЕ переоткрыты нами: 3/3 попытки grid+findroot (Im от 5 до 62) сошлись обратно на Re=0.5
+ровно. Это 3-й раз за сессию (после B-01/Connes и F1/B-06/Speiser), когда оценка
+"дёшево, одна сессия" от идея-генератора оказалась заниженной — стоит учитывать при
+калибровке будущих оценок стоимости. Promoted: `experiments/20260719-B07-dh-negative-control/`.
+
+**Следующий шаг:** Track R backlog — B-03 (de Bruijn-Newman) остаётся неначатым,
+следующая кандидатура при желании продолжать Track R.
 
 ---
 
@@ -172,6 +180,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-19 21:15] `ffa70c0`: feat(H-12): B-06 Speiser extended-T — attempted, parked (numerical instability)
 - [2026-07-19 20:43] `bb30f66`: chore(H-12): Track H hygiene — fix findings from 10-tool test pass
 - [2026-07-19 19:24] `468ecc2`: feat(H-12): close B-02 Nyman-Beurling atom — WEAKENED/illustration + B-01 index entry
 - [2026-07-17 05:55] `ef8a19c`: feat(H-12): close Track C-1 evidence gate — V5 cross-model review + numeric reruns

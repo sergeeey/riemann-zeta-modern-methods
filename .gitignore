@@ -37,5 +37,10 @@ experiments/**/bettin_conrey_farmer_*.txt
 experiments/**/estimates_*.txt
 
 # Claude Code / tool-generated caches — not project content
+# WHY **/ prefix: a hook wrote its state file to a nested .claude/state/
+# inside experiments/20260719-B07-.../ (relative to some non-root cwd), and
+# the root-anchored pattern below didn't catch it — match at any depth.
 .claude/state/
+**/.claude/state/
 graphify-out/
+**/graphify-out/
