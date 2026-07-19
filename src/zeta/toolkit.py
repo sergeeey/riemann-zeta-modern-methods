@@ -50,6 +50,13 @@ def count_zeros_expected(T: float | mp.mpf) -> mp.mpf:
     N(T) ≈ (T/2π)·ln(T/2π) − T/2π + 7/8.
     WHY: completeness check — compare against the count actually found, so we
     detect missed (closely-spaced) zeros.
+
+    STATUS (2026-07-19, sci-code-audit finding): defined but NOT currently
+    called anywhere in this codebase. A-04's actual completeness check uses
+    mpmath's built-in mp.nzeros() instead (see experiments/20260614-A04-hardy-Z/).
+    This function is a legitimate alternative but is dead code today — do not
+    assume it protects any active pipeline against closely-spaced (Lehmer-type)
+    missed zeros until it is actually wired into a caller.
     """
     T = mp.mpf(T)
     two_pi = 2 * mp.pi

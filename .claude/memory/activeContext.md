@@ -3,7 +3,36 @@
 
 ## Current Focus
 
-**[2026-07-19] B-02 ЗАКРЫТ — WEAKENED/illustration.** Сессия была прервана на диагностике
+**[2026-07-19] Прогнаны 13 инструментов (skills/agents) на реальном материале проекта
+(эксперимент пользователя "протестировать и оценить инструменты"). Track H (гигиена,
+все находки инструментов) ЗАКРЫТ:**
+- PLAN-2026H2.md §2 чекбоксы Track 0 отмечены (были невыполнены, хотя Track 0 назван DONE).
+- ROADMAP.md БЛОК 1 синхронизирован (A-05..A-09,A-12 показывали 0%, хотя закрыты).
+- SYNTHESIS.md: убран A-08 из "остающихся" (§6, противоречил §3), уточнена формулировка
+  "три независимых подхода" (A-07/A-09/A-12 — НЕ включает A-06/B-02, которые производные).
+- null_results/20260614-grant-rh-audit.md: добавлена запись о повторном source-audit
+  (2026-07-19) — циркулярность подтверждена, НО sub-агент ошибочно заявил "два PDF
+  идентичны" (проверено напрямую: pdfinfo/MD5 — разные файлы, 95стр/14стр, оригинальная
+  запись от 14.06 была точна). Урок: чужой [VERIFIED] = наш [INFERRED] до проверки.
+- requirements.txt создан (mpmath==1.3.0, sympy==1.14.0) — не было НИ ОДНОГО файла
+  пиннинга зависимостей во всём проекте.
+- src/zeta/toolkit.py: docstring `count_zeros_expected()` исправлен (была мёртвая функция
+  с обещанием "completeness check", нигде не вызывается; A-04 использует mp.nzeros() вместо неё).
+- sandbox/INDEX.md: dh-negative-control-battery — revival condition выполнено (Track C
+  закрыт), помечено разблокированным, но ЕЩЁ НЕ НАЧАТО; rh-failure-taxonomy получил
+  next_check дату (2026-08-15) вместо бессрочного "—".
+- ~/.claude/hooks/estimand_guard.py (ГЛОБАЛЬНЫЙ хук, не project-scoped): исправлен баг —
+  не парсил markdown-таблицы/заголовки-с-доп-текстом для MCID/ICE, давал false positive
+  на всех 7 атомах в начале ЭТОЙ сессии. Проверено 7/7 позитивный + 1 негативный контроль
+  (шаблон с настоящими плейсхолдерами всё ещё даёт unfilled=True).
+
+**Следующий шаг:** F1 — Speiser-эквивалент на большем T (новый Track R атом, из
+combinatorial-creativity теста) — mpmath дифференцирует ζ нативно, дёшево, не дублирует
+A-06/B-01..B-05.
+
+---
+
+**[2026-07-19, ранее] B-02 ЗАКРЫТ — WEAKENED/illustration.** Сессия была прервана на диагностике
 численного расхождения (I_N·log(N) растёт, не убывает к C=2+γ−log4π на N=10..3000),
 продолжена и закрыта в тот же заход. Два контроля (negative control V=0→I=1; no-collapse
 4 схемы квадратуры, разброс ≤0.03%) исключили баг реализации/интегрирования. Причина —
@@ -135,6 +164,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-19 19:24] `468ecc2`: feat(H-12): close B-02 Nyman-Beurling atom — WEAKENED/illustration + B-01 index entry
 - [2026-07-17 05:55] `ef8a19c`: feat(H-12): close Track C-1 evidence gate — V5 cross-model review + numeric reruns
 - [2026-07-17 05:39] `ef8a19c`: feat(H-12): close Track C-1 evidence gate — V5 cross-model review + numeric reruns
 - [2026-07-17 05:27] `3db6f1f`: chore(H-12): Track 0 hygiene — commit evolution/ + sandbox recon, sync PLAN-2026H2
