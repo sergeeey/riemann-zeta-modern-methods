@@ -1,8 +1,45 @@
 # activeContext — H-12 Гипотеза Римана
-Обновлено: 2026-07-17
+Обновлено: 2026-07-19
 
 ## Current Focus
-**[2026-07-17] Действует PLAN-2026H2.md** (корень проекта). Track 0 DONE (коммит `3db6f1f` evolution/+sandbox, PR открыт вручную — gh auth сломан). **Track C-1 (evidence gate) DONE 2026-07-17: 11/11 catches TRACE-OK.** Числовые перепроверки (#8 crossover 10³⁸⁷⁷, #11 Robin 26 exceptions) — PASS. V5 cross-model review (Codex gpt-5.5, независимая модель, Context Asymmetry соблюдён) на 3 критичных circularity-кейсах — 3/3 CONFIRMED (Grant Doc A 9/10, Thm 5.3 10/10, A-06 Li 9/10). Артефакт: `evolution/20260630-evolve-solution/v5_codex_review_20260717.txt`. **Следующий шаг: Track C-2 — перенос пакета в `E:\skeptic-engine-manuscript`.** После — Track R: B-01 репликация Connes arXiv:2602.04022 (форма Вейля, p<13, точность 2.6e-55). Внешний каталог 100 направлений (ChatGPT) запаркован: `sandbox/20260717-external-100-rh-programs.md` (6/10). D-H negative-control идея тоже parked (revival: после Track C).
+
+**[2026-07-19] B-02 ЗАКРЫТ — WEAKENED/illustration.** Сессия была прервана на диагностике
+численного расхождения (I_N·log(N) растёт, не убывает к C=2+γ−log4π на N=10..3000),
+продолжена и закрыта в тот же заход. Два контроля (negative control V=0→I=1; no-collapse
+4 схемы квадратуры, разброс ≤0.03%) исключили баг реализации/интегрирования. Причина —
+задокументированное самой статьёй (Bettin–Conrey–Farmer, §1: цитата про графики
+Landreau–Richards) пред-асимптотическое поведение, тот же паттерн "стены", что в A-06/A-08.
+Promoted: `experiments/20260717-B02-nyman-beurling/` (claim/estimand/controls/decision/
+caveats/result_summary + run_b02.py + diagnose_quad.py). Реестры обновлены:
+sandbox/INDEX.md (B-02 promoted), parked/INDEX.md (добавлена запись B-01, была пропущена
+в предыдущей сессии).
+
+**Следующий шаг:** пересортировка Track R бэклога по CDT-score (PLAN-2026H2.md §5.1) —
+кандидат B-03 (de Bruijn–Newman, приоритет 3) либо переход к упаковке G3 (landscape note),
+т.к. B-01 parked + B-02 weakened = 2 подряд не-PROMOTE сессии, но НЕ 2 NULL (обе дали
+реальные pearls/выводы, Stop-rule §5.3 не сработал буквально — решение по факту, не автоматом).
+
+
+**[2026-07-17] Действует PLAN-2026H2.md** (корень проекта). **TRACK C ПОЛНОСТЬЮ ЗАКРЫТ:**
+- Track 0 DONE: коммит `3db6f1f` → **PR #9** (https://github.com/sergeeey/riemann-zeta-modern-methods/pull/9).
+- Track C-1 (evidence gate) DONE: 11/11 catches TRACE-OK. Числовые перепроверки (#8 crossover 10³⁸⁷⁷, #11 Robin 26 exceptions) PASS. V5 cross-model review (Codex gpt-5.5, независимая модель, Context Asymmetry) — 3/3 CONFIRMED (Grant Doc A 9/10, Thm 5.3 10/10, Li circularity 9/10). Коммит `ef8a19c` → **PR #10** (base: PR #9, мёржить после него) (https://github.com/sergeeey/riemann-zeta-modern-methods/pull/10).
+- Track C-2 DONE: кейс перенесён в `E:\skeptic-engine-manuscript\docs\case-study-riemann-hypothesis.md` (+ запись в docs/README.md), коммит `8798149` на ветке `docs/h12-riemann-case-study` (main repo, Zenodo DOI). **НЕ запушено** — `origin/main` того репо на 12+ коммитов позади локального main из-за старого коммита `42709e6` с 143MB CSV (>GitHub лимит), блокирует push. Не трогать без явного решения пользователя (переписывание истории). Кейс явно помечен как cross-domain (логический review, не статистический AUC-детектор) — вопрос о product scope оставлен открытым в самом документе.
+
+**gh auth фикс:** `GH_TOKEN` env var сломан (invalid), но keyring-токен рабочий → используй `env -u GH_TOKEN gh ...` для любых gh-команд в этой среде.
+
+**Открыто:** PR #9 и #10 в riemann-zeta-modern-methods ждут ревью/мёржа пользователем. skeptic-engine-manuscript: large-file проблема в main — отдельная задача, не начата.
+
+**Track R начат: B-01 PARKED (2026-07-17), не FALSIFIED.** Прочитал оба источника целиком
+(arXiv:2602.04022 + arXiv:2106.01715 Connes-Consani) — claim реален, не выдумка, но точный
+рецепт = многоступенчатый эмпирический pipeline (скан по α + D(α,k) + D₀(α) + eigenvector-
+matching), не разовый скрипт. Реальная стоимость — недели, не сессии; kill criterion превышен
+на порядок. Разбор: `sandbox/20260717-B01-connes-replication/step1_verdict.md`. Приоритет
+Track R сдвинут: **B-02 (Nyman–Beurling численно) теперь #1** — см. PLAN-2026H2.md §4.
+
+Внешний каталог 100 направлений (ChatGPT) запаркован: `sandbox/20260717-external-100-rh-programs.md`
+(6/10). D-H negative-control идея parked (revival: после Track C — теперь свободна).
+
+**Следующий шаг:** B-02 (Nyman–Beurling / Báez-Duarte численно) — новый Шаг 1 не начат.
 
 Прежний фокус (Phase 4, 2026-06-14):
 **Phase 4: H-12 → актив для Skeptic Engine (#1)**
@@ -98,6 +135,8 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-17 05:55] `ef8a19c`: feat(H-12): close Track C-1 evidence gate — V5 cross-model review + numeric reruns
+- [2026-07-17 05:39] `ef8a19c`: feat(H-12): close Track C-1 evidence gate — V5 cross-model review + numeric reruns
 - [2026-07-17 05:27] `3db6f1f`: chore(H-12): Track 0 hygiene — commit evolution/ + sandbox recon, sync PLAN-2026H2
 - [2026-06-14 15:37] `cfbf0d5`: docs: Skeptic Engine case study — 11 caught circularities & overclaims on RH
 - [2026-06-14 15:25] `885cede`: chore(A-06): remove unverified skeptic draft script

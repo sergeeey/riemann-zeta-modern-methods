@@ -26,3 +26,16 @@ data/raw/
 
 # Backups
 *.bak
+
+# External paper full-text extractions (pdftotext dumps of arXiv papers) —
+# same "not redistributed" policy as *.pdf above, just applied post-conversion.
+sandbox/**/connes_*.txt
+sandbox/**/bettin_conrey_farmer_*.txt
+sandbox/**/estimates_*.txt
+experiments/**/connes_*.txt
+experiments/**/bettin_conrey_farmer_*.txt
+experiments/**/estimates_*.txt
+
+# Claude Code / tool-generated caches — not project content
+.claude/state/
+graphify-out/
