@@ -1,0 +1,64 @@
+{
+  "experiment": "20260719-B06-speiser-extended-T",
+  "method": "reused from experiments/20260614-A07-levinson-density/run_speiser.py (count_zeros_in_rect, argument principle, LEFT side only)",
+  "ladder": [
+    {
+      "T": 50.0,
+      "raw_count": [
+        -0.0,
+        0.0
+      ],
+      "rounded": 0,
+      "residual_from_integer": 0.0,
+      "stable": true,
+      "consistent_with_RH": true
+    },
+    {
+      "T": 100.0,
+      "raw_count": [
+        0.010114,
+        -0.023833
+      ],
+      "rounded": 0,
+      "residual_from_integer": 0.033947,
+      "stable": false,
+      "consistent_with_RH": true
+    },
+    {
+      "T": 200.0,
+      "raw_count": [
+        0.438666,
+        0.414411
+      ],
+      "rounded": 0,
+      "residual_from_integer": 0.853077,
+      "stable": false,
+      "consistent_with_RH": true
+    },
+    {
+      "T": 400.0,
+      "raw_count": [
+        0.902592,
+        -3.801977
+      ],
+      "rounded": 1,
+      "residual_from_integer": 3.899386,
+      "stable": false,
+      "consistent_with_RH": false
+    },
+    {
+      "T": 800.0,
+      "raw_count": [
+        7.42441,
+        8.721765
+      ],
+      "rounded": 7,
+      "residual_from_integer": 9.146175,
+      "stable": false,
+      "consistent_with_RH": false
+    }
+  ],
+  "all_numerically_stable": false,
+  "all_consistent_with_RH": false,
+  "verdict": "FALSIFIED-or-unstable"
+}

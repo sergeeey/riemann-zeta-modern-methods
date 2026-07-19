@@ -26,9 +26,17 @@
   на всех 7 атомах в начале ЭТОЙ сессии. Проверено 7/7 позитивный + 1 негативный контроль
   (шаблон с настоящими плейсхолдерами всё ещё даёт unfilled=True).
 
-**Следующий шаг:** F1 — Speiser-эквивалент на большем T (новый Track R атом, из
-combinatorial-creativity теста) — mpmath дифференцирует ζ нативно, дёшево, не дублирует
-A-06/B-01..B-05.
+**F1 (Speiser extended-T) ПОПРОБОВАН И PARKED в тот же заход.** Переиспользовал устойчивый
+contour-метод A-07, расширил T=50→800. Результат: численная нестабильность (residual от
+целого растёт 0.03→7), НЕ находка нулей ζ' слева от прямой. 2 диагностики (dps 30→50 —
+улучшение ~40×; +сегментация контура — не сошлось за >15 мин). Оценка combinatorial-creativity
+("дёшево, одна сессия") оказалась НЕВЕРНОЙ — тот же паттерн переоценки, что был у B-01/Connes.
+Park: `sandbox/20260719-B06-speiser-extended-T/step1_verdict.md`. Revival: адаптивная точность
+O(T) ИЛИ другой (не contour) метод счёта нулей ζ', отдельная сессия.
+
+**Следующий шаг:** Track R backlog пересмотрен — B-03 (de Bruijn-Newman) или B-07
+(ex-dh-negative-control, revival condition выполнено) — оба ещё не начаты, решение за
+пользователем в начале следующей сессии.
 
 ---
 
@@ -164,6 +172,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-19 20:43] `bb30f66`: chore(H-12): Track H hygiene — fix findings from 10-tool test pass
 - [2026-07-19 19:24] `468ecc2`: feat(H-12): close B-02 Nyman-Beurling atom — WEAKENED/illustration + B-01 index entry
 - [2026-07-17 05:55] `ef8a19c`: feat(H-12): close Track C-1 evidence gate — V5 cross-model review + numeric reruns
 - [2026-07-17 05:39] `ef8a19c`: feat(H-12): close Track C-1 evidence gate — V5 cross-model review + numeric reruns
