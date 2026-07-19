@@ -3,6 +3,23 @@
 
 ## Current Focus
 
+**[2026-07-19, "давай всё по очереди"] Все 4 открытых пункта закрыты за один заход:**
+1. PR #9, #10 смёржены в master (riemann-zeta-modern-methods) — потребовался доп. PR #11 (плюмбинг).
+2. skeptic-engine-manuscript: 143MB CSV обойдён БЕЗ переписывания истории (cherry-pick на
+   чистую ветку от origin/main) — PR #2 + попутный фикс предсуществующего ruff-бага PR #3,
+   оба смёржены в Skeptic-Engine-2026-.
+3. G3: `LANDSCAPE-NOTE.md` — draft v1 написан и закоммичен, синтез A-04..A-12 + B-01..B-07,
+   НЕ прогнан через Submission Gate (это следующий шаг, если готовить к внешней публикации).
+4. B-03 revival (близкая пара нулей): нашёл реальную задокументированную Lehmer-пару
+   (γ≈7005.063/7005.101, WebSearch-подтверждена), 2 честные попытки трекинга под H_t —
+   обе уткнулись в предел разрешения текущей числовой схемы на этом масштабе (тот же
+   класс проблемы, что B-06). PARKED с конкретным revival condition в decision.md.
+
+**Локальная ветка `feat/h12-track-c1-evidence-gate` всё ещё не запушена** — содержит
+Track H, B-06, B-07, B-03 (+ revival attempt), LANDSCAPE-NOTE.md. Решение о PR/push — за
+пользователем.
+
+
 **[2026-07-19] Прогнаны 13 инструментов (skills/agents) на реальном материале проекта
 (эксперимент пользователя "протестировать и оценить инструменты"). Track H (гигиена,
 все находки инструментов) ЗАКРЫТ:**
@@ -209,6 +226,9 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-19 22:27] `3b99949`: docs(H-12): B-03 close-pair revival condition — attempted, parked
+- [2026-07-19 22:17] `b1bc3c4`: docs(H-12): draft G3 landscape note synthesizing A-04..A-12 + B-01..B-07
+- [2026-07-19 22:16] `ffdebaf`: docs(H-12): log skeptic-engine-manuscript CSV history fix
 - [2026-07-19 22:06] `4d4f0f4`: docs(H-12): log PR #9/#10/#11 merge into master
 - [2026-07-19 21:54] `4d4f0f4`: docs(H-12): log PR #9/#10/#11 merge into master
 - [2026-07-19 21:44] `7c225d8`: feat(H-12): B-03 de Bruijn-Newman heat flow — PROMOTE (illustration)
