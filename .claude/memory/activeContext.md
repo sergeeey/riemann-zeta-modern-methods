@@ -66,6 +66,15 @@ parked, B-07 promoted-scoped, B-03 promoted — 5 атомов за 2 дня). �
 иллюстрации), либо пауза, либо новый Track R кандидат (близкая пара нулей для B-03/
 Rodgers-Tao — самый очевидный следующий шаг, если продолжать).
 
+**skeptic-engine-manuscript ЗАКРЫТ (2026-07-19).** Проблема с 143MB CSV в истории
+main решена БЕЗ переписывания истории: cherry-pick кейс-документа (2 файла, 128 строк)
+на чистую ветку от origin/main → PR #2. Заодно CI поймал предсуществующий ruff-баг
+в src/skeptic_toolkit/integrity.py (Optional[X] вместо X|None), не связанный с этим PR —
+починен отдельным PR #3 (21/21 тестов прошли), смёржен первым, затем #2 обновлён и
+смёржен тоже. Оба PR смёржены в https://github.com/sergeeey/Skeptic-Engine-2026-.
+Локальная ветка `docs/h12-riemann-case-study` (со старой, проблемной историей) оставлена
+как есть — не трогалась, не удалялась.
+
 ---
 
 **[2026-07-19, ранее] B-02 ЗАКРЫТ — WEAKENED/illustration.** Сессия была прервана на диагностике
@@ -200,6 +209,8 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-19 22:06] `4d4f0f4`: docs(H-12): log PR #9/#10/#11 merge into master
+- [2026-07-19 21:54] `4d4f0f4`: docs(H-12): log PR #9/#10/#11 merge into master
 - [2026-07-19 21:44] `7c225d8`: feat(H-12): B-03 de Bruijn-Newman heat flow — PROMOTE (illustration)
 - [2026-07-19 21:34] `1cb442c`: feat(H-12): B-07 Davenport-Heilbronn negative control (scoped down)
 - [2026-07-19 21:15] `ffa70c0`: feat(H-12): B-06 Speiser extended-T — attempted, parked (numerical instability)
