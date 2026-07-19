@@ -1,5 +1,35 @@
 # activeContext — H-12 Гипотеза Римана
-Обновлено: 2026-07-19
+Обновлено: 2026-07-19 · **[ЗАКОНСЕРВИРОВАНО mothball 2026-07-19 — читать этот блок первым при разморозке]**
+
+## При разморозке — сделать ПЕРВЫМ
+
+1. **Решить судьбу локальной ветки `feat/h12-track-c1-evidence-gate`** (10 коммитов
+   впереди origin/master: Track H гигиена, B-06 parked, B-07 promoted-scoped, B-03
+   promoted + revival attempt, LANDSCAPE-NOTE.md draft, wrap-up notes). Не запушена.
+   Варианты: открыть новый PR в riemann-zeta-modern-methods, или push напрямую — нужно
+   явное «го» пользователя (см. rules/integrity.md — git push не выполняется без спроса).
+2. **LANDSCAPE-NOTE.md — draft v1, НЕ прошёл Submission Gate.** Если цель — внешняя
+   публикация, следующий шаг: адверсариальный ревью + verification checklist +
+   internal consistency check + cooling-off (integrity.md § Submission Gate), не просто
+   "выглядит готово".
+3. **Track R backlog, не начато:** B-04 (Hankel-миноры Ли-коэффициентов), B-05 (Weil
+   positivity, gated behind B-01). Revival conditions: B-01 (≥2 недели на Connes-репликацию),
+   B-06 (адаптивная точность O(T) или другой метод счёта нулей ζ'), B-07-close-pair
+   (та же проблема разрешения на масштабе, см. `experiments/20260719-B03-de-bruijn-newman/decision.md`).
+4. **2 предсуществующих ruff-ошибки** в `experiments/20260614-A04-hardy-Z/run.py`
+   (неиспользуемый импорт + f-string без плейсхолдера) — НЕ сегодняшние, не тронуты
+   намеренно (mothball не чинит, только фиксирует). Дешёвый быстрый фикс, если руки дойдут.
+5. Прочитать `.claude/memory/decisions.md` (3 новых ADR за сегодня) перед тем как
+   повторять паттерны сегодняшнего дня (типы независимости, cherry-pick vs rewrite history,
+   недоверие к "дёшево" от идея-генераторов).
+
+**Открытые вопросы (не решены, не забыты):**
+- skeptic-engine-manuscript: старая ветка `docs/h12-riemann-case-study` (с проблемной
+  историей) оставлена как есть, не удалена — можно почистить, не срочно.
+- PR#9/#10/#11 (riemann-zeta-modern-methods) и PR#2/#3 (Skeptic-Engine-2026-) уже смёржены
+  — эта часть закрыта, не путать с п.1 выше (другая, ещё не запушенная ветка).
+
+---
 
 ## Current Focus
 
@@ -226,6 +256,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-19 22:28] `d6581bf`: docs(H-12): wrap up — all 4 queued items closed
 - [2026-07-19 22:27] `3b99949`: docs(H-12): B-03 close-pair revival condition — attempted, parked
 - [2026-07-19 22:17] `b1bc3c4`: docs(H-12): draft G3 landscape note synthesizing A-04..A-12 + B-01..B-07
 - [2026-07-19 22:16] `ffdebaf`: docs(H-12): log skeptic-engine-manuscript CSV history fix
