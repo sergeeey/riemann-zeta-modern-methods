@@ -31,14 +31,43 @@ The atom's scope was deliberately the calibration/smooth-motion illustration,
 not the close-pair mechanism, decided BEFORE running (see claim.md), not
 narrowed after seeing a clean result.
 
-## Revival condition (for the harder, more interesting follow-up)
-Locate a genuine close (Lehmer-type) pair of ζ zeros (candidate search
-already flagged in today's earlier goal-expansion-100 idea #2 and
-combinatorial-creativity idea 2 — both parked as separate ideas, not done),
-then track BOTH zeros of that pair under H_t as t decreases from 0, to see
-whether they approach each other and go complex, or repel and stay real
-(the actual empirical content behind Rodgers-Tao's proof). This is a
-genuinely separate, harder task from what this atom did.
+## Revival condition (for the harder, more interesting follow-up) — ATTEMPTED, PARKED
+Located the real, documented Lehmer pair (γ≈7005.06286617, γ≈7005.10056467,
+gap≈0.0377 vs typical spacing ~1 at this height — [VERIFIED via WebSearch,
+Wikipedia "Lehmer pair" + MathWorld; both refined and confirmed genuine ζ
+zeros via direct evaluation, |ζ|~1e-9..1e-8 at the cited values before
+refinement, exact after `findroot`).
+
+**Attempt 1 — direct findroot on H_t at x≈2γ:** at this height (x≈14010),
+naive `mp.quad([0,u_max])` gives H_0≈0.0064 (NOT near zero) — the fixed
+breakpoint scheme fails to resolve the much-faster cos(xu) oscillation at
+this x (same failure mode as B-06's contour instability). Fixed by
+segmenting the integration into 80 sub-intervals (dps=20): H_0(2γ)≈-4×10⁻²²,
+calibration restored. But `findroot` (Newton) from this corrected H_t then
+converged to x≈12704 — an unrelated, distant root — in 232s, evidently
+thrown off by evaluation cost/noise or the nearby second zero confusing the
+local derivative estimate.
+
+**Attempt 2 — bracketing scan instead of Newton:** scanned x0±0.15 around
+2γ₁ in steps of 0.05. Result: H_0 stays at the SAME tiny magnitude
+(~-4×10⁻²²) across nearly the entire window, jumping by 4 orders of
+magnitude only at the window's edge. This means the separation between the
+two zeros in x (≈0.075, twice the 0.038 gap in γ) is smaller than or
+comparable to this integration scheme's own approximation-error floor —
+the method cannot currently distinguish "near zero 1" from "near zero 2" at
+this resolution; a sign-change bracket for each zero separately isn't
+resolvable without a finer/adaptive scheme.
+
+**Verdict: PARKED** (2 honest attempts, not a 3rd, per this project's own
+discipline). Substrate Gate: BLOCKED-INFRASTRUCTURE for this specific
+close-pair case, not evidence about the pair's actual behavior under H_t.
+
+**Revival condition:** adaptive precision/segmentation that scales with how
+close the target zeros are (not just with x), OR reformulate using a method
+less sensitive to this than direct H_t evaluation + root-finding (e.g., an
+argument-principle contour count in a tiny box around the pair, analogous to
+A-07's stable left-side Speiser count) — a genuinely separate numerical
+engineering task, not a quick fix.
 
 ## What's next
 Not a new atom by itself — a calibration + illustration piece, usable
