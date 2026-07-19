@@ -1,0 +1,40 @@
+{
+  "experiment": "20260719-B03-de-bruijn-newman",
+  "calibration": [
+    {
+      "label": "gamma_1",
+      "x": 28.26945028346939,
+      "H_0(x)": -1.4530837897115362e-19
+    },
+    {
+      "label": "gamma_2",
+      "x": 42.04407927754311,
+      "H_0(x)": 2.2657126810582026e-21
+    }
+  ],
+  "calibration_pass": true,
+  "zero_track": [
+    {
+      "t": -0.05,
+      "x": 28.29843730741145
+    },
+    {
+      "t": -0.02,
+      "x": 28.281043774469175
+    },
+    {
+      "t": 0.0,
+      "x": 28.26945028346939
+    },
+    {
+      "t": 0.02,
+      "x": 28.257858551689132
+    },
+    {
+      "t": 0.05,
+      "x": 28.240474254649154
+    }
+  ],
+  "monotone_decrease_with_t": true,
+  "scope_note": "Illustrates smooth real-axis motion of ONE well-separated zero. Does NOT search for or track a close (Lehmer-type) pair, and does NOT itself demonstrate the Rodgers-Tao real-to-complex mechanism -- see decision.md."
+}

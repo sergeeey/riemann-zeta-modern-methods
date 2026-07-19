@@ -43,8 +43,20 @@ D(s) существуют по литературе (Davenport-Heilbronn 1936, A
 "дёшево, одна сессия" от идея-генератора оказалась заниженной — стоит учитывать при
 калибровке будущих оценок стоимости. Promoted: `experiments/20260719-B07-dh-negative-control/`.
 
-**Следующий шаг:** Track R backlog — B-03 (de Bruijn-Newman) остаётся неначатым,
-следующая кандидатура при желании продолжать Track R.
+**B-03 (de Bruijn-Newman heat flow) СДЕЛАН в тот же заход — PROMOTE, первый успех дня
+с первой попытки.** Реализовал H_t(x)/Φ(u) (формула перепроверена WebSearch, MathWorld/
+Wikipedia/arXiv:1801.05914 согласуются). Калибровка: H_0(2γ₁)≈-1.5e-19, H_0(2γ₂)≈2.3e-21
+(против опубликованных нулей ζ — точное совпадение подтверждает формулу). Один хорошо
+разделённый ноль отслежен на t∈[-0.05,0.05] — остаётся вещественным, движется монотонно,
+БЕЗ Substrate Gate проблем (в отличие от B-06/B-07 сегодня). НЕ демонстрирует сам механизм
+Rodgers-Tao (нужна близкая пара нулей — отдельная, более сложная задача, revival note в
+decision.md). Promoted: `experiments/20260719-B03-de-bruijn-newman/`.
+
+**Track R backlog на сегодня исчерпан** (B-01 parked вчера, B-02 weakened вчера, B-06
+parked, B-07 promoted-scoped, B-03 promoted — 5 атомов за 2 дня). Следующий шаг: G3
+(упаковка landscape note) — материала уже достаточно (SYNTHESIS.md + B-02 + B-03
+иллюстрации), либо пауза, либо новый Track R кандидат (близкая пара нулей для B-03/
+Rodgers-Tao — самый очевидный следующий шаг, если продолжать).
 
 ---
 
@@ -180,6 +192,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-19 21:34] `1cb442c`: feat(H-12): B-07 Davenport-Heilbronn negative control (scoped down)
 - [2026-07-19 21:15] `ffa70c0`: feat(H-12): B-06 Speiser extended-T — attempted, parked (numerical instability)
 - [2026-07-19 20:43] `bb30f66`: chore(H-12): Track H hygiene — fix findings from 10-tool test pass
 - [2026-07-19 19:24] `468ecc2`: feat(H-12): close B-02 Nyman-Beurling atom — WEAKENED/illustration + B-01 index entry
