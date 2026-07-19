@@ -52,6 +52,14 @@ Wikipedia/arXiv:1801.05914 согласуются). Калибровка: H_0(2�
 Rodgers-Tao (нужна близкая пара нулей — отдельная, более сложная задача, revival note в
 decision.md). Promoted: `experiments/20260719-B03-de-bruijn-newman/`.
 
+**PR #9 и #10 СМЁРЖЕНЫ в master (2026-07-19).** PR #10 базировался на ветке PR #9
+(`chore/h12-track0-hygiene`), поэтому смёржился туда, не в master напрямую — потребовался
+промежуточный PR #11 (чистый плюмбинг, тот же диф что #10, 0 нового контента) чтобы
+довести до master. Итог: master = `5c342c6`, содержит Track 0 hygiene + Track C-1
+evidence gate. Локальная ветка `feat/h12-track-c1-evidence-gate` с сегодняшними
+коммитами (Track H, B-06, B-07, B-03) — НЕ запушена, ждёт решения пользователя
+(новый PR или прямой push).
+
 **Track R backlog на сегодня исчерпан** (B-01 parked вчера, B-02 weakened вчера, B-06
 parked, B-07 promoted-scoped, B-03 promoted — 5 атомов за 2 дня). Следующий шаг: G3
 (упаковка landscape note) — материала уже достаточно (SYNTHESIS.md + B-02 + B-03
@@ -192,6 +200,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-07-19 21:44] `7c225d8`: feat(H-12): B-03 de Bruijn-Newman heat flow — PROMOTE (illustration)
 - [2026-07-19 21:34] `1cb442c`: feat(H-12): B-07 Davenport-Heilbronn negative control (scoped down)
 - [2026-07-19 21:15] `ffa70c0`: feat(H-12): B-06 Speiser extended-T — attempted, parked (numerical instability)
 - [2026-07-19 20:43] `bb30f66`: chore(H-12): Track H hygiene — fix findings from 10-tool test pass
