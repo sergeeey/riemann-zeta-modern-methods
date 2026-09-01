@@ -1,5 +1,55 @@
 # activeContext — H-12 Гипотеза Римана
-Обновлено: 2026-07-19 · **[ЗАКОНСЕРВИРОВАНО mothball 2026-07-19 — читать этот блок первым при разморозке]**
+Обновлено: 2026-08-27
+
+## [2026-08-27] Внешний факт: A-07 рекорд обновлён 41.28%→67.25%
+
+Пользователь принёс `deep-research-report`. [VERIFIED-tool] через WebFetch: arXiv:2608.13637
+(Alpöge-Furman), github.com/anthropics/zeta-23-lean, arXiv:2503.15449 (PCC) — все реальны,
+0 фантомных ссылок. Provenance-находка: результат обнаружила неопубликованная версия Claude
+(Anthropic), Alpöge/Furman валидировали — не независимые авторы в классическом смысле;
+отчёт пользователя это опускал. Подробности + все источники → `riemann_atoms.md` A-07,
+`riemann_approaches.md` §A4 (полная запись с provenance и новым структурным потолком ~0.682).
+Не наш эксперимент — внешний результат, A-07-density не пересчитывать.
+
+## [2026-08-27] B-05: зависимость от B-01 снята
+
+По итогам находки boyko-project-radar (research-audit, тот же день): "B-05 gated behind
+B-01" была внутренним секвенированием, не логической необходимостью — привязка держала
+B-05 бессрочно замороженным, раз B-01 parked. Пользователь подтвердил: вычеркнуть
+зависимость. Обновлено в `PLAN-2026H2.md` §Track R (B-05 теперь независимый кандидат,
+приоритет 5 без изменений; связь с B-01 переформулирована как "потенциально
+информативно", не как предпосылка).
+
+## [2026-08-27] Разморозка: /boyko-goal-expansion-100 audit-режим на external-100 каталоге
+
+Пользователь вызвал `/boyko-goal-expansion-100` без указания режима. Обнаружен
+конфликт с novelty-check (FL Step -3): в проекте уже лежит parked-каталог 100
+направлений (`sandbox/20260717-external-100-rh-programs.md`, ChatGPT, 2026-07-17).
+Уточнено у пользователя: цель = "следующий шаг для доказательства/опровержения RH",
+режим = `audit` (не генерировать новые 100 с нуля).
+
+**Результат аудита:** `sandbox/20260827-external-100-audit.md` (полный отчёт).
+- [VERIFIED-tool] Source Trace: 15 доп. ссылок проверены WebFetch → 15/15 реальны, 0 галлюцинаций,
+  13/15 точное совпадение темы (2/15 тема верна, подпись каталога расплывчата).
+- Дедуп по механизму: ~27/100 карточек — не независимые идеи, а 3 стены, УЖЕ
+  пройденные этим проектом (heat-flow/dBN → B-03 illustration + B-06 parked;
+  Nyman-Beurling → B-02 weakened; Connes/Weil-positivity → B-01 parked).
+- Recalibrated scoring (priority_score формула skill'а, не self-score ChatGPT):
+  топ-1 = карточка #12 (Hankel-миноры коэффициентов Ли) — **подтверждает** уже
+  стоящий в бэклоге B-04, не открывает новое направление. #2 = #84 (SOS/SDP
+  сертификат на усечённой форме Вейля, toy-модель) — genuinely fresh, не
+  пересекается ни с одной уже пройденной стеной.
+- sandbox/INDEX.md обновлён (ссылка на аудит в записи external-100-rh-programs).
+
+**Следующий шаг, если продолжать Track R:** B-04 (Hankel-миноры Ли) — теперь
+с внешней валидацией и калиброванным score, ADR-3 caveat применить (1-2 пробных
+вызова на малом N перед полным claim.md). Локальная ветка
+`feat/h12-track-c1-evidence-gate` и решение по LANDSCAPE-NOTE.md (п.1-2 ниже)
+всё ещё не решены — этот заход их не трогал.
+
+---
+
+**[ЗАКОНСЕРВИРОВАНО mothball 2026-07-19 — читать этот блок первым при разморозке]**
 
 ## При разморозке — сделать ПЕРВЫМ
 
@@ -256,6 +306,10 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-09-01 15:06] `140eba8`: docs(H-12): B-05 no longer gated behind B-01
+- [2026-09-01 15:06] `3a382ef`: docs(H-12): A-07 record update + skeptic verdict on Alpöge-Furman claim
+- [2026-09-01 15:06] `35f2ecf`: docs(H-12): audit external-100 catalog + full project-radar scan
+- [2026-07-19 22:42] `4b7df4e`: chore(H-12): mothball — freeze session state before pause
 - [2026-07-19 22:28] `d6581bf`: docs(H-12): wrap up — all 4 queued items closed
 - [2026-07-19 22:27] `3b99949`: docs(H-12): B-03 close-pair revival condition — attempted, parked
 - [2026-07-19 22:17] `b1bc3c4`: docs(H-12): draft G3 landscape note synthesizing A-04..A-12 + B-01..B-07
