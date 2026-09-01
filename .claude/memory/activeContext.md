@@ -20,6 +20,18 @@ B-05 бессрочно замороженным, раз B-01 parked. Польз
 приоритет 5 без изменений; связь с B-01 переформулирована как "потенциально
 информативно", не как предпосылка).
 
+## [2026-08-27, продолжение] toolkit.py test suite ЗАКРЫТ (atomize bottleneck #1)
+
+`tests/test_toolkit.py` + `conftest.py`, 10 тестов, все прошли с первой попытки
+(`python -m pytest tests/test_toolkit.py -v` → 10 passed), ruff чист. Позитивный
+контроль — reference.py (Odlyzko), не из тестируемого кода. Отдельно закреплён
+(не "исправлен") sci-code-audit finding: scan_step слеп к близким парам —
+`test_finer_scan_step_never_finds_fewer_zeros` пинит текущее поведение, чтобы
+будущее тихое изменение алгоритма ловилось тестом, а не новым B-03/B-06-сюрпризом.
+
+Ещё открыто, не тронуто: branch push/PR decision (с 2026-07-19), LANDSCAPE-NOTE.md
+Submission Gate, B-04 не начат. Все три — требуют отдельного явного "го".
+
 ## [2026-08-27] Разморозка: /boyko-goal-expansion-100 audit-режим на external-100 каталоге
 
 Пользователь вызвал `/boyko-goal-expansion-100` без указания режима. Обнаружен
@@ -306,6 +318,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-09-01 16:39] `11ee796`: test(H-12): pytest regression suite for src/zeta/toolkit.py
 - [2026-09-01 15:06] `d5b4cd2`: docs(H-12): session log — 2026-08-27 audits + external fact + backlog edit
 - [2026-09-01 15:06] `140eba8`: docs(H-12): B-05 no longer gated behind B-01
 - [2026-09-01 15:06] `3a382ef`: docs(H-12): A-07 record update + skeptic verdict on Alpöge-Furman claim
