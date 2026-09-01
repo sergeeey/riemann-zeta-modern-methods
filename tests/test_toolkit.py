@@ -18,6 +18,7 @@ import pytest
 
 from zeta.reference import ODLYZKO_FIRST_10
 from zeta.toolkit import (
+    cross_check_against_zetazero,
     find_zeros_on_critical_line,
     hardy_Z,
     set_precision,
@@ -76,6 +77,34 @@ def test_verify_zero_true_for_known_zero():
 def test_verify_zero_false_for_non_zero_point():
     # t=10 is nowhere near a zero (first zero is ~14.13) -- must reject it.
     assert not verify_zero_on_critical_line(10.0)
+
+
+# ---------------------------------------------------------------------------
+# cross_check_against_zetazero: the third leg of the design's claimed triple
+# cross-check (module docstring), never actually called before this test --
+# confirmed by `grep -rn zetazero` finding zero call sites anywhere in the
+# codebase (methodology-comparison audit, 2026-09-01). Odlyzko's table only
+# covers the first 10 zeros; mpmath.zetazero() has no such limit, so this is
+# also the only leg of the three that can be exercised well past t_max=50.
+# ---------------------------------------------------------------------------
+
+
+def test_cross_check_against_zetazero_agrees_for_first_ten():
+    zeros = find_zeros_on_critical_line(t_max=50.0)
+    assert len(zeros) >= 10
+    results = cross_check_against_zetazero(zeros[:10])
+    assert all(results)
+
+
+def test_cross_check_against_zetazero_extends_past_odlyzko_table():
+    """mpmath.zetazero() has no 10-zero ceiling -- exercise it well beyond
+    what src/zeta/reference.py's ODLYZKO_FIRST_10 alone could ever check."""
+    zeros = find_zeros_on_critical_line(t_max=100.0)
+    assert len(zeros) > 10
+    results = cross_check_against_zetazero(zeros)
+    assert all(results), (
+        f"{results.count(False)} of {len(results)} zeros disagreed with mpmath.zetazero()"
+    )
 
 
 # ---------------------------------------------------------------------------

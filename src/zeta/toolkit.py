@@ -3,9 +3,19 @@
 Design note (WHY independent root-finding):
 We do NOT use mpmath.zetazero() as the primary source of zeros. Instead we find
 zeros via sign changes of the Hardy Z-function, which is a different code path.
-mpmath.zetazero() is used ONLY as an independent cross-check (see verify.py).
+mpmath.zetazero() is used ONLY as an independent cross-check (see
+cross_check_against_zetazero() below).
 This avoids circular validation: a zero is "found" by one method and "confirmed"
 by two others (zetazero + direct substitution + published Odlyzko values).
+
+CORRECTED (2026-09-01, methodology-comparison audit): this docstring named
+"verify.py" as the home of the zetazero cross-check since the file's own
+history began, but that file was never created and the check was never
+called anywhere in this codebase -- confirmed by `grep -rn zetazero` over
+the whole tree before this fix. The "triple cross-check" was in practice a
+double cross-check (Odlyzko table + direct substitution); zetazero was
+docstring-only. cross_check_against_zetazero() below is the first real
+implementation of the third leg.
 """
 
 from __future__ import annotations
@@ -139,3 +149,33 @@ def verify_zero_on_critical_line(t: float | mp.mpf, tol: float = 1e-10) -> bool:
     Independent of how t was found. Returns True if |ζ(1/2+it)| < tol.
     """
     return abs(zeta(mp.mpf(1) / 2 + 1j * mp.mpf(t))) < tol
+
+
+def cross_check_against_zetazero(zeros: list[Zero], tol: float = 1e-8) -> list[bool]:
+    """Independently re-derive each zero via mpmath.zetazero() and compare.
+
+    WHY a third method, not just a second: `zeros` were found by scanning for
+    sign changes in the Hardy Z-function (this module's own primary method).
+    mpmath.zetazero(n) uses a completely different algorithm internally
+    (argument-principle zero counting via the Riemann-Siegel formula, per
+    mpmath's own implementation) -- an agreement here is not "the same code
+    ran twice", it is two independently-implemented root-finders agreeing on
+    the same zero, the same principle as this repo's own no-collapse "use a
+    different tool" control (see rules/perelman-audit.md).
+
+    Args:
+        zeros: zeros as returned by find_zeros_on_critical_line(), assumed to
+            be the first N zeros in increasing order (zetazero's 1-based
+            index n only makes sense against a complete, gap-free prefix).
+        tol: absolute tolerance on the imaginary part, in the same units as
+            Zero.t.
+
+    Returns:
+        One bool per input zero: True if mpmath.zetazero(n)'s imaginary part
+        matches zeros[n-1].t within tol.
+    """
+    results: list[bool] = []
+    for i, z in enumerate(zeros, start=1):
+        independent_t = mp.im(mp.zetazero(i))
+        results.append(abs(independent_t - z.t) < tol)
+    return results
