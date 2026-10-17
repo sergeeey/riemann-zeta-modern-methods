@@ -318,6 +318,7 @@ HD-MAVP аудит двух Grant (2026) PDF про RH. Вердикт: ОБА �
 - Тавтологичные numeric-тесты «спектр оператора = нули» при circular-входе (Validation Theater). Только negative-control / out-of-sample / self-adjointness.
 
 ## Auto-commit log
+- [2026-09-01 16:40] `f9387e5`: docs(H-12): log toolkit.py test suite completion in activeContext
 - [2026-09-01 16:39] `11ee796`: test(H-12): pytest regression suite for src/zeta/toolkit.py
 - [2026-09-01 15:06] `d5b4cd2`: docs(H-12): session log — 2026-08-27 audits + external fact + backlog edit
 - [2026-09-01 15:06] `140eba8`: docs(H-12): B-05 no longer gated behind B-01

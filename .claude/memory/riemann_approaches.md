@@ -103,6 +103,24 @@ Maynard, Oxford: "genuinely interesting mathematical contribution"; Andrew Suthe
 MIT: "further evidence AI is capable of interesting mathematical research"). **Сам
 Anthropic не ожидает, что эта техника приведёт к полному доказательству RH.**
 
+**Provenance-пропуск во входящем отчёте [VERIFIED-tool, 2026-09-28]:** внешний
+deep-research отчёт «Гипотеза Римана: состояние на 27.08.2026» (ChatGPT Deep Research,
+JSON-экспорт: 274 источника) в тексте НЕ содержит слов «Claude»/«Anthropic», хотя агент
+открывал `anthropic.com/research/riemann-zeta`, PDF на `www-cdn.anthropic.com` и репо
+`anthropics/zeta-23-lean`. Математика и ссылки точны, авторство опущено. Правило: цитируя
+этот отчёт, добавлять AI-происхождение; источник фактов — первоисточник Anthropic.
+
+**Уточнения 2026-09-28 [VERIFIED-tool, чтение PDF]:** (а) потолок класса bandwidth-one в
+статье p0 ≤ 0.6818287 («≈ 0.682»), не 0.68185 (это из блога); (б) оптимальность
+константы Montgomery–Taylor (2−C_MT=0.6725) доказана только для ОДНОГО окна («among
+windows», CCLM17 Cor.14), поэтому значения между 0.6725 и 0.682 внутри bandwidth-one не
+противоречат теореме — PR mdumitrean (six-translate penalty) и лабораторные 0.6730
+не «невозможны»; (в) цитата «Nothing in the method distinguishes between "two thirds"
+and "all"» — §7.2, подтверждена. Свежие продолжения: Lamzouri arXiv:2609.02882 (Hilbert-space
+inequality; 88.76% simple-or-on-line), Wang arXiv:2609.24167 (+6.7e-8, шум), Zhu
+arXiv:2608.24827 (Weil positivity до поддержки 1.6; барьер T1=2πe^{A_L}, A_L≈4e^L).
+Полный срез и список «не считать открытием» → `sandbox/20260928-rh-landscape-deep-search.md`.
+
 **Новый структурный потолок:** ~0.682 для class сертификатов с Fourier bandwidth ≤1
 (bandwidth-one ceiling). Выход за него требует недиагональных prime-pair sums
 (Hardy-Littlewood-уровня арифметика) при Fourier support >1 — принципиально новая
