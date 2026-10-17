@@ -120,11 +120,11 @@ def find_zeros_on_critical_line(
             # Exact zero landed on the scan grid — bracket is degenerate, use it.
             t_root = t_prev
         elif z_prev * z < 0:
-            # WHY two-point form [t_prev, t]: this selects a bracketing solver
-            # (Illinois/Brent) that STAYS inside the interval. A single start
-            # point (t_prev+t)/2 runs Muller/secant, which can run off to a
-            # neighbouring root and create a duplicate or miss. (reviewer P0)
-            t_root = mp.findroot(hardy_Z, [t_prev, t])
+            # WHY solver='anderson': mp.findroot defaults to secant even with two
+            # start points, and secant can leave [t_prev, t] and land on a
+            # neighbouring root (verified: [1, 1.2] on cos gave pi/2). Anderson
+            # is a bracketing method that stays inside the sign-change interval.
+            t_root = mp.findroot(hardy_Z, [t_prev, t], solver="anderson")
         if t_root is not None:
             residual = abs(zeta(half + 1j * t_root))
             zeros.append(
