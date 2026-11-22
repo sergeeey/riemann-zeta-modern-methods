@@ -21,6 +21,7 @@ CHARS = {
     "chi4": (1, 4, lambda n: 0 if n % 2 == 0 else (1 if n % 4 == 1 else -1)),
     "chi5": (0, 5, lambda n: {0: 0, 1: 1, 2: -1, 3: -1, 4: 1}[n % 5]),
     "chi8": (0, 8, lambda n: {1: 1, 3: -1, 5: -1, 7: 1}.get(n % 8, 0)),
+    "chim8": (1, 8, lambda n: {1: 1, 3: 1, 5: -1, 7: -1}.get(n % 8, 0)),  # odd primitive real character mod 8, (-8/n)
     "dh": (
         1,
         5,
