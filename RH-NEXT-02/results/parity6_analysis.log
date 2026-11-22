@@ -1,0 +1,39 @@
+cells loaded: 354; excluded (n_neg != 0 or undetermined): 0
+N=96 cells present: 14 of 14 expected
+
+CHECK 1: interlacing lambda(96) <= lambda(64):
+  violations: 0 
+
+CHECK 2: N=96 vs N=64: |log10(l96/l64)| and convergence (< 1 decade):
+  c=37 D= -3: l64=1.794e-59  l96=3.205e-62  log10(l96/l64) = -2.75  NOT converged
+  c=37 D= -4: l64=1.184e-45  l96=6.534e-46  log10(l96/l64) = -0.26  converged
+  c=53 D= -3: l64=1.575e-74  l96=3.693e-86  log10(l96/l64) = -11.63  NOT converged
+  c=53 D= -4: l64=1.245e-61  l96=4.655e-67  log10(l96/l64) = -5.43  NOT converged
+  c=53 D=  5: l64=1.262e-53  l96=2.486e-55  log10(l96/l64) = -1.71  NOT converged
+  c=53 D= -7: l64=3.657e-37  l96=2.508e-37  log10(l96/l64) = -0.16  converged
+  c=53 D= -8: l64=4.440e-32  l96=3.443e-32  log10(l96/l64) = -0.11  converged
+  c=53 D=  8: l64=3.942e-34  l96=3.245e-34  log10(l96/l64) = -0.08  converged
+  c=79 D= -3: l64=1.205e-88  l96=2.471e-108  log10(l96/l64) = -19.69  NOT converged
+  c=79 D= -4: l64=3.925e-76  l96=8.648e-91  log10(l96/l64) = -14.66  NOT converged
+  c=79 D=  5: l64=1.229e-68  l96=3.659e-79  log10(l96/l64) = -10.53  NOT converged
+  c=79 D= -7: l64=1.878e-53  l96=4.876e-57  log10(l96/l64) = -3.59  NOT converged
+  c=79 D= -8: l64=6.983e-48  l96=1.786e-49  log10(l96/l64) = -1.59  NOT converged
+  c=79 D=  8: l64=1.247e-49  l96=1.404e-51  log10(l96/l64) = -1.95  NOT converged
+  converged: 4 of 14; missing: none
+
+CHECK 4: regression on BEST ESTIMATES (log10 lambda_min ~ 1 + log10 q + gamma_1 + I(odd)):
+  c kept     R2    sd |  parity(odd) [t] |  q per doubling [t] |   gamma_1 per unit [t] (se)  dropped
+ 37   19  0.946  2.93 |   -0.86 [ -0.5] |    +7.69 [  +4.2] |    -3.48 [ -3.0] (1.17)  dropped [-3]
+ 53   17  0.966  1.95 |   +0.70 [ +0.6] |   +11.76 [  +9.6] |    -1.91 [ -2.1] (0.91)  dropped [-4, -3, 5]
+ 79   14  0.978  1.30 |   +2.24 [ +2.6] |   +15.66 [ +17.6] |    -0.49 [ -0.7] (0.70)  dropped [-8, -7, -4, -3, 5, 8]
+
+VERDICTS on best estimates (pre-registered rule):
+  parity (odd): ROBUSTLY NOT DETECTED; same sign at all three c: False
+  conductor q: ROBUSTLY DETECTED; same sign at all three c: True
+  first-zero height gamma_1: ROBUSTLY NOT DETECTED; same sign at all three c: True
+
+CHECK 5: gamma_1 coefficient (decades per unit) under three data choices:
+  c |      N=64 all 20 |  N=64 converged only |   best estimates
+ 37 |    -5.08 [ -4.5] |   -2.53 [ -3.3] n=18 |    -3.48 [ -3.0]
+ 53 |    -5.25 [ -4.6] |   -1.88 [ -2.1] n=17 |    -1.91 [ -2.1]
+ 79 |    -3.76 [ -4.2] |   -0.49 [ -0.7] n=14 |    -0.49 [ -0.7]
