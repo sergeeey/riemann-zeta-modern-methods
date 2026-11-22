@@ -48,6 +48,9 @@ Lambda_D(n), n=1..12: ['0.0', '0.196909', '-0.312093', '-1.44223', '0.0', '1.936
 ### python id_test.py chi3 13 120
 chi3 c=13: zeros found up to 120.0: 58  first: ['8.0397372', '11.249206', '15.704619']
   v^T Q v = 9.29021374955e-5   2*sum|xi_hat|^2 = 0.000238289038494   ratio = 0.38987163691   L=2.5649494  1/L=0.38987125
+### python id_test.py chi3 37 120
+chi3 c=37: zeros found up to 120.0: 58  first: ['8.0397372', '11.249206', '15.704619']
+  v^T Q v = 2.06821469493e-5   2*sum|xi_hat|^2 = 7.46814811483e-5   ratio = 0.276938092701   L=3.6109179  1/L=0.27693789
 ### python id_test.py dh 13 120
 dh c=13: zeros found up to 120.0: 64  first: ['5.0941598', '8.9399144', '12.133545']
   v^T Q v = 0.000218564765002   2*sum|xi_hat|^2 = 0.000560607328583   ratio = 0.389871401707   L=2.5649494  1/L=0.38987125
@@ -56,34 +59,34 @@ dh c=37: zeros found up to 120.0: 64  first: ['5.0941598', '8.9399144', '12.1335
   v^T Q v = 2.13113211208e-5   2*sum|xi_hat|^2 = 7.69533112557e-5   ratio = 0.276938324979   L=3.6109179  1/L=0.27693789
 ### python dh_scan.py dh 120 13 29 30 31 32 36 37 113 523 1009 2003
 dh c=13 N=120 prec=1200: CERTIFIED n_pos=241 n_neg=0  (3s)
-dh c=29 N=120 prec=1200: CERTIFIED n_pos=241 n_neg=0  (3s)
-dh c=30 N=120 prec=1200: CERTIFIED n_pos=241 n_neg=0  (3s)
-dh c=31 N=120 prec=1200: CERTIFIED n_pos=240 n_neg=1  (3s)
-dh c=32 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (3s)
-dh c=36 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (3s)
-dh c=37 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (3s)
-dh c=113 N=120 prec=2400: CERTIFIED n_pos=237 n_neg=4  (9s)
-dh c=523 N=120 prec=4800: CERTIFIED n_pos=237 n_neg=4  (40s)
-dh c=1009 N=120 prec=4800: CERTIFIED n_pos=237 n_neg=4  (52s)
-dh c=2003 N=120 prec=4800: CERTIFIED n_pos=235 n_neg=6  (79s)
+dh c=29 N=120 prec=1200: CERTIFIED n_pos=241 n_neg=0  (6s)
+dh c=30 N=120 prec=1200: CERTIFIED n_pos=241 n_neg=0  (6s)
+dh c=31 N=120 prec=1200: CERTIFIED n_pos=240 n_neg=1  (6s)
+dh c=32 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (6s)
+dh c=36 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (6s)
+dh c=37 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (6s)
+dh c=113 N=120 prec=2400: CERTIFIED n_pos=237 n_neg=4  (18s)
+dh c=523 N=120 prec=4800: CERTIFIED n_pos=237 n_neg=4  (73s)
+dh c=1009 N=120 prec=4800: CERTIFIED n_pos=237 n_neg=4  (95s)
+dh c=2003 N=120 prec=4800: CERTIFIED n_pos=235 n_neg=6  (105s)
 ### python dh_scan.py chi3 120 113 523 1009 2003
-chi3 c=113 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (31s)
-chi3 c=523 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (29s)
-chi3 c=1009 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (29s)
-chi3 c=2003 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (33s)
+chi3 c=113 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (49s)
+chi3 c=523 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (50s)
+chi3 c=1009 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (60s)
+chi3 c=2003 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (66s)
 ### python dh_scan.py chi4 120 113 523
-chi4 c=113 N=120 prec=2400: CERTIFIED n_pos=241 n_neg=0  (9s)
-chi4 c=523 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (28s)
+chi4 c=113 N=120 prec=2400: CERTIFIED n_pos=241 n_neg=0  (13s)
+chi4 c=523 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (50s)
 ### python dh_scan.py dh 40 113
 dh c=113 N=40 prec=1200: CERTIFIED n_pos=81 n_neg=0  (0s)
 ### python dh_scan.py dh 60 113
 dh c=113 N=60 prec=1200: CERTIFIED n_pos=119 n_neg=2  (1s)
 ### python dh_scan.py dh 80 113
-dh c=113 N=80 prec=2400: CERTIFIED n_pos=159 n_neg=2  (4s)
+dh c=113 N=80 prec=2400: CERTIFIED n_pos=159 n_neg=2  (5s)
 ### python dh_scan.py dh 100 113
-dh c=113 N=100 prec=2400: CERTIFIED n_pos=197 n_neg=4  (6s)
+dh c=113 N=100 prec=2400: CERTIFIED n_pos=197 n_neg=4  (9s)
 ### python dh_scan.py dh 150 113
-dh c=113 N=150 prec=2400: CERTIFIED n_pos=293 n_neg=8  (17s)
+dh c=113 N=150 prec=2400: CERTIFIED n_pos=293 n_neg=8  (25s)
 ### python dh_vec.py 113 60
 dh c=113 N=60: negative eigenvalues (mid matrix, 120 digits): ['-3.38897e-41', '-2.21938e-42']
   weight of |xi_hat(t)|^2 for t in [0,40): 1.0
@@ -92,6 +95,29 @@ dh c=113 N=60: negative eigenvalues (mid matrix, 120 digits): ['-3.38897e-41', '
   weight of |xi_hat(t)|^2 for t in [92,130): 1.3967e-41
   weight of |xi_hat(t)|^2 for t in [130,150): 3.12961e-42
   peak of |xi_hat|^2 at t = 20.75
-### python id_test.py chi3 37 120  (appended after the main run)
-chi3 c=37: zeros found up to 120.0: 58  first: ['8.0397372', '11.249206', '15.704619']
-  v^T Q v = 2.06821469493e-5   2*sum|xi_hat|^2 = 7.46814811483e-5   ratio = 0.276938092701   L=3.6109179  1/L=0.27693789
+### python selfcheck.py
+[PASS] B indefinite 4x4 (expected 2,2 or undetermined only if a pivot is exactly 0): got n_pos=2 n_neg=2 undetermined=None
+[PASS] B positive definite 3x3: got (3, 0, None)
+[PASS] B negative definite 3x3: got (0, 3, None)
+[PASS] B singular 2x2 (second pivot exactly 0 must be UNDETERMINED, never a sign): got (1, 0, 1)
+[PASS] B ball pivot straddling 0 must be UNDETERMINED: got (1, 0, 1)
+[PASS] C Lambda_D defining identity n<=200: max |sum_(d|n) Lambda_D(d) a(n/d) - a(n) log n| = 5.98e-88
+[PASS] C -D'/D(4) series(200 terms) vs numeric: |diff| = 1.14e-8 (crude tail bound 8.33e-8)
+[PASS] C -D'/D(5) series(200 terms) vs numeric: |diff| = 5.56e-11 (crude tail bound 3.12e-10)
+[PASS] D arb(0, rad) radius >= rad: r.rad() = 3.000e-07, contains +rad: True, contains -rad: True
+[PASS] D arb(0, ball) radius covers the ball's upper bound: r2.rad() = 3.010e-07
+[PASS] D x + arb(0, 2*tail) encloses x +- 2*tail: x = [1.000000 +/- 6.01e-7]
+[PASS] A chi3 c=13 n=0: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 0.00e+00, 0.00e+00, 0.00e+00, 0.00e+00 | dpsi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04
+[PASS] A chi3 c=13 n=1: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04 | dpsi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04
+[PASS] A chi3 c=13 n=2: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 6.43e-03, 3.56e-03, 1.95e-03, 1.06e-03 | dpsi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04
+[PASS] A chi3 c=13 n=3: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 9.65e-03, 5.34e-03, 2.93e-03, 1.59e-03 | dpsi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04
+[PASS] A chi5 c=13 n=0: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 0.00e+00, 0.00e+00, 0.00e+00, 0.00e+00 | dpsi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04
+[PASS] A chi5 c=13 n=1: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04 | dpsi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04
+[PASS] A chi5 c=13 n=2: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 6.94e-03, 3.81e-03, 2.08e-03, 1.12e-03 | dpsi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04
+[PASS] A chi5 c=13 n=3: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 1.04e-02, 5.72e-03, 3.12e-03, 1.69e-03 | dpsi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04
+[PASS] A chi8 c=29 n=0: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 0.00e+00, 0.00e+00, 0.00e+00, 0.00e+00 | dpsi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04
+[PASS] A chi8 c=29 n=1: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04 | dpsi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04
+[PASS] A chi8 c=29 n=2: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 5.64e-03, 3.08e-03, 1.67e-03, 9.01e-04 | dpsi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04
+[PASS] A chi8 c=29 n=3: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 8.46e-03, 4.62e-03, 2.51e-03, 1.35e-03 | dpsi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04
+
+ALL PASS

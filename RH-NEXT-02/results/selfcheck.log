@@ -1,0 +1,25 @@
+[PASS] B indefinite 4x4 (expected 2,2 or undetermined only if a pivot is exactly 0): got n_pos=2 n_neg=2 undetermined=None
+[PASS] B positive definite 3x3: got (3, 0, None)
+[PASS] B negative definite 3x3: got (0, 3, None)
+[PASS] B singular 2x2 (second pivot exactly 0 must be UNDETERMINED, never a sign): got (1, 0, 1)
+[PASS] B ball pivot straddling 0 must be UNDETERMINED: got (1, 0, 1)
+[PASS] C Lambda_D defining identity n<=200: max |sum_(d|n) Lambda_D(d) a(n/d) - a(n) log n| = 5.98e-88
+[PASS] C -D'/D(4) series(200 terms) vs numeric: |diff| = 1.14e-8 (crude tail bound 8.33e-8)
+[PASS] C -D'/D(5) series(200 terms) vs numeric: |diff| = 5.56e-11 (crude tail bound 3.12e-10)
+[PASS] D arb(0, rad) radius >= rad: r.rad() = 3.000e-07, contains +rad: True, contains -rad: True
+[PASS] D arb(0, ball) radius covers the ball's upper bound: r2.rad() = 3.010e-07
+[PASS] D x + arb(0, 2*tail) encloses x +- 2*tail: x = [1.000000 +/- 6.01e-7]
+[PASS] A chi3 c=13 n=0: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 0.00e+00, 0.00e+00, 0.00e+00, 0.00e+00 | dpsi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04
+[PASS] A chi3 c=13 n=1: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04 | dpsi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04
+[PASS] A chi3 c=13 n=2: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 6.43e-03, 3.56e-03, 1.95e-03, 1.06e-03 | dpsi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04
+[PASS] A chi3 c=13 n=3: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 9.65e-03, 5.34e-03, 2.93e-03, 1.59e-03 | dpsi 3.22e-03, 1.78e-03, 9.76e-04, 5.31e-04
+[PASS] A chi5 c=13 n=0: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 0.00e+00, 0.00e+00, 0.00e+00, 0.00e+00 | dpsi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04
+[PASS] A chi5 c=13 n=1: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04 | dpsi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04
+[PASS] A chi5 c=13 n=2: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 6.94e-03, 3.81e-03, 2.08e-03, 1.12e-03 | dpsi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04
+[PASS] A chi5 c=13 n=3: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 1.04e-02, 5.72e-03, 3.12e-03, 1.69e-03 | dpsi 3.47e-03, 1.91e-03, 1.04e-03, 5.62e-04
+[PASS] A chi8 c=29 n=0: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 0.00e+00, 0.00e+00, 0.00e+00, 0.00e+00 | dpsi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04
+[PASS] A chi8 c=29 n=1: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04 | dpsi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04
+[PASS] A chi8 c=29 n=2: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 5.64e-03, 3.08e-03, 1.67e-03, 9.01e-04 | dpsi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04
+[PASS] A chi8 c=29 n=3: |tau-form(T) - closed form| for T=500,1000,2000,4000: psi 8.46e-03, 4.62e-03, 2.51e-03, 1.35e-03 | dpsi 2.82e-03, 1.54e-03, 8.36e-04, 4.51e-04
+
+ALL PASS

@@ -40,6 +40,26 @@ def prime_powers(c):
     return sorted(out)
 
 
+def dh_coefficients():
+    """Dirichlet coefficients a(n) mod 5 of the Davenport-Heilbronn function, as Arb balls."""
+    s5 = arb(5).sqrt()
+    kappa = ((10 - 2 * s5).sqrt() - 2) / (s5 - 1)
+    return [arb(0), arb(1), kappa, -kappa, arb(-1)]
+
+
+def lambda_D(c):
+    """Lambda_D(n), n = 1..c, defined by sum_{d|n} Lambda_D(d) a(n/d) = a(n) log n  (a(1) = 1)."""
+    a_per = dh_coefficients()
+    lam = {}
+    # WHY push-style: acc[n] = sum_{d|n, d<n} lam[d] a(n/d) is filled from each d, O(c log c) instead of O(c^2)
+    acc = [arb(0)] * (c + 1)
+    for n in range(1, c + 1):
+        lam[n] = a_per[n % 5] * arb(n).log() - acc[n]
+        for m in range(2 * n, c + 1, n):
+            acc[m] = acc[m] + lam[n] * a_per[(m // n) % 5]
+    return lam
+
+
 def build_arb(name, c, N, prec):
     a_par, q, chi = CHARS[name]
     ctx.prec = prec
@@ -57,17 +77,7 @@ def build_arb(name, c, N, prec):
 
     if name == "dh":
         # Davenport-Heilbronn: weights Lambda_D(n)/sqrt(n) over ALL n <= c, from -D'/D = sum Lambda_D(n) n^-s
-        s5 = arb(5).sqrt()
-        kappa = ((10 - 2 * s5).sqrt() - 2) / (s5 - 1)
-        a_per = [arb(0), arb(1), kappa, -kappa, arb(-1)]
-        lam = {}
-        acc = [arb(0)] * (
-            c + 1
-        )  # acc[n] = sum_{d|n, d<n} lam[d] a(n/d), filled by pushing from each d
-        for n in range(1, c + 1):
-            lam[n] = a_per[n % 5] * arb(n).log() - acc[n]
-            for m in range(2 * n, c + 1, n):
-                acc[m] = acc[m] + lam[n] * a_per[(m // n) % 5]
+        lam = lambda_D(c)
         pos = [arb(n).log() for n in range(2, c + 1)]
         wts = [lam[n] / arb(n).sqrt() for n in range(2, c + 1)]
     else:

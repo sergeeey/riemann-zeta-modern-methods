@@ -20,3 +20,4 @@ run python dh_scan.py chi3 120 113 523 1009 2003       # controls (expected n_ne
 run python dh_scan.py chi4 120 113 523
 for n in 40 60 80 100 150; do run python dh_scan.py dh $n 113; done
 run python dh_vec.py 113 60                            # where the negative direction lives (spectral weight by height)
+run python selfcheck.py                                # independent checks requested by the code review (tau-form, inertia, Lambda_D, arb radius)
