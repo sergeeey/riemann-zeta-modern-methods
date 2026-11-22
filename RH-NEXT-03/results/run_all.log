@@ -12,22 +12,65 @@ C. chi3 c=23 N=16: lambda_min = 2.2008303e-26; at c=23.001: 2.1988661e-26; d ln(
 C. ||dQ/dc||_2 ~ 1.878e+00;  Weyl step lambda_min/||dQ/dc|| ~ 1.17e-26 in c (absolute perturbation bound; useless when lambda_min is tiny)
 ### python cont_bench.py D
 D. prec=1500: point certificate at c=23: n_pos=33 n_neg=0 und=None  time=0.11s
-D. prec=1500: widest certified c-interval [23, 23+10^-70] (first width in the scan 1e-1,1e-2,.. that certifies), time=0.06s
+D. prec=1500: smallest tested exponent k that certifies the window [23, 23+1.1*10^-k]: k=70 (1 decade resolution); failing exponents tested: [67, 68, 69]; failures at exponents above the threshold (tested up to k=80): none
+D. prec=1500: at k=70: max entry radius = 3.90e-67 (input window 1.1e-70, ratio 3.55e+03); last pivot radius = 1.34e-05; time 0.05s
+D.   k=5: failed, max entry radius 3.94e-02, last pivot radius 0.1263139839284122
+D.   k=10: failed, max entry radius 3.90e-07, last pivot radius 0.00024755772392381914
+D.   k=15: failed, max entry radius 3.90e-12, last pivot radius 0.06085573142627254
+D.   k=20: failed, max entry radius 3.90e-17, last pivot radius 3.2152278860164696e-09
+D.   k=25: failed, max entry radius 3.90e-22, last pivot radius 4.401650842856403e-11
+D.   k=30: failed, max entry radius 3.90e-27, last pivot radius 2.2526859555244833e-11
+D.   k=35: failed, max entry radius 3.90e-32, last pivot radius 2.0070220755591503e-13
+D.   k=40: failed, max entry radius 3.90e-37, last pivot radius 8.122629269191606e-08
+D.   k=45: failed, max entry radius 3.90e-42, last pivot radius 2.0411002644993292e-09
+D.   k=50: failed, max entry radius 3.90e-47, last pivot radius 9.533050157649672e-12
+D.   k=55: failed, max entry radius 3.90e-52, last pivot radius 1.3747346511161496e-08
+D.   k=60: failed, max entry radius 3.90e-57, last pivot radius 0.008866519419825636
+D.   k=65: failed, max entry radius 3.90e-62, last pivot radius 1.0050062726474351e-07
+D.   k=66: failed, max entry radius 3.90e-63, last pivot radius 8.238878501742875e-05
+D.   k=67: failed, max entry radius 3.90e-64, last pivot radius 8.214647365889505e-06
+D.   k=68: failed, max entry radius 3.90e-65, last pivot radius 1.1368601519734511e-05
+D.   k=69: failed, max entry radius 3.90e-66, last pivot radius 1.1345620016811608e-06
 D. prec=3000: point certificate at c=23: n_pos=33 n_neg=0 und=None  time=0.47s
-D. prec=3000: widest certified c-interval [23, 23+10^-75] (first width in the scan 1e-1,1e-2,.. that certifies), time=0.34s
+D. prec=3000: smallest tested exponent k that certifies the window [23, 23+1.1*10^-k]: k=72 (1 decade resolution); failing exponents tested: [65, 70, 71]; failures at exponents above the threshold (tested up to k=85): none
+D. prec=3000: at k=72: max entry radius = 2.95e-67 (input window 1.1e-72, ratio 2.69e+05); last pivot radius = 1.16e-05; time 0.19s
+D.   k=5: failed, max entry radius 7.12e+00, last pivot radius None
+D.   k=10: failed, max entry radius 2.95e-05, last pivot radius 0.022479406732600182
+D.   k=15: failed, max entry radius 2.95e-10, last pivot radius 0.00016872594710548583
+D.   k=20: failed, max entry radius 2.95e-15, last pivot radius 2.7842479966011524e-07
+D.   k=25: failed, max entry radius 2.95e-20, last pivot radius 5.7534142164014646e-11
+D.   k=30: failed, max entry radius 2.95e-25, last pivot radius 5.614813064632688e-12
+D.   k=35: failed, max entry radius 2.95e-30, last pivot radius 1.742486688792455e-11
+D.   k=40: failed, max entry radius 2.95e-35, last pivot radius 5.405025038312888e-13
+D.   k=45: failed, max entry radius 2.95e-40, last pivot radius 9.27934763533464e-11
+D.   k=50: failed, max entry radius 2.95e-45, last pivot radius 8.244171968360692e-10
+D.   k=55: failed, max entry radius 2.95e-50, last pivot radius 3.5009716089703935e-10
+D.   k=60: failed, max entry radius 2.95e-55, last pivot radius 1.0166937725042402e-07
+D.   k=65: failed, max entry radius 2.95e-60, last pivot radius 8.714023863376497e-06
+D.   k=70: failed, max entry radius 2.95e-65, last pivot radius 9.850155407775674e-06
+D.   k=71: failed, max entry radius 2.95e-66, last pivot radius 9.829194631549854e-07
 ### python cont_bench.py E
-E. baseline certified bisection: bracket [30.98938083928078413009644, 30.98938084021210670471191] width 9.31e-10, 30 steps, 30 certificates, 11.1s
-E. hybrid: 13 Illinois iterations (15 pivot evaluations), c* = 30.98938083935292399997126; certificates at c*-5e-10 and c*+5e-10: [('30.98938083885292399997126', 121, 0, None), ('30.98938083985292399997126', 120, 1, None)]; total 8.1s
-E. cost ratio baseline/hybrid = 1.37; certificates: baseline 30, hybrid 2 (+ 15 non-certified factorizations)
+E. baseline certified bisection: bracket [30.98938083928078413009644, 30.98938084021210670471191] width 9.31e-10, 30 steps, 30 certificates, 9.2s
+E. hybrid: 13 Illinois iterations (15 pivot evaluations), c* = 30.98938083935292399997126; certificates at c*-5e-10 and c*+5e-10: [('30.98938083885292399997126', 121, 0, None), ('30.98938083985292399997126', 120, 1, None)]; total 6.1s
+E. cost ratio baseline/hybrid = 1.52; certificates: baseline 30, hybrid 2 (+ 15 non-certified factorizations)
 E. consistency: hybrid c* inside the baseline bracket: True
 ### python dbg_interval.py
-k=60: mid=23.000000000000000000000000000.. rad=5.000000000e-61  c-ball=[23.00000000000000000000000000000000000000000000000000000000000 +/- 1.01e-60]  max entry rad (float)=3.90e-57  -> n_pos=29 n_neg=0 und=29
-   failing pivot ball: [+/- 0.0208]  last good pivots: ['[6.524e-7 +/- 7.04e-11]', '[2.2e-7 +/- 1.45e-9]', '[+/- 0.0208]']
-k=30: mid=23.000000000000000000000000000.. rad=5.000000000e-31  c-ball=[23.00000000000000000000000000000 +/- 1.01e-30]  max entry rad (float)=3.90e-27  -> n_pos=18 n_neg=0 und=18
-   failing pivot ball: [+/- 1.09e-10]  last good pivots: ['[3.8869e-10 +/- 3.74e-15]', '[8.3e-11 +/- 2.01e-13]', '[+/- 1.09e-10]']
-k=10: mid=23.000000000050000000000000000.. rad=5.000000000e-11  c-ball=[23.000000000 +/- 1.01e-10]  max entry rad (float)=3.90e-07  -> n_pos=10 n_neg=0 und=10
-   failing pivot ball: [0.045 +/- 6.39e-4]  last good pivots: ['[2.261 +/- 5.74e-4]', '[1.425 +/- 7.91e-4]', '[0.045 +/- 6.39e-4]']
-k=3: mid=23.000500000000000000000000000.. rad=0.0005000000000  c-ball=[23.00 +/- 1.01e-3]  max entry rad (float)=1.28e+01  -> n_pos=0 n_neg=0 und=0
-   failing pivot ball: None  last good pivots: []
-point '23': (33, 0, None)
-tuple ('23','0'): (33, 0, None)
+(1) old construction from decimal strings: lower end relative to c = 23
+  k=60: lower-23 = -1.54e-69, upper-23 = +1.00e-60, radius = 5.000e-61 (requested 5.000e-61)
+  k=30: lower-23 = -1.59e-39, upper-23 = +1.00e-30, radius = 5.000e-31 (requested 5.000e-31)
+  k=10: lower-23 = -1.25e-19, upper-23 = +1.00e-10, radius = 5.000e-11 (requested 5.000e-11)
+  k=3: lower-23 = -1.92e-12, upper-23 = +1.00e-03, radius = 5.000e-04 (requested 5.000e-04)
+(2) new construction window_ball(23, k): [23 + 0.1 w, 23 + 1.1 w]
+  k=60: (lower-23)/w = 0.1000 (expect 0.1), (upper-23)/w = 1.1000 (expect 1.1), radius/w = 0.5000
+  k=30: (lower-23)/w = 0.1000 (expect 0.1), (upper-23)/w = 1.1000 (expect 1.1), radius/w = 0.5000
+  k=10: (lower-23)/w = 0.1000 (expect 0.1), (upper-23)/w = 1.1000 (expect 1.1), radius/w = 0.5000
+  k=3: (lower-23)/w = 0.1000 (expect 0.1), (upper-23)/w = 1.1000 (expect 1.1), radius/w = 0.5000
+(3) guard: balls that cross an integer or leave [c, c+1] must raise ValueError
+  crosses c from below  [22.999, 23.001]: REJECTED
+  contains c+1 side     [23.5, 24.5]: REJECTED
+  inside [23, 24]       [23.2, 23.4]: accepted
+  exact left end        23: accepted
+  exact right end       24: accepted
+(4) control: the same point as a string and as a degenerate tuple
+  point '23': (33, 0, None)
+  tuple ('23','0'): (33, 0, None)

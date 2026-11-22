@@ -69,8 +69,19 @@ def build_arb(name, c, N, prec, c_arb=None):
         c_ball = arb(c)
     elif isinstance(c_arb, tuple):
         c_ball = arb(c_arb[0], c_arb[1])
+    elif isinstance(c_arb, arb):
+        c_ball = c_arb
     else:
         c_ball = arb(c_arb)
+    if c_arb is not None and not (c_ball.lower() >= c and c_ball.upper() <= c + 1):
+        # WHY this guard (review of RH-NEXT-03, finding M3): the weight set is fixed by the integer `c`, and the
+        # formulas are valid only while the real parameter lies in [c, c+1]: below c the weight of n = c would have
+        # to be 0, not the continued formula; above c+1 the weight of n = c+1 (a prime power or an n for D) may be
+        # missing. Both ends are continuous (a new weight starts at 0), so the closed interval is allowed.
+        # Without the check a ball that crosses an integer silently certifies the wrong matrix family.
+        raise ValueError(
+            f"c_arb ball {c_ball.str(20)} is not inside [{c}, {c + 1}]: weight set for c={c} would be wrong"
+        )
     L = c_ball.log()
     PI = arb.pi()
     a = arb("0.25") + arb(a_par) / 2
@@ -180,11 +191,17 @@ if __name__ == "__main__":
             for j in range(DIM):
                 diff = abs(mp.mpf(A[i][j].mid().str(55, radius=False)) - Q[i, j])
                 worst = max(worst, float(diff))
-        print(f"  compare vs independent mpmath quadrature builder: max |entry diff| = {worst:.3e}")
+        print(
+            f"  compare vs independent mpmath quadrature builder: max |entry diff| = {worst:.3e}"
+        )
     t1 = time.time()
     npos, nneg, und, piv = ldlt_inertia(A, DIM)
     if und is None:
-        print(f"  CERTIFIED inertia: n_pos={npos} n_neg={nneg}  (ldlt {time.time() - t1:.1f}s)")
-        print("  smallest pivot (ball):", min(piv, key=lambda s: float(s.mid())).str(12))
+        print(
+            f"  CERTIFIED inertia: n_pos={npos} n_neg={nneg}  (ldlt {time.time() - t1:.1f}s)"
+        )
+        print(
+            "  smallest pivot (ball):", min(piv, key=lambda s: float(s.mid())).str(12)
+        )
     else:
         print(f"  UNDETERMINED at pivot {und} (ball contains 0): raise prec")

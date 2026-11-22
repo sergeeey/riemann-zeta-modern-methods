@@ -50,14 +50,19 @@ def exp_A():
         for i in range(2 * N + 1)
         for j in range(2 * N + 1)
     )
-    print(f"A. continuity at c=13: max |Q(c=13, weights<=12) - Q(c=13, weights<=13)| = {d:.3e}")
+    print(
+        f"A. continuity at c=13: max |Q(c=13, weights<=12) - Q(c=13, weights<=13)| = {d:.3e}"
+    )
 
     # one-sided derivatives wrt L
     def dQ(cint, ca, cb):
         Aa = Qm(cint, ca)
         Ab = Qm(cint, cb)
         dL = (cb / ca).log()
-        return [[(Ab[i][j] - Aa[i][j]) / dL for j in range(2 * N + 1)] for i in range(2 * N + 1)]
+        return [
+            [(Ab[i][j] - Aa[i][j]) / dL for j in range(2 * N + 1)]
+            for i in range(2 * N + 1)
+        ]
 
     left = dQ(12, c0 - 2 * h, c0 - h)
     right = dQ(13, c0 + h, c0 + 2 * h)
@@ -68,7 +73,9 @@ def exp_A():
     exp_val = (
         -2 / 13**0.5
     )  # -2 chi(13) Lambda(13)/(sqrt(13) log 13), chi_3(13)=+1, Lambda(13)=log 13
-    dev = max(abs(jump[i][j] - exp_val) for i in range(2 * N + 1) for j in range(2 * N + 1))
+    dev = max(
+        abs(jump[i][j] - exp_val) for i in range(2 * N + 1) for j in range(2 * N + 1)
+    )
     print(
         f"A. derivative jump (right - left, wrt L=log c) in every entry: expected {exp_val:.8f}; max deviation over all {(2 * N + 1) ** 2} entries = {dev:.2e} (h=1e-6, O(h) accuracy)"
     )
@@ -84,8 +91,13 @@ def exp_B():
     sv = sorted([float(x) for x in sv], reverse=True)
     import math
 
-    print("B. chi3 N=16: singular values of Q(23.5) - Q(23.0) (same weights), log10(s_k / s_1):")
-    print("   k:    " + " ".join(f"{k:6d}" for k in (1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 33)))
+    print(
+        "B. chi3 N=16: singular values of Q(23.5) - Q(23.0) (same weights), log10(s_k / s_1):"
+    )
+    print(
+        "   k:    "
+        + " ".join(f"{k:6d}" for k in (1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 33))
+    )
     print(
         "   log10:"
         + " ".join(
@@ -93,7 +105,9 @@ def exp_B():
             for k in (1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 33)
         )
     )
-    ranks = {tol: sum(1 for s in sv if s / sv[0] > tol) for tol in (1e-3, 1e-6, 1e-10, 1e-14)}
+    ranks = {
+        tol: sum(1 for s in sv if s / sv[0] > tol) for tol in (1e-3, 1e-6, 1e-10, 1e-14)
+    }
     print(f"   numerical rank at relative tolerance {ranks}")
     q1 = mid_mp(A1)
     sq = sorted([float(x) for x in mp.svd_r(q1, compute_uv=False)], reverse=True)
@@ -125,10 +139,33 @@ def exp_C():
     )
 
 
-def certify_interval(name, cint, N, prec, mid, rad):
-    A, DIM, _ = cc.build_arb(name, cint, N, prec, c_arb=(mid, rad))
-    npos, nneg, und, _ = cc.ldlt_inertia(A, DIM)
-    return npos, nneg, und, DIM
+def window_ball(cint, k):
+    """Ball [cint + 0.1 w, cint + 1.1 w], w = 10^-k, built from arb arithmetic (no decimal strings).
+
+    WHY: the first version of D built the ball from decimal strings; rounding the midpoint string put its lower
+    end ~1e-69 BELOW cint (review finding M3), where the weight set is wrong. The 0.1 w margin keeps the lower
+    end above cint by far more than the rounding error at any precision used here.
+    """
+    w = arb(10) ** (-k)
+    return arb(cint) + w * arb("0.6") + arb(0, w / 2)
+
+
+def certify_interval(name, cint, N, prec, ball):
+    A, DIM, _ = cc.build_arb(name, cint, N, prec, c_arb=ball)
+    npos, nneg, und, piv = cc.ldlt_inertia(A, DIM)
+    r_entry = max(float(A[i][j].rad()) for i in range(DIM) for j in range(DIM))
+    return npos, nneg, und, DIM, r_entry, (float(piv[-1].rad()) if piv else None)
+
+
+def try_k(results, N, prec, k):
+    """Certify the window of exponent k, record (ok, max entry radius, last pivot radius, seconds) in results."""
+    t0 = time.time()
+    _npos, nneg, und, _dim, r_entry, r_piv = certify_interval(
+        "chi3", 23, N, prec, window_ball(23, k)
+    )
+    ok = und is None and nneg == 0
+    results[k] = (ok, r_entry, r_piv, time.time() - t0)
+    return ok
 
 
 def exp_D():
@@ -143,23 +180,43 @@ def exp_D():
         )
         best = None
         # WHY the scan goes to 10^-300: the first version stopped at 10^-60 and wrongly suggested "no width certifies";
-        # interval LDL^T amplifies the input radius by about cond(Q)^2 ~ 1e52 for this matrix, so the threshold is much smaller.
-        for k in list(range(1, 60, 3)) + list(range(60, 301, 5)):
-            w = arb(10) ** (-k)
-            mid = (arb(23) + w / 2).str(40 + k, radius=False)
-            rad = (w / 2).str(10, radius=False)
-            t0 = time.time()
-            npos, nneg, und, DIM = certify_interval("chi3", 23, N, prec, mid, rad)
-            ok = und is None and nneg == 0
-            if ok:
-                best = (k, time.time() - t0)
+        # the true threshold is far below that.  Scan: coarse grid (step 5 in the exponent), then every integer
+        # exponent between the last failing and the first certifying grid point, so the threshold has resolution 1 decade.
+        # Monotonicity (a narrower ball certifies if a wider one does) is NOT assumed: all grid points are recorded.
+        results = {}
+
+        last_fail = 0
+        for k in list(range(5, 301, 5)):
+            if try_k(results, N, prec, k):
+                best = k
                 break
-        if best:
+            last_fail = k
+        if best is not None:
+            for k in range(last_fail + 1, best):
+                try_k(results, N, prec, k)
+            # WHY extra points above the threshold: the scan stops at the first success, so monotonicity could not be
+            # observed at all (review follow-up); test the ten exponents above it (narrower windows) as well.
+            for k in range(best + 1, best + 11):
+                try_k(results, N, prec, k)
+            ok_ks = sorted(k for k, v in results.items() if v[0])
+            fail_ks = sorted(k for k, v in results.items() if not v[0])
+            thr = min(ok_ks)
+            non_mono = [k for k in fail_ks if k > thr]
             print(
-                f"D. prec={prec}: widest certified c-interval [23, 23+10^-{best[0]}] (first width in the scan 1e-1,1e-2,.. that certifies), time={best[1]:.2f}s"
+                f"D. prec={prec}: smallest tested exponent k that certifies the window [23, 23+1.1*10^-k]: k={thr} (1 decade resolution); "
+                f"failing exponents tested: {fail_ks[-3:]}; failures at exponents above the threshold (tested up to k={max(results)}): {non_mono if non_mono else 'none'}"
             )
+            kk = thr
+            print(
+                f"D. prec={prec}: at k={kk}: max entry radius = {results[kk][1]:.2e} (input window {1.1 * 10.0**-kk:.1e}, ratio {results[kk][1] / (1.1 * 10.0**-kk):.2e}); last pivot radius = {results[kk][2]:.2e}; time {results[kk][3]:.2f}s"
+            )
+            for k in sorted(results):
+                if k < thr:
+                    print(
+                        f"D.   k={k}: failed, max entry radius {results[k][1]:.2e}, last pivot radius {results[k][2]}"
+                    )
         else:
-            print(f"D. prec={prec}: no interval width down to 1e-60 certified")
+            print(f"D. prec={prec}: no interval width down to 1e-300 certified")
 
 
 def cert_pt(name, cint, N, prec, cs):
@@ -245,9 +302,15 @@ def exp_E():
                 break
         ok.append((dec(cs), npos, nneg, und))
     t_hyb = time.time() - t0
-    print(f"E. hybrid: {it} Illinois iterations ({n_eval} pivot evaluations), c* = {dec(cstar)}; certificates at c*-5e-10 and c*+5e-10: {ok}; total {t_hyb:.1f}s")
-    print(f"E. cost ratio baseline/hybrid = {t_base / t_hyb:.2f}; certificates: baseline {n_cert}, hybrid 2 (+ {n_eval} non-certified factorizations)")
-    print(f"E. consistency: hybrid c* inside the baseline bracket: {lo <= (lo + hi) / 2 and mp.mpf('30.98938083928078413') <= cstar + d and cstar - d <= mp.mpf('30.98938084021210670')}")
+    print(
+        f"E. hybrid: {it} Illinois iterations ({n_eval} pivot evaluations), c* = {dec(cstar)}; certificates at c*-5e-10 and c*+5e-10: {ok}; total {t_hyb:.1f}s"
+    )
+    print(
+        f"E. cost ratio baseline/hybrid = {t_base / t_hyb:.2f}; certificates: baseline {n_cert}, hybrid 2 (+ {n_eval} non-certified factorizations)"
+    )
+    print(
+        f"E. consistency: hybrid c* inside the baseline bracket: {lo <= (lo + hi) / 2 and mp.mpf('30.98938083928078413') <= cstar + d and cstar - d <= mp.mpf('30.98938084021210670')}"
+    )
 
 
 if __name__ == "__main__":
