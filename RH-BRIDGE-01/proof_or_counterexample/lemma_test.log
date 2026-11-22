@@ -1,0 +1,7 @@
+Lemma Z : instances with hypotheses satisfied 95, violations 0, largest w/bound 0.050
+Lemma Z+: instances with hypotheses satisfied 144, violations 0, largest w/bound 0.092
+
+Sharpness of the eta term (eps = 0): w = nu D versus the bound D*eta = D*nu/(1-nu)
+  D=20, nu=0.1: w=2, eta=0.11111, bound D*eta=2.222, ratio w/(D eta)=0.9000
+  D=40, nu=0.05: w=2, eta=0.05263, bound D*eta=2.105, ratio w/(D eta)=0.9500
+  D=100, nu=0.01: w=1, eta=0.01010, bound D*eta=1.010, ratio w/(D eta)=0.9900

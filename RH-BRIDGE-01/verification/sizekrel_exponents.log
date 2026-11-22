@@ -1,0 +1,21 @@
+ # clause                                slack at centre     worst corner  class
+ 1 x^th m^5 f L x^eps <= k               0 + 121/400 eps   0 + 93/400 eps  BINDING (slack 93/400 eps, > 0)
+ 2 8 C_Gam m^5 f L <= k                    0 + 21/16 eps  0 + 497/400 eps  BINDING (slack 497/400 eps, > 0)
+ 3 k <= sqrt(x) n rankBudget                   0 + 5 eps  0 + 497/100 eps  BINDING (slack 497/100 eps, > 0)
+ 4 sqrt(k/m) <= rankBudget                 0 + 63/32 eps 0 + 1559/800 eps  BINDING (slack 1559/800 eps, > 0)
+ 5 m^2 L <= k                             7/2 + 73/8 eps 7/2 + 1819/200 eps  automatic (eps^0 slack 7/2)
+ 6 m sqrt(x) log x <= k                 7/2 + 161/16 eps 7/2 + 4017/400 eps  automatic (eps^0 slack 7/2)
+ 7 x^th m^6 L <= k log k              3/2 + 1873/200 eps 3/2 + 1859/200 eps  automatic (eps^0 slack 3/2)
+ 8 x^th m^3 L log rdE <= k log^2 k      3 + 3671/400 eps   3 + 731/80 eps  automatic (eps^0 slack 3)
+ 9 log f <= sqrt(rS)                     1/4 + -1/32 eps 1/4 + -29/800 eps  automatic (eps^0 slack 1/4)
+10 log^2 f <= m^2 L                          1 + 7/8 eps  1 + 171/200 eps  automatic (eps^0 slack 1)
+11 x^th loglog b <= r f log r         13/2 + 1799/100 eps 13/2 + 1797/100 eps  automatic (eps^0 slack 13/2)
+12 x^th L <= f log k                     2 + 699/100 eps   2 + 349/50 eps  automatic (eps^0 slack 2)
+13 f <= m^2 n                               1 + -1/8 eps  1 + -29/200 eps  automatic (eps^0 slack 1)
+14 f <= r^2                                   7 + 12 eps 7 + 1197/100 eps  automatic (eps^0 slack 7)
+
+clauses 1 and 4 together: k >= x^th m^5 f L x^eps and k <= m n^2 x^{-2eps}  =>  n >= x^{4 mu + 4 eps + th}
+  required nu >= 2 + 94/25 eps; SizeN centre 2 + 8 eps; margin 0 + 106/25 eps
+clause 3 from clause 4: k <= m n^2 x^{-2eps} <= x^{mu_hi + 2 nu - 2 eps}; needed bound 1/2 + 2 nu - eps; leftover 0 + 421/400 eps (>= 0 means implied)
+
+At eps -> 0 (mu, nu, kappa) = (1/2, 2, 9/2): clause 1 slack 0, clause 2 slack 0, clause 4 slack 0, clause 3 slack 0

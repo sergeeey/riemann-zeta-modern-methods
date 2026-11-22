@@ -1,0 +1,4 @@
+n=    4: eta=0, eps=1/5, w=1; bound without kappa = 0.8000 (violated: True); bound with kappa = 3.2000 (violated: False)
+n=   10: eta=0, eps=1/11, w=1; bound without kappa = 0.3636 (violated: True); bound with kappa = 3.6364 (violated: False)
+n=  100: eta=0, eps=1/101, w=1; bound without kappa = 0.0396 (violated: True); bound with kappa = 3.9604 (violated: False)
+n= 1000: eta=0, eps=1/1001, w=1; bound without kappa = 0.0040 (violated: True); bound with kappa = 3.9960 (violated: False)

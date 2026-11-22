@@ -86,5 +86,30 @@
       "(selB ..).Q = b.B.Q at definition level",
       "fidelity of the 13 Published statements to the literature"
     ]
+  },
+  "unified_mission": {
+    "mission": "H12-UNIFIED-RESEARCH-01",
+    "date": "2026-11-22",
+    "outcome": "PARTIAL",
+    "files": [
+      "literature_delta.md",
+      "critical_dependencies.md",
+      "bridge_comparison.md",
+      "candidate_lemma.md",
+      "next_research_decision.md"
+    ],
+    "results": {
+      "A_literature": "SOURCE_TRACED: A1 hexagon:2611.00828v1 (conditional, AI-generated), A2 Zhang note (AI-assisted, Lemma 4.2 = TheoremFSharp), A3 Masullo PDF received, proof OPEN/disputed, A4 Sutherland page 2026-11-22 16:20 UTC (kernel runs: nanoda, con-leche, con-ron, lean4lean, leanchecker; default/paranoid kernel and lake comparator still running)",
+      "B2_SizeKRel": "EXACT_COMPUTED exponent classification: clauses 1,2,4 binding, 3 implied by 4, 5-14 automatic; declaration-level dependence OPEN (export scan not finished)",
+      "B3_window": "W1 bounded windows REFUTED (KERNEL_CHECKED), W2 density 1/2 REFUTED, W2' density -> 1 REFUTED (Fejer kernel, PROVED + numeric check), integral variant on bounded windows REFUTED, W3 OPEN",
+      "C_lemma": "Lemma Z+ PROVED on paper; algebraic tail KERNEL_CHECKED (LemmaZAlgebra.lean); operator part NOT_RUN in Lean; necessity of kappa EXACT_COMPUTED; novelty OPEN"
+    },
+    "export_scan": {
+      "script": "E:/Проверка Гипотез/работаю над проверкой гипотез/H12-lean-audit/sources/export_scan.sh",
+      "output": "E:/Проверка Гипотез/работаю над проверкой гипотез/H12-lean-audit/sources/export_scan.out",
+      "status_at_checkpoint": "RUNNING (started 2026-11-22T18:49:15Z, output empty at 19:03Z)"
+    },
+    "next_cheap_step": "Read export_scan.out; fill 'Результат скана' in critical_dependencies.md; decide declaration-level dependence of SizeKRel/MIstar2.",
+    "push": "never done"
   }
 }

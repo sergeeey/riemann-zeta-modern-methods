@@ -1,0 +1,3 @@
+'zplus_alg_cor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'zplus_alg_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+(compiled in WSL ~/h12/rh with lake env lean; Lean v4.33.1, Mathlib 0df444a3; one deprecation warning for push_neg, no errors)

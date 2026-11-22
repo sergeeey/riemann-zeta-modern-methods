@@ -1,0 +1,3 @@
+N=  3: kernel identity err 1.8e-15; transform err 2.1e-10; violations of (*) 0; guaranteed bad fraction (2/pi) asin(1/sqrt(N+1)) = 0.3333 (grid 0.3329); actual fraction with g>0: 0.3084
+N= 10: kernel identity err 5.4e-13; transform err 7.1e-10; violations of (*) 0; guaranteed bad fraction (2/pi) asin(1/sqrt(N+1)) = 0.1950 (grid 0.1947); actual fraction with g>0: 0.1363
+N= 40: kernel identity err 1.5e-12; transform err 2.8e-09; violations of (*) 0; guaranteed bad fraction (2/pi) asin(1/sqrt(N+1)) = 0.0998 (grid 0.0997); actual fraction with g>0: 0.0658
