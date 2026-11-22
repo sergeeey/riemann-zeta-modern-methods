@@ -1,0 +1,13 @@
+[2026-11-22 22:53:23] ### lake build Formalism.LocalToGlobal.IndefiniteReal.PrimitivePackageFullHecke   (cores: 8, mem: 23 GB)
+✔ [8706/9749] Built Formalism.SizeWindowBrackets.RealSlopeBoundsSplit (1.3s)
+⚠ [8707/9749] Built Lemmata.GeneralBFactRightMore.Imports (5.9s)
+warning: src/Lemmata/GeneralBFactRightMore/Imports.lean:6:16: Variable name `inst` is not explicitly referenced.
+[... 20289 lines in the full log; warnings omitted ...]
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (9749 jobs).
+[2026-11-22 23:21:54] exit=0  	Elapsed (wall clock) time (h:mm:ss or m:ss): 28:31.45 	Maximum resident set size (kbytes): 8085356 
+built local modules (log lines): 1017
+peak sampled: 2026-11-22 23:13:21 used_MB=10883 avail_MB=13151
+[2026-11-22 23:21:54] ### lake env lean Check_l1b.lean
+[2026-11-22 23:22:02] check exit=0
+[2026-11-22 23:22:02] done

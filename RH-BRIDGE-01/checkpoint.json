@@ -1,0 +1,51 @@
+{
+  "mission": "H12-BRIDGE-DISCOVERY-01",
+  "date": "2026-11-22",
+  "outcome": "PARTIAL",
+  "level_L0": "structural (deductive mathematics); nothing here proves or refutes RH",
+  "repo": {
+    "worktree": "E:/Проверка Гипотез/работаю над проверкой гипотез/H12-bridge-discovery-01",
+    "branch": "bridge-discovery-01",
+    "base_commit": "71259e78d8e602b0109c451ef2cabcde006b93ec",
+    "push": "never done; requires a separate yes and python ~/.claude/hooks/pre_push_privacy_guard.py --check"
+  },
+  "sources": {
+    "pdf": {"path": "C:/Users/serge/Downloads/zeta-paper.pdf", "sha256": "667d88b3c375adf0466678094f452ca966aef0f4d368f6340d2bd5328b7fb706", "bytes": 1627433, "online_content_length_matches": true},
+    "lean_commit": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
+    "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "not_opened": ["H12-M-TRACE-04/05 audits", "H12-M2-CENTERING-01", "H12-PADIC-B4-03", "RH-NEXT-04B reports", "Technology Opportunity Radar", "H12-RESEARCH-MEMORY-2026-11-22-v2.zip"]
+  },
+  "environment": {
+    "wsl_distro": "Ubuntu (WSL2), 8 cores, 23 GB RAM",
+    "lean_checkout": "~/h12/rh (WSL ext4), HEAD 7cbf7a0c32fca1badf05931879a37c3f8a2b03b4, Mathlib cache fetched, .lake about 7.6 GB",
+    "logs": "~/h12/logs (WSL)",
+    "elan": "4.4.0, ~/.elan/bin; PATH must include it",
+    "windows_native_build": "impossible: LongPathsEnabled=0, max relative path 239 chars",
+    "windows_side_checkout": "E:/Проверка Гипотез/работаю над проверкой гипотез/H12-lean-audit (large, may be removed after review; contains zeta-paper.txt, the extracted PDF text)"
+  },
+  "done": {
+    "dependency_map": "bridge_dependency_map.md",
+    "candidates": "bridge_candidates.md",
+    "counterexample": "proof_or_counterexample/window_sharpness.md (+ WindowSharpness.lean, KERNEL_CHECKED standard axioms)",
+    "kernel_checked": [
+      "Deduction.zeroFree_of_rpow_window, lemmaL, windowHyp_of_rpow (30-module closure, 60 s)",
+      "CxData.exists_zeta_pairing_factors_through_periods, btVanish_of_miStar2, isometric_periods_of_unit_hypotheses, cutPairing, PrimitiveStatementsBaseLiftsOnly.cols, basePackageFullHecke, packageFullHecke, Links.primitivePackageFullHecke (1043-module closure, 28 min 31 s)",
+      "window_sharpness_sign, exponent_system (WindowSharpness.lean)"
+    ],
+    "exact_computed": ["interval-lemma constants", "identity (II.8) and table (II.24) for q=3,d=23", "lemniscate numbers A_5,A_9,A_17 and valuations", "window counterexample closed form"]
+  },
+  "not_run": [
+    {"what": "lake build Main and #print axioms riemannHypothesis", "blocker": "174764 modules, 17329808 lines; estimated 254-567 CPU hours, 37-82 h wall on 8 cores (INFERRED from the 1043-module build)", "files": ["verification/CheckAxioms.lean", "verification/run_full_main_build.sh"]},
+    {"what": "independent check of Estimates B and C (Part III.1-III.2)", "blocker": "not examined"},
+    {"what": "literature novelty search", "blocker": "not performed"}
+  ],
+  "open": [
+    "origin of ra.miStar / selI (supplier of MIstar2) above wire4F_alt",
+    "whether SizeKRel (condition k >= 8 C m^5 f x^eps) is among the declarations riemannHypothesis depends on",
+    "W3: minimal growth of the window length L(U) in the one-sided criterion",
+    "hypothesis (B) all degrees (H12-PADIC-B4-04)"
+  ],
+  "next_command": "cd ~/h12/rh && cp <worktree>/RH-BRIDGE-01/verification/CheckAxioms.lean . && bash <worktree>/RH-BRIDGE-01/verification/run_full_main_build.sh   # inside WSL, long run",
+  "next_cheap_step": "trace ra.miStar upward from Formalism.L2.Top4Wire2.wire4F_alt (hRows) through TopShape; source reading only"
+}

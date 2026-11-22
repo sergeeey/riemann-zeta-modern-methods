@@ -1,0 +1,12 @@
+'Formalism.IndefR.Cx.CxData.exists_zeta_pairing_factors_through_periods' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Formalism.IndefR.Cx.CxData.btVanish_of_miStar2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Formalism.IndefR.Cx.CxData.isometric_periods_of_unit_hypotheses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Formalism.IndefR.Cx.CxData.cutPairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Formalism.IndefR.Cx.PrimitiveStatementsBaseLiftsOnly.cols' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Formalism.IndefR.Cx.basePackageFullHecke' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Formalism.IndefR.Cx.packageFullHecke' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Formalism.IndefR.Links.primitivePackageFullHecke' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,35 @@
+zeroFree_of_rpow_window : ∀ (F : CharFamily) {θ δ C : ℝ},
+  0 < θ → θ < 1 → 0 < δ → (∀ (Y₀ : ℝ), ∃ Y, Y₀ ≤ Y ∧ ∀ y ∈ Set.Icc Y (Y ^ (1 + δ)), Gm F y ≤ C * y ^ θ) → ZeroFree F θ
+'Deduction.zeroFree_of_rpow_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.lemmaL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Deduction.windowHyp_of_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+def Deduction.ZeroFree : CharFamily → ℝ → Prop :=
+fun F θ => ∀ (i : F.ι) (s : ℂ), θ < s.re → DirichletCharacter.LFunction (F.χ i) s ≠ 0
+def Deduction.WindowHyp : CharFamily → ℝ → ℝ → Prop :=
+fun F θ δ =>
+  ∀ (η : ℝ),
+    0 < η →
+      ∀ (Y₀ : ℝ),
+        ∃ Y,
+          Y₀ ≤ Y ∧
+            ∃ R,
+              MeasureTheory.IntegrableOn (fun y => R y * y ^ (-θ - 1)) (Set.Icc Y (Y ^ (1 + δ))) MeasureTheory.volume ∧
+                (∀ y ∈ Set.Icc Y (Y ^ (1 + δ)), 0 ≤ R y ∧ Gm F y ≤ R y) ∧
+                  ∫ (y : ℝ) in Set.Icc Y (Y ^ (1 + δ)), R y * y ^ (-θ - 1) ≤ Y ^ η
+def Deduction.Gm : CharFamily → ℝ → ℝ :=
+fun F y => ∑ i, F.a i * (Gchi (F.χ i) y).re
+structure Deduction.CharFamily : Type 1
+number of parameters: 0
+fields:
+  Deduction.CharFamily.ι : Type
+  Deduction.CharFamily.fin : Fintype self.ι
+  Deduction.CharFamily.N : self.ι → ℕ
+  Deduction.CharFamily.nz : ∀ (i : self.ι), NeZero (self.N i)
+  Deduction.CharFamily.χ : (i : self.ι) → DirichletCharacter ℂ (self.N i)
+  Deduction.CharFamily.a : self.ι → ℝ
+  Deduction.CharFamily.a_pos : ∀ (i : self.ι), 0 < self.a i
+  Deduction.CharFamily.adm : ∀ (i : self.ι), self.N i = 1 ∨ self.χ i ≠ 1
+constructor:
+  Deduction.CharFamily.mk (ι : Type) [fin : Fintype ι] (N : ι → ℕ) [nz : ∀ (i : ι), NeZero (N i)]
+    (χ : (i : ι) → DirichletCharacter ℂ (N i)) (a : ι → ℝ) (a_pos : ∀ (i : ι), 0 < a i)
+    (adm : ∀ (i : ι), N i = 1 ∨ χ i ≠ 1) : CharFamily

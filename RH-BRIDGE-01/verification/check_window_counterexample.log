@@ -1,0 +1,7 @@
+s=(2.5 + 0.0j): quadrature=(0.00838758742185049 + 0.0j) closed form=(0.00838758742185049 + 0.0j) |diff|=0.0
+s=(3.0 + 7.0j): quadrature=(0.0221691927427147 + 0.0405909565256123j) closed form=(0.0221691927427147 + 0.0405909565256123j) |diff|=6.89e-33
+s=(1.5 - 14.0j): quadrature=(0.689213770765087 - 0.11480334969916j) closed form=(0.689213770765087 - 0.11480334969916j) |diff|=4.05e-19
+poles of the closed form: ['(0.8 + 14.134725j)', '(0.8 - 14.134725j)'] real part 0.8 > theta 0.6
+denominator on the real axis, minimum over s in [0, 50]: 199.79045 (> 0, so no real pole)
+window length L=0.200035 < pi/gamma=0.222261; (k, U, max of g on [U, U+L]) : [(10, '4.5674556', '-6.04267'), (100, '44.574366', '-4.79792e+14'), (1000, '444.64347', '-4.77856e+153'), (100000, '44452.245', '-3.06266e+15443')]
+g < 0 <= e^{theta u} on all sampled windows: True

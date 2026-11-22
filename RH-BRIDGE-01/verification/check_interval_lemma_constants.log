@@ -1,0 +1,13 @@
+eta: ('0.977122206528', '0.982476903694', '0.982476903694')
+log((1+eta)/(2eta)): 0.00887828701359
+c=0.008 < bound: True
+sigma_min for theta->0: 251.001333332
+sigma=252 works for all theta in (0,1): True
+sigma=251 works (should be False): False
+window ends v: ('0.8', '1.2')
+base v e^{1-v} at 4/5, 6/5, 1: ('0.977122206528', '0.982476903694', '1.0')
+outside fraction (U, j, fraction, fraction / e^{-c j}): [(20, 6250, '3.11949e-50', '1.61736e-28'), (40, 12500, '2.28618e-98', '6.14552e-55'), (80, 25000, '1.7314e-194', '1.25111e-107'), (160, 50000, '1.4023e-386', '7.32209e-213'), (320, 100000, '1.29993e-770', '3.54409e-423'), (640, 200000, '1.57916e-1538', '1.17381e-843')]
+ratio bounded (max): 1.61736e-28
+ratio non-increasing for large U: True
+exponents (x/m, xm/k, m, k/n^2) at eps->0: ('0.5', '-3.0', '0.5', '0.5')
+x/m + m >= 2 sqrt(x) for every m>0 (so exponent 1/2 cannot be improved inside this bookkeeping): True

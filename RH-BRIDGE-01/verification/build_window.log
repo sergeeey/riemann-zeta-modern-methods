@@ -1,0 +1,102 @@
+[2026-11-22 22:51:12] versions: Lake version 5.0.0-src+819816b (Lean version 4.33.1) | lean: Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+[2026-11-22 22:51:14] HEAD 7cbf7a0c32fca1badf05931879a37c3f8a2b03b4
+[2026-11-22 22:51:14] mathlib rev:  (manifest)
+[2026-11-22 22:51:14] ### lake build Statements
+✔ [8706/8706] Built Statements (10s)
+Build completed successfully (8706 jobs).
+[2026-11-22 22:51:33] exit=0  	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:19.18 	Maximum resident set size (kbytes): 6692580 
+[2026-11-22 22:51:34] ### lake build Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow
+✔ [8706/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily (4.0s)
+✔ [8707/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion (4.9s)
+✔ [8708/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax (6.2s)
+✔ [8709/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite (6.2s)
+⚠ [8710/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp (6.5s)
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypUOfWindowHyp.lean:29:60: Variable name `hδ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hδ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8711/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow (6.6s)
+✔ [8712/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral (6.7s)
+✔ [8713/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe (7.0s)
+✔ [8714/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace (7.9s)
+✔ [8715/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra (8.6s)
+✔ [8716/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi (6.7s)
+✔ [8717/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy (7.2s)
+⚠ [8718/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe (6.8s)
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/CharFamilyLFunctionNeZeroOfOneLeRe.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [8719/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth (7.6s)
+✔ [8720/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp (7.7s)
+✔ [8721/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj (7.5s)
+✔ [8722/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal (7.7s)
+⚠ [8723/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq (9.5s)
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean:77:17: `MeasureTheory.integral_inter_add_diff` has been deprecated: Use `MeasureTheory.integral_inter_add_sdiff` instead
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean:104:45: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean:104:73: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+✔ [8724/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff (6.1s)
+⚠ [8725/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy (7.1s)
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:51:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:76:51: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:25:5: Variable name `hle` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hle
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:25:44: Variable name `hθσ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hθσ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8726/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym (6.7s)
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean:19:61: Variable name `hρ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hρ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8727/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest (7.8s)
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean:57:87: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean:96:19: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead
+✔ [8728/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne (7.5s)
+✔ [8729/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj (5.2s)
+✔ [8730/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne (8.4s)
+✔ [8731/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails (13s)
+⚠ [8732/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData (5.0s)
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean:152:15: This simp argument is unused:
+  Function.update_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [g, hw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean:373:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8733/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow (5.5s)
+✔ [8734/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL (4.2s)
+✔ [8735/8735] Built Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow (4.2s)
+Build completed successfully (8735 jobs).
+[2026-11-22 22:52:33] exit=0  	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:59.68 	Maximum resident set size (kbytes): 6863596 
+[2026-11-22 22:52:33] ### lake env lean Check_window.lean
+[2026-11-22 22:52:41] check exit=0
+[2026-11-22 22:52:42] done
