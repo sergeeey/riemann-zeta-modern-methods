@@ -1,0 +1,8 @@
+observed gamma_1 coefficients at N=64: {13: -2.021, 23: -3.434, 37: -5.078}
+A: beta = -0.1418 * c        residuals on the 3 points: [-0.18, -0.17, 0.17]
+B: beta = -1.1643 * log c    residuals on the 3 points: [0.97, 0.22, -0.87]
+C: beta = -0.427 + -0.1267 * c  residuals on the 3 points: [0.05, -0.09, 0.04]
+
+PREDICTIONS (decades per unit gamma_1):
+  c=53:  A -7.52   B -4.62   C -7.14
+  c=79:  A -11.20   B -5.09   C -10.44
