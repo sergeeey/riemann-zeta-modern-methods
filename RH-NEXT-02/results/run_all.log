@@ -1,0 +1,97 @@
+### python chi3_ref.py
+candidates (local minima of |L| < 0.2) for t in [2,14]: ['8.04', '11.24']
+first zero of L(s,chi_3): (0.5 + 8.039737155681466681713623j)
+### python cvs_u.py zeta 13 16 40
+zeta c=13 N=16 dps=40  symmetry_err=0.0
+  lambda_min = 8.5686314e-35  second = 8.6169094e-32
+  gamma_1 = 14.13472514173469379
+  |err| vs known = 2.4606e-30
+### python cvs_u.py chi3 23 16 40
+chi3 c=23 N=16 dps=40  symmetry_err=0.0
+  lambda_min = 2.2008303e-26  second = 2.7185683e-23
+  gamma_1 = 8.0397371556814666817
+  |err| vs known = 9.3731e-9
+### python cert_chi.py chi3 13 16 500
+chi3 c=13 N=16 prec=500 bits  dim=33  K_terms=73  build=0.0s  max entry radius=1.901e-146
+  CERTIFIED inertia: n_pos=33 n_neg=0  (ldlt 0.0s)
+  smallest pivot (ball): [2.56115938645e-7 +/- 3.51e-19]
+### python cert_chi.py chi3 23 16 500
+chi3 c=23 N=16 prec=500 bits  dim=33  K_terms=60  build=0.0s  max entry radius=1.169e-146
+  CERTIFIED inertia: n_pos=33 n_neg=0  (ldlt 0.0s)
+  smallest pivot (ball): [8.31357148021e-11 +/- 3.19e-23]
+### python cert_chi.py chi3 23 50 1500
+chi3 c=23 N=50 prec=1500 bits  dim=101  K_terms=171  build=0.3s  max entry radius=0.000e+00
+  CERTIFIED inertia: n_pos=101 n_neg=0  (ldlt 0.2s)
+  smallest pivot (ball): [2.21330101263e-12 +/- 4.82e-24]
+### python cert_chi.py chi3 29 50 1500
+chi3 c=29 N=50 prec=1500 bits  dim=101  K_terms=159  build=0.3s  max entry radius=0.000e+00
+  CERTIFIED inertia: n_pos=101 n_neg=0  (ldlt 0.2s)
+  smallest pivot (ball): [5.88624896025e-15 +/- 1.34e-27]
+### python cert_chi.py chi3 37 20 700
+chi3 c=37 N=20 prec=700 bits  dim=41  K_terms=72  build=0.0s  max entry radius=1.843e-206
+  CERTIFIED inertia: n_pos=41 n_neg=0  (ldlt 0.0s)
+  smallest pivot (ball): [2.47737568603e-14 +/- 4.66e-26]
+### python cert_chi.py chi3 13 6 300 --compare
+chi3 c=13 N=6 prec=300 bits  dim=13  K_terms=46  build=0.0s  max entry radius=3.828e-87
+  compare vs independent mpmath quadrature builder: max |entry diff| = 1.597e-50
+  CERTIFIED inertia: n_pos=13 n_neg=0  (ldlt 0.0s)
+  smallest pivot (ball): [3.71140229022e-6 +/- 3.24e-18]
+### python dh_check.py
+kappa = 0.28407904384041229603
+FE test s= (0.3 + 2.1j)  xi(s)-xi(1-s) = 1.1093e-31  |xi|= 0.72706
+FE test s= (0.7 + 5.5j)  xi(s)-xi(1-s) = 2.3919e-32  |xi|= 0.029912
+FE test s= (0.55 + 12.3j)  xi(s)-xi(1-s) = 1.7321e-34  |xi|= 0.00010158
+zero near 0.8085+85.699i -> (0.808517182456637 + 85.6993484853776j)  |D|= 8.19e-36
+mirror zero 1-conj -> (0.191482817543363 + 85.6993484853776j)
+Lambda_D(n), n=1..12: ['0.0', '0.196909', '-0.312093', '-1.44223', '0.0', '1.93636', '0.552792', '0.0158907', '-2.28588', '0.0', '2.3979', '-0.762877']
+-D'/D(4): series(40 terms) = 0.00426110250632  numeric = 0.00426215158559
+### python id_test.py chi3 13 120
+chi3 c=13: zeros found up to 120.0: 58  first: ['8.0397372', '11.249206', '15.704619']
+  v^T Q v = 9.29021374955e-5   2*sum|xi_hat|^2 = 0.000238289038494   ratio = 0.38987163691   L=2.5649494  1/L=0.38987125
+### python id_test.py dh 13 120
+dh c=13: zeros found up to 120.0: 64  first: ['5.0941598', '8.9399144', '12.133545']
+  v^T Q v = 0.000218564765002   2*sum|xi_hat|^2 = 0.000560607328583   ratio = 0.389871401707   L=2.5649494  1/L=0.38987125
+### python id_test.py dh 37 120
+dh c=37: zeros found up to 120.0: 64  first: ['5.0941598', '8.9399144', '12.133545']
+  v^T Q v = 2.13113211208e-5   2*sum|xi_hat|^2 = 7.69533112557e-5   ratio = 0.276938324979   L=3.6109179  1/L=0.27693789
+### python dh_scan.py dh 120 13 29 30 31 32 36 37 113 523 1009 2003
+dh c=13 N=120 prec=1200: CERTIFIED n_pos=241 n_neg=0  (3s)
+dh c=29 N=120 prec=1200: CERTIFIED n_pos=241 n_neg=0  (3s)
+dh c=30 N=120 prec=1200: CERTIFIED n_pos=241 n_neg=0  (3s)
+dh c=31 N=120 prec=1200: CERTIFIED n_pos=240 n_neg=1  (3s)
+dh c=32 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (3s)
+dh c=36 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (3s)
+dh c=37 N=120 prec=1200: CERTIFIED n_pos=239 n_neg=2  (3s)
+dh c=113 N=120 prec=2400: CERTIFIED n_pos=237 n_neg=4  (9s)
+dh c=523 N=120 prec=4800: CERTIFIED n_pos=237 n_neg=4  (40s)
+dh c=1009 N=120 prec=4800: CERTIFIED n_pos=237 n_neg=4  (52s)
+dh c=2003 N=120 prec=4800: CERTIFIED n_pos=235 n_neg=6  (79s)
+### python dh_scan.py chi3 120 113 523 1009 2003
+chi3 c=113 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (31s)
+chi3 c=523 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (29s)
+chi3 c=1009 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (29s)
+chi3 c=2003 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (33s)
+### python dh_scan.py chi4 120 113 523
+chi4 c=113 N=120 prec=2400: CERTIFIED n_pos=241 n_neg=0  (9s)
+chi4 c=523 N=120 prec=4800: CERTIFIED n_pos=241 n_neg=0  (28s)
+### python dh_scan.py dh 40 113
+dh c=113 N=40 prec=1200: CERTIFIED n_pos=81 n_neg=0  (0s)
+### python dh_scan.py dh 60 113
+dh c=113 N=60 prec=1200: CERTIFIED n_pos=119 n_neg=2  (1s)
+### python dh_scan.py dh 80 113
+dh c=113 N=80 prec=2400: CERTIFIED n_pos=159 n_neg=2  (4s)
+### python dh_scan.py dh 100 113
+dh c=113 N=100 prec=2400: CERTIFIED n_pos=197 n_neg=4  (6s)
+### python dh_scan.py dh 150 113
+dh c=113 N=150 prec=2400: CERTIFIED n_pos=293 n_neg=8  (17s)
+### python dh_vec.py 113 60
+dh c=113 N=60: negative eigenvalues (mid matrix, 120 digits): ['-3.38897e-41', '-2.21938e-42']
+  weight of |xi_hat(t)|^2 for t in [0,40): 1.0
+  weight of |xi_hat(t)|^2 for t in [40,80): 2.34801e-7
+  weight of |xi_hat(t)|^2 for t in [80,92): 1.22873e-36
+  weight of |xi_hat(t)|^2 for t in [92,130): 1.3967e-41
+  weight of |xi_hat(t)|^2 for t in [130,150): 3.12961e-42
+  peak of |xi_hat|^2 at t = 20.75
+### python id_test.py chi3 37 120  (appended after the main run)
+chi3 c=37: zeros found up to 120.0: 58  first: ['8.0397372', '11.249206', '15.704619']
+  v^T Q v = 2.06821469493e-5   2*sum|xi_hat|^2 = 7.46814811483e-5   ratio = 0.276938092701   L=3.6109179  1/L=0.27693789
