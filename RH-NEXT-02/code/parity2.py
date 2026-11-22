@@ -124,16 +124,23 @@ if __name__ == "__main__":
     if sys.argv[1] == "selftest":
         sys.exit(0 if selftest() else 1)
     D, c, N = int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3])
+    # WHY optional dps/prec: for N >= 48 lambda_min can fall below 1e-100, so the eigen-solver needs more digits than 100
+    DPS = int(sys.argv[4]) if len(sys.argv) > 4 else 100
+    PREC = int(sys.argv[5]) if len(sys.argv) > 5 else 2000
     name = register(D)
     a_par, q, _ = cc.CHARS[name]
-    A, DIM, _ = cc.build_arb(name, c, N, 2000)
-    npos, nneg, und, _ = cc.ldlt_inertia(A, DIM)
-    mp.mp.dps = 100
-    E, V = mp.eigsy(mid_matrix(A, 100))
+    while True:
+        A, DIM, _ = cc.build_arb(name, c, N, PREC)
+        npos, nneg, und, _ = cc.ldlt_inertia(A, DIM)
+        if und is None or PREC >= 16000:
+            break
+        PREC *= 2  # undetermined pivot: certify again with twice the bits (the certificate itself is never relaxed)
+    mp.mp.dps = DPS
+    E, V = mp.eigsy(mid_matrix(A, DPS))
     order = sorted(range(DIM), key=lambda i: E[i])
     lam = [E[i] for i in order]
     ref = ref_zero(D)
-    mp.mp.dps = 100
+    mp.mp.dps = DPS
     v = [V[i, order[0]] for i in range(DIM)]
     g1 = first_zero(v, mp.log(c), N, ref)
     err = abs(g1 - ref) if g1 is not None else None
@@ -145,6 +152,8 @@ if __name__ == "__main__":
                 "q": q,
                 "c": c,
                 "N": N,
+                "dps": DPS,
+                "prec_bits": PREC,
                 "n_pos": npos,
                 "n_neg": nneg,
                 "undetermined": und,
