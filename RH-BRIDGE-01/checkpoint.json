@@ -100,16 +100,17 @@
     ],
     "results": {
       "A_literature": "SOURCE_TRACED: A1 hexagon:2611.00828v1 (conditional, AI-generated), A2 Zhang note (AI-assisted, Lemma 4.2 = TheoremFSharp), A3 Masullo PDF received, proof OPEN/disputed, A4 Sutherland page 2026-11-22 16:20 UTC (kernel runs: nanoda, con-leche, con-ron, lean4lean, leanchecker; default/paranoid kernel and lake comparator still running)",
-      "B2_SizeKRel": "EXACT_COMPUTED exponent classification: clauses 1,2,4 binding, 3 implied by 4, 5-14 automatic; declaration-level dependence OPEN (export scan not finished)",
+      "B2_SizeKRel": "EXACT_COMPUTED exponent classification: clauses 1,2,4 binding, 3 implied by 4, 5-14 automatic; export scan finished 2026-11-22T23:56:58Z: 42 of 46 names found as name components (SizeKRel, szRow_sizeKRel, MIstar2, miStar2_of_allTrue_alt_alt, wire4F_alt, published_results_eigen present; f_mul_m_le, miStar2_of_families, miStar2_of_allTrue, joint_star_product_nonvanishing absent) = SOURCE_TRACED by name components only; attribution to one of the five theorems and match with commit 7cbf7a0c OPEN",
       "B3_window": "W1 bounded windows REFUTED (KERNEL_CHECKED), W2 density 1/2 REFUTED, W2' density -> 1 REFUTED (Fejer kernel, PROVED + numeric check), integral variant on bounded windows REFUTED, W3 OPEN",
       "C_lemma": "Lemma Z+ PROVED on paper; algebraic tail KERNEL_CHECKED (LemmaZAlgebra.lean); operator part NOT_RUN in Lean; necessity of kappa EXACT_COMPUTED; novelty OPEN"
     },
     "export_scan": {
       "script": "E:/Проверка Гипотез/работаю над проверкой гипотез/H12-lean-audit/sources/export_scan.sh",
       "output": "E:/Проверка Гипотез/работаю над проверкой гипотез/H12-lean-audit/sources/export_scan.out",
-      "status_at_checkpoint": "RUNNING (started 2026-11-22T18:49:15Z, output empty at 19:03Z)"
+      "status_at_checkpoint": "FINISHED (2026-11-22T18:49:15Z to 23:56:58Z, 18463 s, pipe status 0 0 0 0 0 0); copies in verification/export_scan/",
+      "result": "42 of 46 names found, 4 absent; name-component match only"
     },
-    "next_cheap_step": "Read export_scan.out; fill 'Результат скана' in critical_dependencies.md; decide declaration-level dependence of SizeKRel/MIstar2.",
+    "next_cheap_step": "Attribute the found constants to one of the five theorems (reachability from riemannHypothesis) and to commit 7cbf7a0c; see next_research_decision.md.",
     "push": "never done"
   }
 }
