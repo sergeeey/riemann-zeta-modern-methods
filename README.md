@@ -3,6 +3,9 @@
 > A personal computational experiment exploring the Riemann Hypothesis using modern numerical methods, custom algorithms, and AI-assisted analysis.  
 > **No proof claims** — just an open, curiosity-driven experiment with rigorous methodology.
 
+> **[ОБНОВЛЕНО 2026-11-22 — статус: UNREVIEWED-CLAIM, частично подтверждено]**
+> 20 ноября 2026 Levent Alpöge (с Claude) объявил формальное доказательство RH и GRH для L-функций Дирихле в Lean 4 ([статья](https://alpo.ge/remark.pdf), [репозиторий](https://github.com/leanprover-community/riemann-hypothesis)). Сообщество Lean/Mathlib 21 ноября заявило о корректности формулировки ([блог](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/)). Полные ядерные проверки (default/paranoid kernel, Comparator) на момент последней сверки не были завершены ([страница MIT](https://math.mit.edu/~drew/grh/)), математического рецензирования нет. Сборка архива в этом проекте не запускалась: проверен только SHA-256 архива (совпал с опубликованным). Этот проект по-прежнему не претендует на доказательство.
+
 ---
 
 ## What This Is
