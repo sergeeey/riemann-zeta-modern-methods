@@ -1,0 +1,33 @@
+### python cont_bench.py A
+A. continuity at c=13: max |Q(c=13, weights<=12) - Q(c=13, weights<=13)| = 6.581e-87
+A. derivative jump (right - left, wrt L=log c) in every entry: expected -0.55470020; max deviation over all 81 entries = 7.42e-06 (h=1e-6, O(h) accuracy)
+### python cont_bench.py B
+B. chi3 N=16: singular values of Q(23.5) - Q(23.0) (same weights), log10(s_k / s_1):
+   k:         1      2      3      4      5      6      8     10     12     16     20     24     33
+   log10:   0.0   -0.0   -0.0   -0.1   -0.2   -0.2   -0.2   -0.4   -0.5   -0.6   -0.7   -1.2  -10.3
+   numerical rank at relative tolerance {0.001: 28, 1e-06: 31, 1e-10: 32, 1e-14: 33}
+   for comparison singular values of Q(23) itself: log10(s_33/s_1) = -26.3, rank@1e-10: 26
+### python cont_bench.py C
+C. chi3 c=23 N=16: lambda_min = 2.2008303e-26; at c=23.001: 2.1988661e-26; d ln(lambda_min)/dL = -20.5366
+C. ||dQ/dc||_2 ~ 1.878e+00;  Weyl step lambda_min/||dQ/dc|| ~ 1.17e-26 in c (absolute perturbation bound; useless when lambda_min is tiny)
+### python cont_bench.py D
+D. prec=1500: point certificate at c=23: n_pos=33 n_neg=0 und=None  time=0.11s
+D. prec=1500: widest certified c-interval [23, 23+10^-70] (first width in the scan 1e-1,1e-2,.. that certifies), time=0.06s
+D. prec=3000: point certificate at c=23: n_pos=33 n_neg=0 und=None  time=0.47s
+D. prec=3000: widest certified c-interval [23, 23+10^-75] (first width in the scan 1e-1,1e-2,.. that certifies), time=0.34s
+### python cont_bench.py E
+E. baseline certified bisection: bracket [30.98938083928078413009644, 30.98938084021210670471191] width 9.31e-10, 30 steps, 30 certificates, 11.1s
+E. hybrid: 13 Illinois iterations (15 pivot evaluations), c* = 30.98938083935292399997126; certificates at c*-5e-10 and c*+5e-10: [('30.98938083885292399997126', 121, 0, None), ('30.98938083985292399997126', 120, 1, None)]; total 8.1s
+E. cost ratio baseline/hybrid = 1.37; certificates: baseline 30, hybrid 2 (+ 15 non-certified factorizations)
+E. consistency: hybrid c* inside the baseline bracket: True
+### python dbg_interval.py
+k=60: mid=23.000000000000000000000000000.. rad=5.000000000e-61  c-ball=[23.00000000000000000000000000000000000000000000000000000000000 +/- 1.01e-60]  max entry rad (float)=3.90e-57  -> n_pos=29 n_neg=0 und=29
+   failing pivot ball: [+/- 0.0208]  last good pivots: ['[6.524e-7 +/- 7.04e-11]', '[2.2e-7 +/- 1.45e-9]', '[+/- 0.0208]']
+k=30: mid=23.000000000000000000000000000.. rad=5.000000000e-31  c-ball=[23.00000000000000000000000000000 +/- 1.01e-30]  max entry rad (float)=3.90e-27  -> n_pos=18 n_neg=0 und=18
+   failing pivot ball: [+/- 1.09e-10]  last good pivots: ['[3.8869e-10 +/- 3.74e-15]', '[8.3e-11 +/- 2.01e-13]', '[+/- 1.09e-10]']
+k=10: mid=23.000000000050000000000000000.. rad=5.000000000e-11  c-ball=[23.000000000 +/- 1.01e-10]  max entry rad (float)=3.90e-07  -> n_pos=10 n_neg=0 und=10
+   failing pivot ball: [0.045 +/- 6.39e-4]  last good pivots: ['[2.261 +/- 5.74e-4]', '[1.425 +/- 7.91e-4]', '[0.045 +/- 6.39e-4]']
+k=3: mid=23.000500000000000000000000000.. rad=0.0005000000000  c-ball=[23.00 +/- 1.01e-3]  max entry rad (float)=1.28e+01  -> n_pos=0 n_neg=0 und=0
+   failing pivot ball: None  last good pivots: []
+point '23': (33, 0, None)
+tuple ('23','0'): (33, 0, None)

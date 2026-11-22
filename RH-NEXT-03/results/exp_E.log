@@ -1,0 +1,4 @@
+E. baseline certified bisection: bracket [30.98938083928078413009644, 30.98938084021210670471191] width 9.31e-10, 30 steps, 30 certificates, 9.2s
+E. hybrid: 13 Illinois iterations (15 pivot evaluations), c* = 30.98938083935292399997126; certificates at c*-5e-10 and c*+5e-10: [('30.98938083885292399997126', 121, 0, None), ('30.98938083985292399997126', 120, 1, None)]; total 13.0s
+E. cost ratio baseline/hybrid = 0.70; certificates: baseline 30, hybrid 2 (+ 15 non-certified factorizations)
+E. consistency: hybrid c* inside the baseline bracket: True
