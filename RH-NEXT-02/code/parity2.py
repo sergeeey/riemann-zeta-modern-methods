@@ -6,10 +6,9 @@ Usage: python parity2.py <D> <c> <N>      Self-test of the characters: python pa
 import json
 import sys
 
+import cert_chi as cc
 import mpmath as mp
 from sympy.ntheory.residue_ntheory import jacobi_symbol
-
-import cert_chi as cc
 
 ALL_D = [-3, -4, -7, -8, -11, -15, -19, -20, -23, -24, 5, 8, 12, 13, 17, 21, 24, 28, 29, 33]
 

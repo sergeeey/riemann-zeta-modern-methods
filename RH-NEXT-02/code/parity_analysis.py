@@ -7,7 +7,8 @@ import math
 
 from scipy.stats import spearmanr
 
-rows = [json.loads(line) for line in open("../results/parity_B.jsonl", encoding="utf-8")]
+with open("../results/parity_B.jsonl", encoding="utf-8") as fh:
+    rows = [json.loads(line) for line in fh]
 rows.sort(key=lambda r: (r["c"], r["N"], r["parity"], r["char"]))
 print(
     f"{'char':6} {'par':4} {'q':>2} {'c':>3} {'N':>3} {'inertia':>10} {'lambda_min':>12} {'cond':>11} {'gamma1_ref':>17} {'log10 err':>10}"
