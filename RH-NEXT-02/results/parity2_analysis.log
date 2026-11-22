@@ -1,0 +1,39 @@
+cells: 40; cells with n_neg != 0 or undetermined inertia: 0
+
+c=13, all characters: n=20  R^2=0.960  residual sd=1.03 decades
+  corr(log q, gamma_1)=-0.88  corr(log q, odd)=-0.30  corr(gamma_1, odd)=+0.05  design cond=5.0
+  intercept  coef =   -3.052  se =  3.603  t =   -0.85
+  log10 q    coef =   +5.058  se =  2.028  t =   +2.49
+  gamma_1    coef =   -1.876  se =  0.343  t =   -5.47
+  odd        coef =   -0.478  se =  0.557  t =   -0.86
+
+c=13, only q <= c: n=9  R^2=0.980  residual sd=0.92 decades
+  corr(log q, gamma_1)=-0.93  corr(log q, odd)=-0.42  corr(gamma_1, odd)=+0.09  design cond=13.7
+  intercept  coef =   -4.018  se = 14.817  t =   -0.27
+  log10 q    coef =   +6.918  se = 10.169  t =   +0.68
+  gamma_1    coef =   -1.921  se =  1.127  t =   -1.70
+  odd        coef =   -1.004  se =  1.573  t =   -0.64
+
+c=37, all characters: n=20  R^2=0.996  residual sd=0.55 decades
+  corr(log q, gamma_1)=-0.88  corr(log q, odd)=-0.30  corr(gamma_1, odd)=+0.05  design cond=5.0
+  intercept  coef =  -34.257  se =  1.941  t =  -17.65
+  log10 q    coef =  +22.005  se =  1.093  t =  +20.14
+  gamma_1    coef =   -0.944  se =  0.185  t =   -5.11
+  odd        coef =   +1.053  se =  0.300  t =   +3.51
+
+c=37, only q <= c: n=20  R^2=0.996  residual sd=0.55 decades
+  corr(log q, gamma_1)=-0.88  corr(log q, odd)=-0.30  corr(gamma_1, odd)=+0.05  design cond=5.0
+  intercept  coef =  -34.257  se =  1.941  t =  -17.65
+  log10 q    coef =  +22.005  se =  1.093  t =  +20.14
+  gamma_1    coef =   -0.944  se =  0.185  t =   -5.11
+  odd        coef =   +1.053  se =  0.300  t =   +3.51
+
+DECISION (pre-registered rules, all-characters fits):
+  q and gamma_1 separable (|corr| <= 0.9 and cond <= 30 at both c): True
+  parity (odd vs even), decades: effect = -0.48 (c=13), +1.05 (c=37) decades; t = -0.9, +3.5; same sign False; DETECTED = False
+  conductor, decades per doubling of q: effect = +1.52 (c=13), +6.62 (c=37) decades; t = +2.5, +20.1; same sign True; DETECTED = False
+  first-zero height, decades per unit gamma_1: effect = -1.88 (c=13), -0.94 (c=37) decades; t = -5.5, -5.1; same sign True; DETECTED = True
+
+RESIDUAL CHECK (pre-registered: one check of the linear form), all-characters fits:
+  c=13: corr(residual, (log q - mean)^2) = -0.55; corr(residual, (gamma_1 - mean)^2) = -0.50; largest residuals (decades, D): [(-1.72, 29), (-1.57, -3), (1.33, -15)]
+  c=37: corr(residual, (log q - mean)^2) = -0.44; corr(residual, (gamma_1 - mean)^2) = -0.15; largest residuals (decades, D): [(-1.04, 29), (0.95, 17), (-0.94, 33)]
