@@ -10,11 +10,23 @@
     "push": "never done; requires a separate yes and python ~/.claude/hooks/pre_push_privacy_guard.py --check"
   },
   "sources": {
-    "pdf": {"path": "C:/Users/serge/Downloads/zeta-paper.pdf", "sha256": "667d88b3c375adf0466678094f452ca966aef0f4d368f6340d2bd5328b7fb706", "bytes": 1627433, "online_content_length_matches": true},
+    "pdf": {
+      "path": "C:/Users/serge/Downloads/zeta-paper.pdf",
+      "sha256": "667d88b3c375adf0466678094f452ca966aef0f4d368f6340d2bd5328b7fb706",
+      "bytes": 1627433,
+      "online_content_length_matches": true
+    },
     "lean_commit": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
     "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
     "toolchain": "leanprover/lean4:v4.33.1",
-    "not_opened": ["H12-M-TRACE-04/05 audits", "H12-M2-CENTERING-01", "H12-PADIC-B4-03", "RH-NEXT-04B reports", "Technology Opportunity Radar", "H12-RESEARCH-MEMORY-2026-11-22-v2.zip"]
+    "not_opened": [
+      "H12-M-TRACE-04/05 audits",
+      "H12-M2-CENTERING-01",
+      "H12-PADIC-B4-03",
+      "RH-NEXT-04B reports",
+      "Technology Opportunity Radar",
+      "H12-RESEARCH-MEMORY-2026-11-22-v2.zip"
+    ]
   },
   "environment": {
     "wsl_distro": "Ubuntu (WSL2), 8 cores, 23 GB RAM",
@@ -33,19 +45,46 @@
       "CxData.exists_zeta_pairing_factors_through_periods, btVanish_of_miStar2, isometric_periods_of_unit_hypotheses, cutPairing, PrimitiveStatementsBaseLiftsOnly.cols, basePackageFullHecke, packageFullHecke, Links.primitivePackageFullHecke (1043-module closure, 28 min 31 s)",
       "window_sharpness_sign, exponent_system (WindowSharpness.lean)"
     ],
-    "exact_computed": ["interval-lemma constants", "identity (II.8) and table (II.24) for q=3,d=23", "lemniscate numbers A_5,A_9,A_17 and valuations", "window counterexample closed form"]
+    "exact_computed": [
+      "interval-lemma constants",
+      "identity (II.8) and table (II.24) for q=3,d=23",
+      "lemniscate numbers A_5,A_9,A_17 and valuations",
+      "window counterexample closed form"
+    ]
   },
   "not_run": [
-    {"what": "lake build Main and #print axioms riemannHypothesis", "blocker": "174764 modules, 17329808 lines; estimated 254-567 CPU hours, 37-82 h wall on 8 cores (INFERRED from the 1043-module build)", "files": ["verification/CheckAxioms.lean", "verification/run_full_main_build.sh"]},
-    {"what": "independent check of Estimates B and C (Part III.1-III.2)", "blocker": "not examined"},
-    {"what": "literature novelty search", "blocker": "not performed"}
+    {
+      "what": "lake build Main and #print axioms riemannHypothesis",
+      "blocker": "174764 modules, 17329808 lines; estimated 254-567 CPU hours, 37-82 h wall on 8 cores (INFERRED from the 1043-module build)",
+      "files": [
+        "verification/CheckAxioms.lean",
+        "verification/run_full_main_build.sh"
+      ]
+    },
+    {
+      "what": "independent check of Estimates B and C (Part III.1-III.2)",
+      "blocker": "not examined"
+    },
+    {
+      "what": "literature novelty search",
+      "blocker": "not performed"
+    }
   ],
   "open": [
-    "origin of ra.miStar / selI (supplier of MIstar2) above wire4F_alt",
     "whether SizeKRel (condition k >= 8 C m^5 f x^eps) is among the declarations riemannHypothesis depends on",
     "W3: minimal growth of the window length L(U) in the one-sided criterion",
     "hypothesis (B) all degrees (H12-PADIC-B4-04)"
   ],
   "next_command": "cd ~/h12/rh && cp <worktree>/RH-BRIDGE-01/verification/CheckAxioms.lean . && bash <worktree>/RH-BRIDGE-01/verification/run_full_main_build.sh   # inside WSL, long run",
-  "next_cheap_step": "trace ra.miStar upward from Formalism.L2.Top4Wire2.wire4F_alt (hRows) through TopShape; source reading only"
+  "next_cheap_step": "Decide whether the MIstar2 row theorem needs its own kernel check (about 13 h on 8 cores) or is covered by an external certificate; then address SizeKRel dependency (declaration level).",
+  "miStar2_trace": {
+    "file": "miStar2_trace.md",
+    "status": "SOURCE_TRACED (not compiled)",
+    "summary": "ra.miStar is a field of the hypothesis hRows (RowsAtSelAlt) inside wire4F_alt; discharged via row_rRows_of_parts_alt <- row_rRows_stage0_alt <- allRows_of_open0_alt (o.mi) <- open0_of_unitary_group_hypotheses (hMi.2 of main_theorem_published_inputs_third_alt_alt) <- miStar2_of_allTrue_alt_alt <- miStar2_of_families/joint_star_product_nonvanishing; fed by 13 Published inputs, each supplied by a library theorem (only doublingMethod uses the parameter O).",
+    "not_run": "kernel check of the MIstar2 row theorem; closure 45153 modules / 6132422 lines, about 90 CPU hours (INFERRED)",
+    "open": [
+      "(selB ..).Q = b.B.Q at definition level",
+      "fidelity of the 13 Published statements to the literature"
+    ]
+  }
 }
