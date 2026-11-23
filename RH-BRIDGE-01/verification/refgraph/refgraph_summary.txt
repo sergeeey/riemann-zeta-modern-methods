@@ -1,0 +1,61 @@
+RH_loose 667823
+RH_strict 252121
+FIVE_loose 667826
+FIVE_strict 252126
+name | decls_in_src | in_export | RH_strict | RH_loose | FIVE_loose (path length or -)
+SizeKRel 1 True 16 7 6
+szRow_sizeKRel 1 True 16 11 9
+sizes_sizeKRel 1 True 15 10 8
+SizesAt 5 True - 6 5
+SizeN 1 True 12 6 5
+SizeM 1 True 16 7 5
+SizeK 1 True 12 6 5
+SizeT 2 True - 7 6
+f_mul_m_le 1 False - 9 8
+MIstar2 1 True 10 7 5
+MIid 1 True 11 8 6
+MIUnit2 1 True 11 8 6
+AuNZ 1 True 11 8 6
+MIDat 1 True 11 7 5
+miStar2_of_anchored 1 True 24 24 23
+miStar2_of_families 1 False - - -
+miStar2_of_allTrue 1 False - - -
+miStar2_of_allTrue_alt_alt 1 True 19 19 18
+joint_star_product_nonvanishing 1 False - - -
+isometric_periods_of_unit_hypotheses 1 True 16 8 6
+exists_zeta_pairing_factors_through_periods 1 True 14 6 4
+RowMultiplicityCondition 1 True 9 9 8
+RowsAtSelAlt 1 True 11 11 10
+IndefiniteRealisationConstantBounds 2 True - 10 9
+wire4F_alt 1 True 11 11 10
+wire_sel_alt 1 True 10 10 9
+open0_of_unitary_group_hypotheses 1 True 8 8 7
+published_results_eigen 1 True 6 6 5
+zeroFree_of_rpow_window 1 True - 7 5
+lemmaL 1 True - 8 6
+windowHyp_of_rpow 1 True - 8 6
+harishChandraFinite 1 True 7 6 4
+OpenParameterStatements 1 True 8 8 7
+allRows_of_open0_alt 1 True 9 9 8
+row_rRows_of_parts_alt 1 True 11 11 10
+row_rRows_stage0_alt 1 True 10 10 9
+ElevenLe 0 True - - -
+szTh 1 True 12 5 4
+rankBudget 1 True 11 7 6
+CountsIrreducibilityConstants 1 True - 7 6
+Win_at 1 True 16 11 9
+RamRank_at 1 True 17 12 10
+ChCode_at 1 True 14 8 6
+ramShare_at_of 1 True 17 12 10
+frame_at_of 1 True 16 11 9
+DesignS 0 True - - -
+RH_strict szRow_sizeKRel rhOfAll -> allChi -> everyCharacter -> everyCharacter_of_row -> every_character_of_literature_of_vWin -> every_character_of_theta_integrals_local_matching -> nonempty_hyps_definite_side_of_closed_bound -> open0_of_unitary_group_hypotheses -> open_orbit_of_unramified_exponents_alt -> real_group_inputs_combined_alt_alt -> at_row_hLamP_alt_alt -> evP_params -> szRow_numAt -> szRow_sizesAt -> sizes_sizeKRel -> szRow_sizeKRel
+RH_loose szRow_sizeKRel rhOfAll -> rh_of_every -> h -> H -> le -> recS -> hostWW -> szRow_numAt -> szRow_sizesAt -> sizes_sizeKRel -> szRow_sizeKRel
+RH_strict MIstar2 rhOfAll -> allChi -> everyCharacter -> everyCharacter_of_row -> every_character_of_literature_of_vWin -> every_character_of_theta_integrals_local_matching -> every_character_of_green_v_win -> DefiniteSideCondition -> CovolumeOntoIsometryConditions -> MIstar2
+RH_loose MIstar2 rhOfAll -> rh_of_every -> hs -> intro -> cols -> exists_zeta_pairing_factors_through_periods -> MIstar2
+RH_strict wire4F_alt rhOfAll -> allChi -> everyCharacter -> everyCharacter_of_row -> every_character_of_literature_of_vWin -> every_character_of_theta_integrals_local_matching -> every_character_of_green_v_win -> zero_free_all_of_green_v_win -> shape_closed_link_n_of_green -> wire_sel_alt -> wire4F_alt
+RH_loose wire4F_alt rhOfAll -> allChi -> everyCharacter -> everyCharacter_of_row -> every_character_of_literature_of_vWin -> every_character_of_theta_integrals_local_matching -> every_character_of_green_v_win -> zero_free_all_of_green_v_win -> shape_closed_link_n_of_green -> wire_sel_alt -> wire4F_alt
+RH_strict miStar2_of_allTrue_alt_alt rhOfAll -> allChi -> everyCharacter -> everyCharacter_of_row -> every_character_of_literature_of_vWin -> every_character_of_theta_integrals_local_matching -> nonempty_hyps_definite_side_of_closed_bound -> open0_of_unitary_group_hypotheses -> open_orbit_of_unramified_exponents_alt -> main_theorem_published_inputs_third_alt_alt -> miStarRow_alt_alt -> main_theorem_published_inputs_variant_alt_alt -> miStarRowClosing_alt_alt -> main_theorem_published_results_final_alt_alt -> miStar_row_alt_alt -> main_theorem_from_published_results_alt_alt_alt_alt_alt -> miAt_of_truePack_alt_alt -> main_theorem_from_published_results_alt_alt_alt_alt -> miStar2_of_allTrue_alt_alt
+RH_loose miStar2_of_allTrue_alt_alt rhOfAll -> allChi -> everyCharacter -> everyCharacter_of_row -> every_character_of_literature_of_vWin -> every_character_of_theta_integrals_local_matching -> nonempty_hyps_definite_side_of_closed_bound -> open0_of_unitary_group_hypotheses -> open_orbit_of_unramified_exponents_alt -> main_theorem_published_inputs_third_alt_alt -> miStarRow_alt_alt -> main_theorem_published_inputs_variant_alt_alt -> miStarRowClosing_alt_alt -> main_theorem_published_results_final_alt_alt -> miStar_row_alt_alt -> main_theorem_from_published_results_alt_alt_alt_alt_alt -> miAt_of_truePack_alt_alt -> main_theorem_from_published_results_alt_alt_alt_alt -> miStar2_of_allTrue_alt_alt
+RH_strict f_mul_m_le UNREACHED
+RH_loose f_mul_m_le rhOfAll -> rh_of_every -> h -> t -> row -> row_of_minkowski -> primesLarge_family -> primes_gt -> f_mul_m_le
