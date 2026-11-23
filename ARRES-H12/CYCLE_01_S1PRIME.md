@@ -5,7 +5,7 @@ Isolation: branch `arres-h12-cycle01-20261123` only. Based on `bridge-discovery-
 The newer local `H12-DISCOVERY-03` source is not present in this remote snapshot and has NOT been inspected.
 
 ## Norm–Reynolds lemma
-Let `p` be prime, `R = Z_p[[x_1,...,x_d]]` (or an appropriate complete p-adic coefficient algebra) with augmentation ideal I, `G` a group of order N coprime to p acting continuously by R-algebra automorphisms preserving I, and `U ∈ 1+I`. Define `P=(1/N)Σ_g g`. Then, in the rationalized formal series ring,
+Let `p` be prime, `R = Z_p[[x_1,...,x_d]]` (or an appropriate complete p-adic coefficient algebra) with augmentation ideal I, `G` a group of order N coprime to p acting continuously by Z_p-algebra automorphisms preserving I, and `U ∈ 1+I`. Define `P=(1/N)Σ_g g`. Then, in the rationalized formal series ring,
 
 `exp(P(log U)) = (Π_g g(U))^(1/N) ∈ 1+I`.
 
