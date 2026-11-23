@@ -82,8 +82,20 @@
     "B4-06 Lean work decomposed into 4 parallel lemma groups; every module recompiled by coordinator before use",
     "Lean theorem scope stated as equation (7) for lagA only; not renamed to the headline theorem"
   ],
-  "recommendation": "CONTINUE_WITH_SPECIFIC_TARGET",
-  "next_step": "novelty search (two independent vocabularies, boyko-novelty-assessment) for the congruence p*a_{n1} == -a_{n0} (mod p); close B4-06 as rediscovery if found; only then consider Lean for Step 5 / B4-05",
+  "recommendation": "CLOSE",
+  "recommendation_history": "cycle end: CONTINUE_WITH_SPECIFIC_TARGET (novelty search); after the novelty search (novelty/novelty_report.md): CLOSE for B4-06 as a publishable congruence",
+  "novelty_result": {
+    "decision": "not_novel",
+    "classification": "known_by_specialization",
+    "confidence": "medium-high",
+    "source": "Katz 1982 Thm 3.11 and Chellali 1990 Thm 1.1 (case l=0, n=p-1), read in Bannai-Kobayashi arXiv:0804.4338 Thm 5.1/5.2/5.8",
+    "screeners": "S1 (11 rounds) and S2 (12 rounds), independent and agreed",
+    "relative_recall": 0.75,
+    "citation_chase": "not performed (not required for not_novel; OpenAlex/Semantic Scholar 429)",
+    "not_covered": ["a_{n0} p-adic unit (elementary, proved in Lean)", "elementary proof method", "Lean formalization", "Dwork-gate criterion c^((p^2-1)/4) == -1"],
+    "originals_not_read": ["Katz 1982", "Chellali 1990"]
+  },
+  "next_step": "none required; optional: obtain Chellali 1990 / Katz 1982 originals to raise confidence to high and check eps/gamma conventions. Do not continue B4-06 as a novelty target.",
   "files": {
     "reports": ["b4_06_kernel_report.md", "rh_mathematical_skeleton.md", "zplus_applicability.md", "final_assessment.md"],
     "supporting_outside_final_cycle": ["../rh_attribution.md", "../external_assessment_2026-11-23.md", "../verification/refgraph/"],

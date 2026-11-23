@@ -1,0 +1,10 @@
+p=  3 n=2 n'=10 checks(1..5)=[True, True, True, True, True, True] -> OK
+p=  7 n=6 n'=54 checks(1..5)=[True, True, True, True, True, True] -> OK
+p= 11 n=10 n'=130 checks(1..5)=[True, True, True, True, True, True] -> OK
+p= 19 n=18 n'=378 checks(1..5)=[True, True, True, True, True, True] -> OK
+p= 23 n=22 n'=550 checks(1..5)=[True, True, True, True, True, True] -> OK
+p= 31 n=30 n'=990 checks(1..5)=[True, True, True, True, True, True] -> OK
+p= 43 n=42 n'=1890 checks(1..5)=[True, True, True, True, True, True] -> OK
+p= 47 n=46 n'=2254 checks(1..5)=[True, True, True, True, True, True] -> OK
+p= 59 n=58 n'=3538 checks(1..5)=[True, True, True, True, True, True] -> OK
+failures: 0
