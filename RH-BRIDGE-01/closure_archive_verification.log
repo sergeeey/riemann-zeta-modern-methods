@@ -1,0 +1,14 @@
+==== archive verification 2026-11-23T07:25:08Z
+archive: f86213fedf7b7c03fd1b93ce398553adcecee352a746b5cd56b4a392db60a136  H12-FINAL-CYCLE-01-2026-11-23.zip
+mkzip: entries: 301 testzip: None size: 559852 sha256: f86213fedf7b7c03fd1b93ce398553adcecee352a746b5cd56b4a392db60a136 
+extracted entries: 301
+-- extracted: sha256sum -c RH-BRIDGE-01/SHA256SUMS-ALL.txt (from the archive root)
+manifest lines: 300; lines above = failures (none if empty)
+-- extracted: final_cycle manifest
+manifest lines: 163
+-- extracted: historical manifest (SHA256SUMS.txt)
+manifest lines: 50
+-- archive vs working tree (byte compare)
+files differing: 0
+-- working tree: sha256sum -c RH-BRIDGE-01/SHA256SUMS-ALL.txt
+done

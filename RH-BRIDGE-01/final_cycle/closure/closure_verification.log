@@ -1,0 +1,29 @@
+==== closure verification PRE (new run) 2026-11-23T07:21:24Z
+fatal: not a git repository: /mnt/e/Проверка Гипотез/работаю над проверкой гипотез/H12-bridge-discovery-01/E:/Проверка Гипотез/работаю над проверкой гипотез/H - 12 Гипотеза Римана/.git/worktrees/H12-bridge-discovery-01
+fatal: not a git repository: /mnt/e/Проверка Гипотез/работаю над проверкой гипотез/H12-bridge-discovery-01/E:/Проверка Гипотез/работаю над проверкой гипотез/H - 12 Гипотеза Римана/.git/worktrees/H12-bridge-discovery-01
+git HEAD:  branch: 
+-- expected hashes (from checkpoint.json) vs actual
+OK   lean/B4_06_Universal.lean
+OK   lean/L1.lean
+OK   lean/L2.lean
+OK   lean/L3a.lean
+OK   lean/L3b.lean
+-- toolchain: Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+-- compile: lake env lean final_cycle/b4_06/lean/B4_06_Universal.lean (+ axioms footer in temp copy)
+exit_code=0
+'H12.B4.B4_06_first_resonance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.B4_06_first_resonance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L1_phi_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L2_pphi_q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L5_phi_n0_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3a_inv_pow_perturb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3b_frobenius_trunc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3c_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3d_trunc_invariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+real	0m16.240s
+-- forbidden tokens in code of the delivered file
+none
+-- python evidence logs present
+checked n=1..60: mismatches = 0; a_1=1/5, a_2=1/75
+failures: 0
+HEAD(windows git): 1cddeb0 branch: bridge-discovery-01

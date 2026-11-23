@@ -5,6 +5,44 @@
   "push": "never done; requires a separate yes and python ~/.claude/hooks/pre_push_privacy_guard.py --check",
   "outcome": "COMPLETED_PARTIAL_SCIENTIFIC (all four DoD items met; higher-level success only partly: universal congruence kernel-checked for lagA, not the full B4-06 chain)",
   "level_L0": "structural (deductive mathematics); nothing here proves or refutes RH",
+  "closure": {
+    "mission": "H12-FINAL-CLOSURE-01",
+    "date": "2026-11-23",
+    "state": "CLOSED / REPRODUCIBLE / AUDITABLE (within the limits in final_assessment.md section 6)",
+    "decision": "CLOSE",
+    "default_strategy": "CLOSE; reopen only under a concrete verifiable hypothesis with potential scientific value (R1..R5)",
+    "commits_on_bridge-discovery-01": {
+      "0fac8f8": "BRIDGE-DISCOVERY-01: dependency map, kernel-checked window theorem and l1b chain, window sharpness counterexample",
+      "382a92f": "trace of ra.miStar upward from wire4F_alt (source-traced)",
+      "8c30816": "UNIFIED-RESEARCH-01: literature delta, SizeKRel table, window-criterion counterexample, Lemma Z+",
+      "856ee7e": "export scan result (42/46 names by components)",
+      "ebf2ef7": "attribution of export names to riemannHypothesis via strict reference graph; external assessment saved",
+      "c3ecc03": "final research cycle: B4-06 universal congruence for lagA (KERNEL_CHECKED), RH skeleton map, Z+ not applicable",
+      "1cddeb0": "novelty search: congruence known by specialization (Katz 1982 / Chellali 1990)",
+      "closure_commit": "the commit that contains this block (git log -1 -- RH-BRIDGE-01/final_cycle/checkpoint.json)"
+    },
+    "pinned_statuses_not_to_be_raised": {
+      "B4-06 congruence": "NOT_NOVEL (known_by_specialization, Katz 1982 / Chellali 1990 via Bannai-Kobayashi Ann. Inst. Fourier 66 (2016))",
+      "Lean theorem B4_06_first_resonance": "KERNEL_CHECKED for the formal lagA only; lagA == wp coefficients NOT proved in Lean (numerically n<=60)",
+      "Dwork first resonance vs exact author beta": "OPEN",
+      "RH dependency graph": "SOURCE_TRACED, not KERNEL_VERIFIED; dominators are candidates; mathematical necessity of SizeKRel 1,2,4 OPEN",
+      "Lemma Z+": "CONDITIONAL / NOT_APPLICABLE_WITH_CURRENT_ASSUMPTIONS"
+    },
+    "reopen_conditions": {
+      "R1": "originals of Katz 1982 / Chellali 1990 show conventions under which the l=0, n=p-1 specialization does not give p*a_{n1} == -a_{n0}: reopen novelty as INCONCLUSIVE",
+      "R2": "strict identification of Rubinstein beta with beMean(cob F phFF) for y^2=x^3-cx and check of the BHypCurve premise (all n, ||coeff n thetaS|| <= 1) for c=1, p=3 mod 4; if satisfied while B4-05 shows first-resonance failure, a definition conflict or error must be resolved",
+      "R3": "external report of a concrete error localized in BHyp/B4, SizeKRel or the window (W3)",
+      "R4": "a concrete target where the Theorem A constant (1.2-1.5) limits a conclusion, or a derivation of a uniform kappa bound",
+      "R5": "explicit owner decision for a named expensive check (full Main build, N=128) with hypothesis and stop criterion"
+    },
+    "closure_verification_log": "final_cycle/closure/closure_verification.log",
+    "restore_from_scratch": [
+      "git checkout bridge-discovery-01 in the worktree, or unzip H12-FINAL-CYCLE-01-2026-11-23.zip into the worktree root (entries are RH-BRIDGE-01/..., RH-NEXT-01/..., RH-NEXT-02/..., RH-NEXT-03/...)",
+      "from the worktree root: sha256sum -c RH-BRIDGE-01/SHA256SUMS-ALL.txt   (all files of the four folders); and: cd RH-BRIDGE-01/final_cycle && sha256sum -c SHA256SUMS.txt",
+      "WSL: cd ~/h12/rh && lake env lean <path>/final_cycle/b4_06/lean/B4_06_Universal.lean  (exit 0; axioms [propext, Classical.choice, Quot.sound])",
+      "read final_cycle/final_assessment.md, then final_cycle/README.md"
+    ]
+  },
   "goal": "Close the active H-12 phase with: (1) a reproducible B4-06 dossier with exact kernel-checked / paper-only / open split; (2) a compact source-confirmed map of the mathematical skeleton of riemannHypothesis; (3) one targeted applicability check of Lemma Z+ to TheoremFSharp.",
   "completion_criteria": {
     "B4_06": "reproducible report with real compile result of each of the 4 candidates, exact list of kernel-checked statements and remaining obligations; if universal congruence succeeds, the Lean theorem itself",
@@ -66,7 +104,7 @@
     "Lean: Step 5 (h_n = -a_n/(4n(4n-1)) + [u^n](log g - log f); p(p+1)h_n0 == p^2 binom(p^2+p,p) h_n1 == -a_n0 mod p)",
     "Lean/independent: B4-05 two-source identity and iff criterion c^((p^2-1)/4) == -1",
     "exact match of Rubinstein beta (m(z)=log(sigma/t)) with the Lean source beta (phO/cob/beMean/BHypCurve at 7cbf7a0c)",
-    "literature novelty of the congruence p a_n1 == -a_n0 (mod p) for lemniscatic wp coefficients",
+    "RESOLVED 2026-11-23 (not an obligation any more): literature novelty of p a_n1 == -a_n0 (mod p) -> NOT_NOVEL (novelty/novelty_report.md); remaining: originals of Katz 1982 / Chellali 1990 not read (confidence medium-high)",
     "full B4 (all monomials, all degrees)",
     "hash-level match of the 7.7 GB export with commit 7cbf7a0c",
     "mathematical necessity of SizeKRel relations 1,2,4 (graph shows presence only)",

@@ -3,6 +3,15 @@
   "date": "2026-11-22",
   "outcome": "PARTIAL",
   "level_L0": "structural (deductive mathematics); nothing here proves or refutes RH",
+  "state_2026_11_23": {
+    "H12": "CLOSED (closure commit on bridge-discovery-01; see final_cycle/checkpoint.json and final_cycle/final_assessment.md)",
+    "superseded_by": "final_cycle/checkpoint.json",
+    "note": "the fields below are the historical record of the 2026-11-22 missions; where they say OPEN/next_cheap_step the later documents rh_attribution.md (export names attributed to riemannHypothesis, SOURCE_TRACED), final_cycle/ (B4-06 Lean theorem, RH skeleton, Z+ closed, novelty search) have replaced them",
+    "stale_statements_here": [
+      "unified_mission.next_cheap_step (attribute names to riemannHypothesis): DONE in rh_attribution.md",
+      "open[0] 'whether SizeKRel is among the declarations riemannHypothesis depends on': SOURCE_TRACED reachable (rh_attribution.md, final_cycle/rh_mathematical_skeleton.md); mathematical necessity still OPEN"
+    ]
+  },
   "repo": {
     "worktree": "E:/Проверка Гипотез/работаю над проверкой гипотез/H12-bridge-discovery-01",
     "branch": "bridge-discovery-01",
