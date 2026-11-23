@@ -1,0 +1,4 @@
+--- compile+axioms: lake env lean /home/serge/h12/b4_06/fixed/FrobeniusResidueInterface.axioms.lean
+'H12.B4.normalized_residue_bridge' depends on axioms: [propext, Quot.sound]
+'H12.B4.p3_normalized_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT_CODE_AXIOMS=0

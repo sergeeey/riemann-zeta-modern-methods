@@ -1,0 +1,4 @@
+PASS ell=3: exact two-source resonance; lead-only fails at degree=12; full model passes to degree=12
+PASS ell=7: exact two-source resonance; lead-only fails at degree=56; full model passes to degree=56
+PASS ell=11: exact two-source resonance; lead-only fails at degree=132; full model passes to degree=132
+PASS 6 primes: normalized residue congruence and twist dependence

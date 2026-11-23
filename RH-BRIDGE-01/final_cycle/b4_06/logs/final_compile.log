@@ -1,0 +1,32 @@
+/home/serge/h12/b4_06/final/B4_06_Universal.lean:376:12: warning: This simp argument is unused:
+  ZMod.natCast_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/serge/h12/b4_06/final/B4_06_Universal.lean:427:0: warning: automatically included section variable(s) unused in theorem `H12.B4.not_dvd_four`:
+  hp
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hp in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/serge/h12/b4_06/final/B4_06_Universal.lean:434:0: warning: automatically included section variable(s) unused in theorem `H12.B4.qIdx_facts`:
+  hp
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hp in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'H12.B4.B4_06_first_resonance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L1_phi_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L2_pphi_q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3a_inv_pow_perturb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3b_frobenius_trunc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3c_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3d_trunc_invariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L5_phi_n0_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.B4_06_first_resonance' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m13.967s
+user	0m22.677s
+sys	0m2.278s

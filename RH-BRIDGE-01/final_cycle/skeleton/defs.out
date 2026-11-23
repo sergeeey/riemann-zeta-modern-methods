@@ -1,0 +1,38 @@
+=== ^(def|abbrev|structure|theorem) (UpperTheory\.)?EveryCharacter\b  [./Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean]
+13:def UpperTheory.EveryCharacter : Prop :=
+14-  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ), 1 / 2 < s.re → (χ ≠ 1 ∨ s ≠ 1) → DirichletCharacter.LFunction χ s ≠ 0
+15-
+16-theorem UpperTheory.Top.plugAll (hG : GlobalTheory.GLq.Green) (hV : UpperTheory.Top.VWin)
+=== ^def VWin\b|^(def|abbrev) UpperTheory\.Top\.VWin\b|(def|abbrev) VWin   [./Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean]
+49:def VWin : Prop := ∀ ψ : PChar, VWinAt ψ 401
+50-
+51-theorem VVle.mono {E : Type} [Field E] [NumberField E] {t t' : ℕ} {B B' : ℝ} (h : VVle E t B) (ht : t' ≤ t) (hB : B ≤ B') :
+52-    VVle E t' B' := by
+53-  intro Ω _ _ _ ld
+=== structure UpperTheory.LiteratureTheorems.OpenLiteratureStatements  [./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean]
+215:structure UpperTheory.LiteratureTheorems.OpenLiteratureStatements : Prop where
+216-  caraianiLocalGlobalDual : _root_.UpperTheory.One.M.Row
+217-  localLanglandsExists : _root_.UpperTheory.Zero.LLC.RecTExists
+218-  galoisRepOfPolarizedPairLit : _root_.UpperTheory.One.M.Row
+219-theorem UpperTheory.LiteratureTheorems.logDerivOne (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : GlobalTheory.Mem.An.LogDerOne :=
+=== (def|abbrev|structure) (UpperTheory\.)?GalStar\.Row0b|def Row0b  [./Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean]
+69:def Row0b : Prop :=
+70-  ∀ (E Ω : Type) [Field E] [NumberField E] [IsCMField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω]
+71-    (l : ℕ) [Fact l.Prime] (ι : Qbar l ≃+* ℂ) (a : ℕ), 1 ≤ a →
+72-    ∀ (π : CuspSub E a) (χ : HChar (maximalRealSubfield E)), (CG.mk π).IsRegAlg → GlobalTheory.ContraPair.PolarizedPair π χ →
+73-      ∃ (r : G E Ω →* GL (Fin a) (Qbar l)) (wt : ℤ) (HT : (E →+* Qbar l) → Multiset ℤ), PropsB Rc π ι r wt HT
+=== theorem (Formalism\.VW\.)?rh_of_every\b  [./Formalism/GammaFactorNonvanishing/CritLine.lean]
+29:theorem Formalism.VW.rh_of_every (h : UpperTheory.EveryCharacter) : RiemannHypothesis :=
+30-  Formalism.VW.rh_of_right fun s hs hs1 => by
+31-    have := h 1 (1 : DirichletCharacter ℂ 1) s hs (Or.inr hs1)
+32-    rwa [LFunction_modOne_eq] at this
+=== def RiemannHypothesis|RiemannHypothesis :  [./Main.lean]
+4:theorem riemannHypothesis : RiemannHypothesis := rhOfAll
+5-
+=== lines 215-218 EveryCharacterOfLiteratureOfVWin
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
+structure UpperTheory.LiteratureTheorems.OpenLiteratureStatements : Prop where
+  caraianiLocalGlobalDual : _root_.UpperTheory.One.M.Row
+  localLanglandsExists : _root_.UpperTheory.Zero.LLC.RecTExists
+  galoisRepOfPolarizedPairLit : _root_.UpperTheory.One.M.Row

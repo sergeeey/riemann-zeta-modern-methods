@@ -1,0 +1,22 @@
+date: 2026-11-23T06:51:04Z
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+=== L1  sha256=9f7db200673e5f327c59511931bf661d54c8ce8b462e61135287ce602d70804f
+command: lake env lean L1.lean
+'H12.B4.L1_phi_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_code(lean)=0
+=== L2  sha256=941e6c067ee83944c534835e672d061c358e8a3478c75a591ea89657af65c30a
+command: lake env lean L2.lean
+'H12.B4.L2_pphi_q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L5_phi_n0_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_code(lean)=0
+=== L3a  sha256=380fadb593e96467320dc62aed8f7810ae64e153059d36da94c5271c353b6288
+command: lake env lean L3a.lean
+'H12.B4.L3a_inv_pow_perturb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3d_trunc_invariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_code(lean)=0
+=== L3b  sha256=6adc5dd4a788c2106483e889bf665caac56a96d159b9a6da44e50acfabeb5c34
+command: lake env lean L3b.lean
+'H12.B4.L3b_frobenius_trunc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.L3c_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_code(lean)=0
+=== B4_06_Universal.lean sha256=d1de8f15d2f311b334e48b380e052722e80739162d20121599b2b8065d8d5bc7

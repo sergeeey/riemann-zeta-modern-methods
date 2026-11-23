@@ -1,0 +1,7 @@
+--- compile as-is: lake env lean /home/serge/h12/b4_06/src/ExceptionalIndexGate.lean
+/home/serge/h12/b4_06/src/ExceptionalIndexGate.lean:7:0: error: invalid 'import' command, it must be used in the beginning of the file
+
+real	0m1.021s
+user	0m0.620s
+sys	0m0.448s
+EXIT_CODE_AS_IS=1

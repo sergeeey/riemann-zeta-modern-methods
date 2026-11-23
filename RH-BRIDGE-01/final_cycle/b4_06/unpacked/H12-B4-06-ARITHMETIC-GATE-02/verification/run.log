@@ -1,0 +1,4 @@
+PASS: 24 primes through p=199, all denominator hits, base-p carry, valuations and exceptional residues
+Largest checked resonance n1: 9950
+lean: NOT FOUND
+lake: NOT FOUND

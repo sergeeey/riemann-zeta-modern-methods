@@ -1,0 +1,108 @@
+{
+  "mission": "H12-FINAL-RESEARCH-CYCLE-01",
+  "date": "2026-11-23",
+  "branch": "bridge-discovery-01",
+  "push": "never done; requires a separate yes and python ~/.claude/hooks/pre_push_privacy_guard.py --check",
+  "outcome": "COMPLETED_PARTIAL_SCIENTIFIC (all four DoD items met; higher-level success only partly: universal congruence kernel-checked for lagA, not the full B4-06 chain)",
+  "level_L0": "structural (deductive mathematics); nothing here proves or refutes RH",
+  "goal": "Close the active H-12 phase with: (1) a reproducible B4-06 dossier with exact kernel-checked / paper-only / open split; (2) a compact source-confirmed map of the mathematical skeleton of riemannHypothesis; (3) one targeted applicability check of Lemma Z+ to TheoremFSharp.",
+  "completion_criteria": {
+    "B4_06": "reproducible report with real compile result of each of the 4 candidates, exact list of kernel-checked statements and remaining obligations; if universal congruence succeeds, the Lean theorem itself",
+    "RH_skeleton": "compact map of source-confirmed paths from riemannHypothesis to key declarations; dominator candidates separated from proved necessary dependencies",
+    "Zplus": "checkable verdict on applicability to TheoremFSharp or strictly bounded INCONCLUSIVE with the missing premise",
+    "reproducibility": "archive with code, logs, sources, SHA-256, statuses and restore instruction; committed locally without push"
+  },
+  "allowed_scope": [
+    "read sources, local Lean compiles of small files via lake env lean in ~/h12/rh",
+    "create research modules, tests, reports, checkpoint, local commits on bridge-discovery-01"
+  ],
+  "forbidden_scope_respected": [
+    "no git push",
+    "riemannHypothesis and existing proof not modified",
+    "no full Main build, no new full export scan",
+    "no N=128 runs, no sorry/admit/custom axioms in delivered Lean files",
+    "no global Lean/dependency change"
+  ],
+  "environment": {
+    "wsl": "Ubuntu (WSL2), 8 cores, 23 GB",
+    "lean": "4.33.1 (commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6)",
+    "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean_checkout_head": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
+    "work_dir_wsl": "~/h12/b4_06 (logs, src, fixed, final) and ~/h12/rh (project)"
+  },
+  "inputs": {
+    "b4_06_package": "single H12-B4-06-HANDOFF-2026-11-23.zip NOT found on Drive; eight separate archives downloaded from Drive and CRC-checked (hashes in b4_06/src_zips and SHA256SUMS.txt); main proof read as Google Doc 1OL_RlECGHlJCRR4VzKCw_cPv-ncLEWXq",
+    "external_assessment": "../external_assessment_2026-11-23.md (pasted by owner; unverified opinion)"
+  },
+  "done": {
+    "A1_candidates": {
+      "ResonanceParameters.lean": "as received exit 1 (import after doc comment); fixed -> exit 0, KERNEL_CHECKED, 5 theorems",
+      "ExceptionalIndexGate.lean": "as received exit 1; after import fix a real proof error (quotient_upper_bound needs p>=3, sorryAx propagated); v2 one-line fix -> exit 0, KERNEL_CHECKED, 8 theorems",
+      "FrobeniusResidueInterface.lean": "as received exit 1; fixed -> exit 0, KERNEL_CHECKED, 2 theorems",
+      "FrobeniusNilpotent.lean": "exit 0 as received, KERNEL_CHECKED, 4 theorems",
+      "python_verifiers": "5 scripts PASS (finite checks, NUMERICALLY_CHECKED); first verify.py run failed only because of an -I isolation flag, rerun PASS"
+    },
+    "A1_universal_theorem": {
+      "file": "b4_06/lean/B4_06_Universal.lean",
+      "sha256": "d1de8f15d2f311b334e48b380e052722e80739162d20121599b2b8065d8d5bc7",
+      "theorem": "H12.B4.B4_06_first_resonance (p prime, p % 4 = 3): PCong p (p * lagA n1) (-(lagA n0)) and padicNorm p (lagA n0) = 1",
+      "status": "KERNEL_CHECKED",
+      "axioms": "[propext, Classical.choice, Quot.sound]",
+      "modules": {
+        "L1.lean": "9f7db200673e5f327c59511931bf661d54c8ce8b462e61135287ce602d70804f",
+        "L2.lean": "941e6c067ee83944c534835e672d061c358e8a3478c75a591ea89657af65c30a",
+        "L3a.lean": "380fadb593e96467320dc62aed8f7810ae64e153059d36da94c5271c353b6288",
+        "L3b.lean": "6adc5dd4a788c2106483e889bf665caac56a96d159b9a6da44e50acfabeb5c34"
+      },
+      "independent_audit": "skeptic agent, context-blind, verdict WEAKENED only in scope (formulation correct for lagA, not the headline PROOF.md theorem)",
+      "numeric_link": "lagA n == wp coefficient a_n for c=1, n=1..60 exact, 0 mismatches (NUMERICALLY_CHECKED, not in Lean)"
+    },
+    "B1_skeleton": "rh_mathematical_skeleton.md; paths to szRow_sizeKRel, MIstar2, miStar2_of_allTrue_alt_alt, wire4F_alt, published_results_eigen SOURCE_TRACED; most robust chains: miStar2_of_allTrue_alt_alt (19), wire4F_alt (11); no mathematical necessity proved for any node",
+    "A2_Zplus": "CONDITIONAL / NOT_APPLICABLE_WITH_CURRENT_ASSUMPTIONS; missing premise: uniform bound sup_i ||K_i||_op <= 1+kappa independent of r_i; HS-variant (Theorem A) only a constant, exponent unchanged",
+    "spot_checks": "7 Lean modules recompiled by coordinator by hash; A2 report vs source (FrameLA1, InputSG, ramification_linear_case_holds); B1 report on upper chain and szRow_sizeKRel file count"
+  },
+  "open_obligations": [
+    "Lean: lagA n = Laurent coefficient a_n of wp (Lagrange-Burmann + (v')^2 = 1 - v^4)",
+    "Lean: Step 5 (h_n = -a_n/(4n(4n-1)) + [u^n](log g - log f); p(p+1)h_n0 == p^2 binom(p^2+p,p) h_n1 == -a_n0 mod p)",
+    "Lean/independent: B4-05 two-source identity and iff criterion c^((p^2-1)/4) == -1",
+    "exact match of Rubinstein beta (m(z)=log(sigma/t)) with the Lean source beta (phO/cob/beMean/BHypCurve at 7cbf7a0c)",
+    "literature novelty of the congruence p a_n1 == -a_n0 (mod p) for lemniscatic wp coefficients",
+    "full B4 (all monomials, all degrees)",
+    "hash-level match of the 7.7 GB export with commit 7cbf7a0c",
+    "mathematical necessity of SizeKRel relations 1,2,4 (graph shows presence only)",
+    "Lemma Z+ operator part in Lean and novelty (direction closed)"
+  ],
+  "blockers": [
+    "H12-B4-06-HANDOFF-2026-11-23.zip absent on Drive (worked around with individual archives)",
+    "Firecrawl credits exhausted (no web search in this cycle): external verification news not re-checked"
+  ],
+  "decisions": [
+    "Z+ direction closed as conditional abstract lemma (stop rule of the contract)",
+    "No full Main build / no new export scan",
+    "B4-06 Lean work decomposed into 4 parallel lemma groups; every module recompiled by coordinator before use",
+    "Lean theorem scope stated as equation (7) for lagA only; not renamed to the headline theorem"
+  ],
+  "recommendation": "CONTINUE_WITH_SPECIFIC_TARGET",
+  "next_step": "novelty search (two independent vocabularies, boyko-novelty-assessment) for the congruence p*a_{n1} == -a_{n0} (mod p); close B4-06 as rediscovery if found; only then consider Lean for Step 5 / B4-05",
+  "files": {
+    "reports": ["b4_06_kernel_report.md", "rh_mathematical_skeleton.md", "zplus_applicability.md", "final_assessment.md"],
+    "supporting_outside_final_cycle": ["../rh_attribution.md", "../external_assessment_2026-11-23.md", "../verification/refgraph/"],
+    "checksums": "SHA256SUMS.txt",
+    "archive": "../H12-FINAL-CYCLE-01-2026-11-23.zip"
+  },
+  "recovery": {
+    "restore": [
+      "unzip H12-FINAL-CYCLE-01-2026-11-23.zip into RH-BRIDGE-01/",
+      "cd RH-BRIDGE-01/final_cycle && sha256sum -c SHA256SUMS.txt",
+      "WSL: cd ~/h12/rh && lake env lean <path>/final_cycle/b4_06/lean/B4_06_Universal.lean  # expect exit 0 and axioms [propext, Classical.choice, Quot.sound]",
+      "WSL: bash b4_06/scripts/final_verify.sh  (fresh copy + #print axioms for all chain lemmas)",
+      "python3 b4_06/scripts/lagrange_vs_ode.py 60  (0 mismatches)"
+    ],
+    "requires": "Lean 4.33.1 + Mathlib rev 0df444a3 (checkout ~/h12/rh with built cache); Windows long-path limits make native Windows build impossible, use WSL",
+    "gotchas": [
+      "Git Bash expands $ before WSL: put commands into script files and use MSYS_NO_PATHCONV=1",
+      "hooks block nohup and python3 -c",
+      "import Mathlib must be the first line of a Lean file (before any /-! -/ doc comment)"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+== files naming designS (word):
+./Development/AutomorphicArithmetic/CharacterBoxes/ObjCTrue.lean
+./Development/AutomorphicArithmetic/CharacterBoxes/DesignS.lean
+== declarations of designS / recS / recX / recT:
+./Formalism/SharpRestriction/InertJacobiLevels/ExtraRec.lean:61:def recX : D7 := withGatCB (large₂.withTw W).recS h0 rOf eOf B
+./Formalism/SharpRestriction/InertJacobiLevels/ExtraMods.lean:99:def LevGapD.recS (G : LevGapD D) : D7 := withSeen D (seenOf D G.errX) G.tau
+./Formalism/LocalToGlobal/ProjectiveLattices/RecPJThAllNeBot.lean:47:def recX : WeightAlgebra.Prov D (recB h.toLawsCore) T.G.P := fun j h1 h2 => recPJ h j ⟨h1, h2⟩
+./Formalism/HermitianCurvature/HermitianCurvatureProofs/RecText.lean:18:theorem recT : Formalism.FourierDecayAlt.RecursionText := by
+./Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemberPeriodAtTrivialPositionSpec.lean:171:abbrev recX : ThetaX D where
+./Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemberPeriodAtTrivialPositionSpec.lean:266:abbrev recT : ThetaTied D (recX hP hT hB hL hθ hψ Wf Tw Rc) where
+./Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/RecT.lean:14:def recT {R : Ranks} {H : Host R} {what₂ : Rows.Data R} {N : NData R H what₂} {A : NAut N} (T : GlobalTheory.RowTie.WDTie N A)
+./Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean:18:def recT : UpperTheory.GalStar.RecNotion := fun h rc => UpperTheory.Zero.LLC.IsRecT h rc
+./Development/AutomorphicArithmetic/Foundations/UnitarySphericalFixing/SatakeParameters/RecT.lean:4:def UpperTheory.One.M.recT : UpperTheory.GalStar.RecNotion := fun h rc => UpperTheory.Zero.LLC.IsRecT h rc
+./Development/AutomorphicArithmetic/CharacterBoxes/ObjCTrue.lean:30:theorem recS (QO : Par → ∀ D : D7, Obj D → Prop) (cT : ℝ → ℝ → ℝ) (hR : DC.MinkDiv → RecExP (fun κ => DQ.withQD (QO κ)))
+./Development/AutomorphicArithmetic/CharacterBoxes/DesignS.lean:21:theorem designS : ∀ (Q : Par → PtProp) (cT : ℝ → ℝ → ℝ) (la : ℝ) (G : FReq), 1 < la → DC.MinkDiv →
+== galoisLocalGlobalStrong_recParameter body:
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.TLiftK
+import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GaloisRepresentationsOfThetaLift
+
+namespace UpperTheory.Gal.Int
+
+theorem galoisLocalGlobalStrong_recParameter : UpperTheory.GalStar.Row0b recT := galoisRepresentations_of_thetaLift UpperTheory.TP.K.tLiftK
+
+end UpperTheory.Gal.Int
+== uses of designS in file(s):
+-- ./Development/AutomorphicArithmetic/CharacterBoxes/ObjCTrue.lean
+36:  exact designS (fun κ => ptO (DQ.withQD (QO κ))) cT la G hla hM (kitS _ la G hW hO)
+-- ./Development/AutomorphicArithmetic/CharacterBoxes/DesignS.lean
+21:theorem designS : ∀ (Q : Par → PtProp) (cT : ℝ → ℝ → ℝ) (la : ℝ) (G : FReq), 1 < la → DC.MinkDiv →

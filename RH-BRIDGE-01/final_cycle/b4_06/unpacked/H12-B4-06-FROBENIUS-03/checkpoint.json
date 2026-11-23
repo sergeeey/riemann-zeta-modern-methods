@@ -1,0 +1,9 @@
+{
+  "mission": "H12-B4-06-FROBENIUS-03",
+  "status": "PARTIAL",
+  "verified": ["24 exact finite-field tests p <= 199", "Mathematical derivation of truncated-Frobenius reduction"],
+  "unverified": ["Lean kernel compilation", "Formal proof of uniform truncated-Frobenius coefficient extraction", "Formal proof of exceptional p-adic coefficient", "Compatibility with pinned B4 code"],
+  "next": "Run Lean and formalize Frobenius in truncated power series over ZMod p; then exceptional factor decomposition",
+  "no_sorry": true,
+  "no_custom_axioms": true
+}

@@ -1,0 +1,13 @@
+files 175187
+declared names 759411
+graph built 110
+szRow_sizeKRel avoiding allChi -> rhOfAll(1) > rh_of_every(1) > rh_of_right(1) > intro(4) > KerEntTied(1) > KerRead(2) > KerAt(5) > recB(3) > recX(3) > recS(2) > designS(1) > szRow_numAt(1) > szRow_sizesAt(1) > sizes_sizeKRel(1) > szRow_sizeKRel(1)
+szRow_sizeKRel avoiding everyCharacter_of_row -> rhOfAll(1) > allChi(1) > everyCharacter(1) > galoisLocalGlobalStrong_recParameter(1) > recT(5) > recX(3) > recS(2) > designS(1) > szRow_numAt(1) > szRow_sizesAt(1) > sizes_sizeKRel(1) > szRow_sizeKRel(1)
+szRow_sizeKRel avoiding every_character_of_theta_integrals_local_matching -> rhOfAll(1) > allChi(1) > everyCharacter(1) > galoisLocalGlobalStrong_recParameter(1) > recT(5) > recX(3) > recS(2) > designS(1) > szRow_numAt(1) > szRow_sizesAt(1) > sizes_sizeKRel(1) > szRow_sizeKRel(1)
+szRow_sizeKRel avoiding nonempty_hyps_definite_side_of_closed_bound -> rhOfAll(1) > allChi(1) > everyCharacter(1) > galoisLocalGlobalStrong_recParameter(1) > recT(5) > recX(3) > recS(2) > designS(1) > szRow_numAt(1) > szRow_sizesAt(1) > sizes_sizeKRel(1) > szRow_sizeKRel(1)
+szRow_sizeKRel avoiding szRow_numAt -> rhOfAll(1) > allChi(1) > everyCharacter(1) > everyCharacter_of_row(1) > every_character_of_literature_of_vWin(1) > topCovolSlim2_use_alt_alt(1) > topCovolG_alt_alt(1) > lowDef_of_gram_of_anchor(1) > covering_low_defect_alt(1) > weight_dimension_log_bound'(1) > parameters_scale_rank_gap_bounds(3) > dataNW_all_linked_good_members(1) > dataNW_of_isGoodE_of_isLinked(1) > val_sizes_at_alt(1) > szRow_sizesAt(1) > sizes_sizeKRel(1) > szRow_sizeKRel(1)
+SizeKRel avoiding sizes_sizeKRel -> rhOfAll(1) > rh_of_every(1) > rh_of_right(1) > intro(4) > PreX(1) > spread_le(3) > SizesAt(5) > SizeKRel(1)
+MIstar2 avoiding every_character_of_theta_integrals_local_matching -> rhOfAll(1) > rh_of_every(1) > rh_of_right(1) > ring(5) > rep_algebraMap(2) > rep_of_mem(4) > evR_eq(4) > IsNatural(3) > CubeIn(1) > Open(3) > MultiplicityCondition'(1) > MIstar2(1)
+MIstar2 avoiding every_character_of_green_v_win -> rhOfAll(1) > allChi(1) > everyCharacter(1) > everyCharacter_of_row(1) > every_character_of_literature_of_vWin(1) > every_character_of_theta_integrals_local_matching(1) > nonempty_hyps_definite_side_of_closed_bound(1) > DefiniteSideCondition(1) > CovolumeOntoIsometryConditions(1) > MIstar2(1)
+done 122
+exit 0

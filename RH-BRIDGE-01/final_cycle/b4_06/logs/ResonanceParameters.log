@@ -1,0 +1,7 @@
+--- compile as-is: lake env lean /home/serge/h12/b4_06/src/ResonanceParameters.lean
+/home/serge/h12/b4_06/src/ResonanceParameters.lean:11:0: error: invalid 'import' command, it must be used in the beginning of the file
+
+real	0m1.045s
+user	0m0.608s
+sys	0m0.488s
+EXIT_CODE_AS_IS=1

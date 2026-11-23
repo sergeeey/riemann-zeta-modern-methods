@@ -1,0 +1,2 @@
+--- compile: lake env lean /home/serge/h12/b4_06/fixed/ExceptionalIndexGate.v2.lean
+EXIT_CODE_V2=0

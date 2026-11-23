@@ -1,0 +1,33 @@
+Python 3.12.3
+=== H12-PADIC-B4-06/verify.py (2026-11-23T06:29:25Z)
+Traceback (most recent call last):
+  File "/home/serge/h12/b4_06/verif/H12-PADIC-B4-06/verify.py", line 101, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/serge/h12/b4_06/verif/H12-PADIC-B4-06/verify.py", line 82, in main
+    from b4_04_verify import m_coefficients
+ModuleNotFoundError: No module named 'b4_04_verify'
+EXIT=1
+=== H12-B4-06-LEAN-STEP2-4/verification/exact_test.py (2026-11-23T06:29:25Z)
+PASS: valuation uniqueness and p*phi[q]=-1 for 14 primes p<=103
+PASS: p*a[n1]=-a[n0] mod p for 3 residue 1
+PASS: p*a[n1]=-a[n0] mod p for 7 residue 4
+PASS: p*a[n1]=-a[n0] mod p for 11 residue 10
+PASS: p*a[n1]=-a[n0] mod p for 19 residue 12
+PASS: p*a[n1]=-a[n0] mod p for 23 residue 21
+PASS: p*a[n1]=-a[n0] mod p for 31 residue 13
+EXIT=0
+=== H12-B4-06-ARITHMETIC-GATE-02/verification/check_index_gate.py (2026-11-23T06:29:28Z)
+PASS: 24 primes through p=199, all denominator hits, base-p carry, valuations and exceptional residues
+Largest checked resonance n1: 9950
+EXIT=0
+=== H12-B4-06-FROBENIUS-03/check_frobenius.py (2026-11-23T06:29:28Z)
+PASS: Frobenius exponent identity and normalized coefficient congruence for 24 primes through 199
+Cases: [(3, 2, 1), (7, 3, 4), (11, 1, 10), (19, 7, 12), (23, 2, 21), (31, 18, 13), (43, 13, 30), (47, 29, 18)]
+EXIT=0
+=== H12-B4-06-FROBENIUS-04/check_truncated_frobenius.py (2026-11-23T06:29:28Z)
+{"status": "PASS", "prime_count": 24, "random_examples_per_prime": 5, "total_finite_ring_checks": 120, "seed": 120618, "not_a_universal_proof": true}
+EXIT=0
+=== RERUN H12-PADIC-B4-06/verify.py (no -I, cwd=package copy) 2026-11-23T06:29:54Z
+PASS: 19 primes p=3 mod 4; first 8 inversion vs ODE; 6 full residue tests
+EXIT=0

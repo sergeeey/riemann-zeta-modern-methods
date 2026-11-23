@@ -1,0 +1,4 @@
+PASS: exact B and Q counterexamples, parameter noncomparability, necessity of hypotheses, slope improvement checks
+PASS: 20 full slope-error comparisons including denominator 1-sqrt(e)
+EXIT_STATUS=0
+Wolfram independent checks: eta_old=99/10201, HS(old)=1, HS(new)=4, trace(new)=120; symbolic quadratic root confirmed.

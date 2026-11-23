@@ -1,0 +1,22 @@
+--- compile+axioms: lake env lean /home/serge/h12/b4_06/fixed/ExceptionalIndexGate.axioms.lean
+/home/serge/h12/b4_06/fixed/ExceptionalIndexGate.axioms.lean:62:2: error: linarith failed to find a contradiction
+r j d : ℕ
+hj : j ≤ n1 r
+h : 4 * j + 1 = d * p r
+hmul : 4 * n1 r = p r * (p r + 1)
+hnot : ¬d ≤ p r + 1
+hgt : p r + 2 ≤ d
+hp : 0 < p r
+hmul_le : (p r + 2) * p r ≤ d * p r
+hleft : 4 * j + 1 ≤ 4 * n1 r + 1
+⊢ False
+failed
+'H12.B4.resonance_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.divisor_mod_four' depends on axioms: [propext, Quot.sound]
+'H12.B4.quotient_below_or_exceptional' depends on axioms: [propext, Quot.sound]
+'H12.B4.divisor_equals_p_implies_exceptional' depends on axioms: [propext, Quot.sound]
+'H12.B4.quotient_upper_bound' depends on axioms: [propext, sorryAx]
+'H12.B4.only_exceptional_divisor_or_small' depends on axioms: [propext, sorryAx, Quot.sound]
+'H12.B4.carry_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.denominator_index_digit' depends on axioms: [propext, Quot.sound]
+EXIT_CODE_AXIOMS=1

@@ -1,0 +1,7 @@
+--- compile as-is: lake env lean /home/serge/h12/b4_06/src/FrobeniusResidueInterface.lean
+/home/serge/h12/b4_06/src/FrobeniusResidueInterface.lean:8:0: error: invalid 'import' command, it must be used in the beginning of the file
+
+real	0m1.036s
+user	0m0.582s
+sys	0m0.503s
+EXIT_CODE_AS_IS=1

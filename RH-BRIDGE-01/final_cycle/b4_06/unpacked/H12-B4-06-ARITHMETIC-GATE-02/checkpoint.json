@@ -1,0 +1,11 @@
+{
+  "project": "H12-B4-06-ARITHMETIC-GATE-02",
+  "status": "PARTIAL",
+  "kernel_checked": false,
+  "lean_available": false,
+  "math": "uniqueness of negative p-adic valuation and residue of exceptional Phi coefficient established as paper argument",
+  "finite_checks": "24 primes p<=199, all j<=n1, exact, PASS",
+  "lean_candidate": "ExceptionalIndexGate.lean",
+  "next": "Run lake env lean ExceptionalIndexGate.lean in existing H12 worktree; then Kummer/Wilson and power-series formalization",
+  "source": "H12-PADIC-B4-06-PROOF.md (Google Drive, 2026-11-22)"
+}

@@ -1,0 +1,6 @@
+--- compile+axioms: lake env lean /home/serge/h12/b4_06/fixed/FrobeniusNilpotent.axioms.lean
+'H12.B4.frobenius_one_add_of_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.frobenius_large_power_of_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.frobenius_inverse_truncation' depends on axioms: [propext]
+'H12.B4.frobenius_step4_interface' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT_CODE_AXIOMS=0

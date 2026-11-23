@@ -1,0 +1,222 @@
+{
+  "scope": "Finite field truncation only; no Lean/kernel certification",
+  "checks": [
+    {
+      "p": 3,
+      "n0": 1,
+      "phi_n0": 1,
+      "a_n0": 2,
+      "p_a_n1": 1,
+      "low_coefficient": 1,
+      "high_coefficient": 1
+    },
+    {
+      "p": 7,
+      "n0": 2,
+      "phi_n0": 5,
+      "a_n0": 3,
+      "p_a_n1": 4,
+      "low_coefficient": 5,
+      "high_coefficient": 5
+    },
+    {
+      "p": 11,
+      "n0": 3,
+      "phi_n0": 6,
+      "a_n0": 1,
+      "p_a_n1": 10,
+      "low_coefficient": 6,
+      "high_coefficient": 6
+    },
+    {
+      "p": 19,
+      "n0": 5,
+      "phi_n0": 13,
+      "a_n0": 7,
+      "p_a_n1": 12,
+      "low_coefficient": 13,
+      "high_coefficient": 13
+    },
+    {
+      "p": 23,
+      "n0": 6,
+      "phi_n0": 1,
+      "a_n0": 2,
+      "p_a_n1": 21,
+      "low_coefficient": 1,
+      "high_coefficient": 1
+    },
+    {
+      "p": 31,
+      "n0": 8,
+      "phi_n0": 9,
+      "a_n0": 18,
+      "p_a_n1": 13,
+      "low_coefficient": 9,
+      "high_coefficient": 9
+    },
+    {
+      "p": 43,
+      "n0": 11,
+      "phi_n0": 28,
+      "a_n0": 13,
+      "p_a_n1": 30,
+      "low_coefficient": 28,
+      "high_coefficient": 28
+    },
+    {
+      "p": 47,
+      "n0": 12,
+      "phi_n0": 38,
+      "a_n0": 29,
+      "p_a_n1": 18,
+      "low_coefficient": 38,
+      "high_coefficient": 38
+    },
+    {
+      "p": 59,
+      "n0": 15,
+      "phi_n0": 22,
+      "a_n0": 44,
+      "p_a_n1": 15,
+      "low_coefficient": 22,
+      "high_coefficient": 22
+    },
+    {
+      "p": 67,
+      "n0": 17,
+      "phi_n0": 7,
+      "a_n0": 14,
+      "p_a_n1": 53,
+      "low_coefficient": 7,
+      "high_coefficient": 7
+    },
+    {
+      "p": 71,
+      "n0": 18,
+      "phi_n0": 54,
+      "a_n0": 37,
+      "p_a_n1": 34,
+      "low_coefficient": 54,
+      "high_coefficient": 54
+    },
+    {
+      "p": 79,
+      "n0": 20,
+      "phi_n0": 37,
+      "a_n0": 74,
+      "p_a_n1": 5,
+      "low_coefficient": 37,
+      "high_coefficient": 37
+    },
+    {
+      "p": 83,
+      "n0": 21,
+      "phi_n0": 4,
+      "a_n0": 8,
+      "p_a_n1": 75,
+      "low_coefficient": 4,
+      "high_coefficient": 4
+    },
+    {
+      "p": 103,
+      "n0": 26,
+      "phi_n0": 80,
+      "a_n0": 57,
+      "p_a_n1": 46,
+      "low_coefficient": 80,
+      "high_coefficient": 80
+    },
+    {
+      "p": 107,
+      "n0": 27,
+      "phi_n0": 86,
+      "a_n0": 65,
+      "p_a_n1": 42,
+      "low_coefficient": 86,
+      "high_coefficient": 86
+    },
+    {
+      "p": 127,
+      "n0": 32,
+      "phi_n0": 123,
+      "a_n0": 119,
+      "p_a_n1": 8,
+      "low_coefficient": 123,
+      "high_coefficient": 123
+    },
+    {
+      "p": 131,
+      "n0": 33,
+      "phi_n0": 70,
+      "a_n0": 9,
+      "p_a_n1": 122,
+      "low_coefficient": 70,
+      "high_coefficient": 70
+    },
+    {
+      "p": 139,
+      "n0": 35,
+      "phi_n0": 136,
+      "a_n0": 133,
+      "p_a_n1": 6,
+      "low_coefficient": 136,
+      "high_coefficient": 136
+    },
+    {
+      "p": 151,
+      "n0": 38,
+      "phi_n0": 91,
+      "a_n0": 31,
+      "p_a_n1": 120,
+      "low_coefficient": 91,
+      "high_coefficient": 91
+    },
+    {
+      "p": 163,
+      "n0": 41,
+      "phi_n0": 20,
+      "a_n0": 40,
+      "p_a_n1": 123,
+      "low_coefficient": 20,
+      "high_coefficient": 20
+    },
+    {
+      "p": 167,
+      "n0": 42,
+      "phi_n0": 89,
+      "a_n0": 11,
+      "p_a_n1": 156,
+      "low_coefficient": 89,
+      "high_coefficient": 89
+    },
+    {
+      "p": 179,
+      "n0": 45,
+      "phi_n0": 33,
+      "a_n0": 66,
+      "p_a_n1": 113,
+      "low_coefficient": 33,
+      "high_coefficient": 33
+    },
+    {
+      "p": 191,
+      "n0": 48,
+      "phi_n0": 178,
+      "a_n0": 165,
+      "p_a_n1": 26,
+      "low_coefficient": 178,
+      "high_coefficient": 178
+    },
+    {
+      "p": 199,
+      "n0": 50,
+      "phi_n0": 198,
+      "a_n0": 197,
+      "p_a_n1": 2,
+      "low_coefficient": 198,
+      "high_coefficient": 198
+    }
+  ],
+  "count": 24
+}

@@ -1,0 +1,2390 @@
+{
+ "root": "rhOfAll",
+ "strict_reachable": 252121,
+ "total_declared_names": 759411,
+ "dominator_iterations": 3,
+ "targets": {
+  "szRow_sizeKRel": {
+   "bfs_path": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "open0_of_unitary_group_hypotheses",
+    "open_orbit_of_unramified_exponents_alt",
+    "real_group_inputs_combined_alt_alt",
+    "at_row_hLamP_alt_alt",
+    "evP_params",
+    "szRow_numAt",
+    "szRow_sizesAt",
+    "sizes_sizeKRel",
+    "szRow_sizeKRel"
+   ],
+   "dominator_chain": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "szRow_numAt",
+    "szRow_sizesAt",
+    "sizes_sizeKRel",
+    "szRow_sizeKRel"
+   ],
+   "dominated_subtree_size": {
+    "rhOfAll": 252121,
+    "allChi": 220879,
+    "everyCharacter": 220878,
+    "everyCharacter_of_row": 205127,
+    "every_character_of_literature_of_vWin": 172181,
+    "every_character_of_theta_integrals_local_matching": 115739,
+    "nonempty_hyps_definite_side_of_closed_bound": 97799,
+    "szRow_numAt": 121,
+    "szRow_sizesAt": 30,
+    "sizes_sizeKRel": 4,
+    "szRow_sizeKRel": 2
+   },
+   "dominators_not_on_bfs_path": [],
+   "edge_evidence": [
+    {
+     "A": "rhOfAll",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "rhOfAll",
+     "B": "allChi",
+     "B_file": "Supplements/Kernels/MainTheorems.lean",
+     "B_decl": "allChi",
+     "tokens_in_A_body": [
+      "allChi"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "allChi",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "allChi",
+     "B": "everyCharacter",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "everyCharacter",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "B": "everyCharacter_of_row",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "everyCharacter_of_row",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "B": "every_character_of_literature_of_vWin",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "tokens_in_A_body": [
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_literature_of_vWin",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "A_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "B": "every_character_of_theta_integrals_local_matching",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "every_character_of_theta_integrals_local_matching",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_theta_integrals_local_matching",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "every_character_of_theta_integrals_local_matching",
+     "B": "nonempty_hyps_definite_side_of_closed_bound",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "nonempty_hyps_definite_side_of_closed_bound",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "B": "open0_of_unitary_group_hypotheses",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "open0_of_unitary_group_hypotheses",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "A_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "B": "open_orbit_of_unramified_exponents_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "open_orbit_of_unramified_exponents_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "open_orbit_of_unramified_exponents_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "A_decl": "open_orbit_of_unramified_exponents_alt",
+     "B": "real_group_inputs_combined_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "B_decl": "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "real_group_inputs_combined_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "A_decl": "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt",
+     "B": "at_row_hLamP_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "B_decl": "at_row_hLamP_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fc.RL.at_row_hLamP_alt_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "at_row_hLamP_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "A_decl": "at_row_hLamP_alt_alt",
+     "B": "evP_params",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/RealGroupInputsCombined.lean",
+     "B_decl": "evP_params",
+     "tokens_in_A_body": [
+      "LamLinked.evP_params"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "evP_params",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/RealGroupInputsCombined.lean",
+     "A_decl": "evP_params",
+     "B": "szRow_numAt",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowNumAt.lean",
+     "B_decl": "szRow_numAt",
+     "tokens_in_A_body": [
+      "szRow_numAt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "szRow_numAt",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowNumAt.lean",
+     "A_decl": "szRow_numAt",
+     "B": "szRow_sizesAt",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowElevenLeSplitBound.lean",
+     "B_decl": "szRow_sizesAt",
+     "tokens_in_A_body": [
+      "szRow_sizesAt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "szRow_sizesAt",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowElevenLeSplitBound.lean",
+     "A_decl": "szRow_sizesAt",
+     "B": "sizes_sizeKRel",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowSizeKRelStatement.lean",
+     "B_decl": "_root_.GlobalTheory.T.sizes_sizeKRel",
+     "tokens_in_A_body": [
+      "GlobalTheory.T.sizes_sizeKRel"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "sizes_sizeKRel",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowSizeKRelStatement.lean",
+     "A_decl": "_root_.GlobalTheory.T.sizes_sizeKRel",
+     "B": "szRow_sizeKRel",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowSizeKRel.lean",
+     "B_decl": "szRow_sizeKRel",
+     "tokens_in_A_body": [
+      "GlobalTheory.EX.szRow_sizeKRel"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    }
+   ],
+   "mid_graph_robustness": {
+    "allChi": "BYPASS_EXISTS_in_mid_graph",
+    "everyCharacter": "BYPASS_EXISTS_in_mid_graph",
+    "everyCharacter_of_row": "BYPASS_EXISTS_in_mid_graph",
+    "every_character_of_literature_of_vWin": "BYPASS_EXISTS_in_mid_graph",
+    "every_character_of_theta_integrals_local_matching": "BYPASS_EXISTS_in_mid_graph",
+    "nonempty_hyps_definite_side_of_closed_bound": "BYPASS_EXISTS_in_mid_graph",
+    "szRow_numAt": "BYPASS_EXISTS_in_mid_graph",
+    "szRow_sizesAt": "still_dominator_in_mid_graph",
+    "sizes_sizeKRel": "still_dominator_in_mid_graph"
+   }
+  },
+  "sizes_sizeKRel": {
+   "bfs_path": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "open0_of_unitary_group_hypotheses",
+    "open_orbit_of_unramified_exponents_alt",
+    "real_group_inputs_combined_alt_alt",
+    "at_row_hLamP_alt_alt",
+    "evP_params",
+    "szRow_numAt",
+    "szRow_sizesAt",
+    "sizes_sizeKRel"
+   ],
+   "dominator_chain": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "szRow_numAt",
+    "szRow_sizesAt",
+    "sizes_sizeKRel"
+   ],
+   "dominated_subtree_size": {
+    "rhOfAll": 252121,
+    "allChi": 220879,
+    "everyCharacter": 220878,
+    "everyCharacter_of_row": 205127,
+    "every_character_of_literature_of_vWin": 172181,
+    "every_character_of_theta_integrals_local_matching": 115739,
+    "nonempty_hyps_definite_side_of_closed_bound": 97799,
+    "szRow_numAt": 121,
+    "szRow_sizesAt": 30,
+    "sizes_sizeKRel": 4
+   },
+   "dominators_not_on_bfs_path": [],
+   "edge_evidence": [
+    {
+     "A": "rhOfAll",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "rhOfAll",
+     "B": "allChi",
+     "B_file": "Supplements/Kernels/MainTheorems.lean",
+     "B_decl": "allChi",
+     "tokens_in_A_body": [
+      "allChi"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "allChi",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "allChi",
+     "B": "everyCharacter",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "everyCharacter",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "B": "everyCharacter_of_row",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "everyCharacter_of_row",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "B": "every_character_of_literature_of_vWin",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "tokens_in_A_body": [
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_literature_of_vWin",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "A_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "B": "every_character_of_theta_integrals_local_matching",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "every_character_of_theta_integrals_local_matching",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_theta_integrals_local_matching",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "every_character_of_theta_integrals_local_matching",
+     "B": "nonempty_hyps_definite_side_of_closed_bound",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "nonempty_hyps_definite_side_of_closed_bound",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "B": "open0_of_unitary_group_hypotheses",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "open0_of_unitary_group_hypotheses",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "A_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "B": "open_orbit_of_unramified_exponents_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "open_orbit_of_unramified_exponents_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "open_orbit_of_unramified_exponents_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "A_decl": "open_orbit_of_unramified_exponents_alt",
+     "B": "real_group_inputs_combined_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "B_decl": "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "real_group_inputs_combined_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "A_decl": "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt",
+     "B": "at_row_hLamP_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "B_decl": "at_row_hLamP_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fc.RL.at_row_hLamP_alt_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "at_row_hLamP_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "A_decl": "at_row_hLamP_alt_alt",
+     "B": "evP_params",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/RealGroupInputsCombined.lean",
+     "B_decl": "evP_params",
+     "tokens_in_A_body": [
+      "LamLinked.evP_params"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "evP_params",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/RealGroupInputsCombined.lean",
+     "A_decl": "evP_params",
+     "B": "szRow_numAt",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowNumAt.lean",
+     "B_decl": "szRow_numAt",
+     "tokens_in_A_body": [
+      "szRow_numAt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "szRow_numAt",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowNumAt.lean",
+     "A_decl": "szRow_numAt",
+     "B": "szRow_sizesAt",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowElevenLeSplitBound.lean",
+     "B_decl": "szRow_sizesAt",
+     "tokens_in_A_body": [
+      "szRow_sizesAt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "szRow_sizesAt",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowElevenLeSplitBound.lean",
+     "A_decl": "szRow_sizesAt",
+     "B": "sizes_sizeKRel",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowSizeKRelStatement.lean",
+     "B_decl": "_root_.GlobalTheory.T.sizes_sizeKRel",
+     "tokens_in_A_body": [
+      "GlobalTheory.T.sizes_sizeKRel"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    }
+   ],
+   "mid_graph_robustness": {
+    "allChi": "BYPASS_EXISTS_in_mid_graph",
+    "everyCharacter": "BYPASS_EXISTS_in_mid_graph",
+    "everyCharacter_of_row": "BYPASS_EXISTS_in_mid_graph",
+    "every_character_of_literature_of_vWin": "BYPASS_EXISTS_in_mid_graph",
+    "every_character_of_theta_integrals_local_matching": "BYPASS_EXISTS_in_mid_graph",
+    "nonempty_hyps_definite_side_of_closed_bound": "BYPASS_EXISTS_in_mid_graph",
+    "szRow_numAt": "BYPASS_EXISTS_in_mid_graph",
+    "szRow_sizesAt": "still_dominator_in_mid_graph"
+   }
+  },
+  "SizeKRel": {
+   "bfs_path": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "open0_of_unitary_group_hypotheses",
+    "open_orbit_of_unramified_exponents_alt",
+    "real_group_inputs_combined_alt_alt",
+    "at_row_hLamP_alt_alt",
+    "evP_params",
+    "szRow_numAt",
+    "szRow_sizesAt",
+    "sizes_sizeKRel",
+    "SizeKRel"
+   ],
+   "dominator_chain": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "szRow_numAt",
+    "szRow_sizesAt",
+    "sizes_sizeKRel",
+    "SizeKRel"
+   ],
+   "dominated_subtree_size": {
+    "rhOfAll": 252121,
+    "allChi": 220879,
+    "everyCharacter": 220878,
+    "everyCharacter_of_row": 205127,
+    "every_character_of_literature_of_vWin": 172181,
+    "every_character_of_theta_integrals_local_matching": 115739,
+    "nonempty_hyps_definite_side_of_closed_bound": 97799,
+    "szRow_numAt": 121,
+    "szRow_sizesAt": 30,
+    "sizes_sizeKRel": 4,
+    "SizeKRel": 1
+   },
+   "dominators_not_on_bfs_path": [],
+   "edge_evidence": [
+    {
+     "A": "rhOfAll",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "rhOfAll",
+     "B": "allChi",
+     "B_file": "Supplements/Kernels/MainTheorems.lean",
+     "B_decl": "allChi",
+     "tokens_in_A_body": [
+      "allChi"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "allChi",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "allChi",
+     "B": "everyCharacter",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "everyCharacter",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "B": "everyCharacter_of_row",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "everyCharacter_of_row",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "B": "every_character_of_literature_of_vWin",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "tokens_in_A_body": [
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_literature_of_vWin",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "A_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "B": "every_character_of_theta_integrals_local_matching",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "every_character_of_theta_integrals_local_matching",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_theta_integrals_local_matching",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "every_character_of_theta_integrals_local_matching",
+     "B": "nonempty_hyps_definite_side_of_closed_bound",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "nonempty_hyps_definite_side_of_closed_bound",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "B": "open0_of_unitary_group_hypotheses",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "open0_of_unitary_group_hypotheses",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "A_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "B": "open_orbit_of_unramified_exponents_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "open_orbit_of_unramified_exponents_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "open_orbit_of_unramified_exponents_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "A_decl": "open_orbit_of_unramified_exponents_alt",
+     "B": "real_group_inputs_combined_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "B_decl": "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "real_group_inputs_combined_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "A_decl": "_root_.GlobalTheory.T.real_group_inputs_combined_alt_alt",
+     "B": "at_row_hLamP_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "B_decl": "at_row_hLamP_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fc.RL.at_row_hLamP_alt_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "at_row_hLamP_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean",
+     "A_decl": "at_row_hLamP_alt_alt",
+     "B": "evP_params",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/RealGroupInputsCombined.lean",
+     "B_decl": "evP_params",
+     "tokens_in_A_body": [
+      "LamLinked.evP_params"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "evP_params",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/RealGroupInputsCombined.lean",
+     "A_decl": "evP_params",
+     "B": "szRow_numAt",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowNumAt.lean",
+     "B_decl": "szRow_numAt",
+     "tokens_in_A_body": [
+      "szRow_numAt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "szRow_numAt",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowNumAt.lean",
+     "A_decl": "szRow_numAt",
+     "B": "szRow_sizesAt",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowElevenLeSplitBound.lean",
+     "B_decl": "szRow_sizesAt",
+     "tokens_in_A_body": [
+      "szRow_sizesAt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "szRow_sizesAt",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowElevenLeSplitBound.lean",
+     "A_decl": "szRow_sizesAt",
+     "B": "sizes_sizeKRel",
+     "B_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowSizeKRelStatement.lean",
+     "B_decl": "_root_.GlobalTheory.T.sizes_sizeKRel",
+     "tokens_in_A_body": [
+      "GlobalTheory.T.sizes_sizeKRel"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "sizes_sizeKRel",
+     "A_file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowSizeKRelStatement.lean",
+     "A_decl": "_root_.GlobalTheory.T.sizes_sizeKRel",
+     "B": "SizeKRel",
+     "B_file": "Formalism/SharpRestriction/ElevenLe.lean",
+     "B_decl": "SizeKRel",
+     "tokens_in_A_body": [
+      "SizeKRel"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    }
+   ],
+   "mid_graph_robustness": {
+    "allChi": "BYPASS_EXISTS_in_mid_graph",
+    "everyCharacter": "BYPASS_EXISTS_in_mid_graph",
+    "everyCharacter_of_row": "BYPASS_EXISTS_in_mid_graph",
+    "every_character_of_literature_of_vWin": "BYPASS_EXISTS_in_mid_graph",
+    "every_character_of_theta_integrals_local_matching": "BYPASS_EXISTS_in_mid_graph",
+    "nonempty_hyps_definite_side_of_closed_bound": "BYPASS_EXISTS_in_mid_graph",
+    "szRow_numAt": "BYPASS_EXISTS_in_mid_graph",
+    "szRow_sizesAt": "BYPASS_EXISTS_in_mid_graph",
+    "sizes_sizeKRel": "BYPASS_EXISTS_in_mid_graph"
+   }
+  },
+  "MIstar2": {
+   "bfs_path": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "every_character_of_green_v_win",
+    "DefiniteSideCondition",
+    "CovolumeOntoIsometryConditions",
+    "MIstar2"
+   ],
+   "dominator_chain": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "MIstar2"
+   ],
+   "dominated_subtree_size": {
+    "rhOfAll": 252121,
+    "allChi": 220879,
+    "everyCharacter": 220878,
+    "everyCharacter_of_row": 205127,
+    "every_character_of_literature_of_vWin": 172181,
+    "every_character_of_theta_integrals_local_matching": 115739,
+    "MIstar2": 1
+   },
+   "dominators_not_on_bfs_path": [],
+   "edge_evidence": [
+    {
+     "A": "rhOfAll",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "rhOfAll",
+     "B": "allChi",
+     "B_file": "Supplements/Kernels/MainTheorems.lean",
+     "B_decl": "allChi",
+     "tokens_in_A_body": [
+      "allChi"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "allChi",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "allChi",
+     "B": "everyCharacter",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "everyCharacter",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "B": "everyCharacter_of_row",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "everyCharacter_of_row",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "B": "every_character_of_literature_of_vWin",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "tokens_in_A_body": [
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_literature_of_vWin",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "A_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "B": "every_character_of_theta_integrals_local_matching",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "every_character_of_theta_integrals_local_matching",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_theta_integrals_local_matching",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "every_character_of_theta_integrals_local_matching",
+     "B": "every_character_of_green_v_win",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+     "B_decl": "UpperTheory.Top.every_character_of_green_v_win",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Top.every_character_of_green_v_win"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_green_v_win",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+     "A_decl": "UpperTheory.Top.every_character_of_green_v_win",
+     "B": "DefiniteSideCondition",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DefiniteSideCondition.lean",
+     "B_decl": "DefiniteSideCondition",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fc.DefiniteSideCondition"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "DefiniteSideCondition",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DefiniteSideCondition.lean",
+     "A_decl": "DefiniteSideCondition",
+     "B": "CovolumeOntoIsometryConditions",
+     "B_file": "Formalism/LocalToGlobal/IndefiniteReal/BaseLiftsPackageOfPrimitiveLinks.lean",
+     "B_decl": "CovolumeOntoIsometryConditions",
+     "tokens_in_A_body": [
+      "CovolumeOntoIsometryConditions"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "CovolumeOntoIsometryConditions",
+     "A_file": "Formalism/LocalToGlobal/IndefiniteReal/BaseLiftsPackageOfPrimitiveLinks.lean",
+     "A_decl": "CovolumeOntoIsometryConditions",
+     "B": "MIstar2",
+     "B_file": "Formalism/LocalToGlobal/IndefiniteReal/IsometricPeriodsOfUnitHypotheses.lean",
+     "B_decl": "MIstar2",
+     "tokens_in_A_body": [
+      "MIstar2"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    }
+   ],
+   "mid_graph_robustness": {
+    "allChi": "BYPASS_EXISTS_in_mid_graph",
+    "everyCharacter": "BYPASS_EXISTS_in_mid_graph",
+    "everyCharacter_of_row": "BYPASS_EXISTS_in_mid_graph",
+    "every_character_of_literature_of_vWin": "BYPASS_EXISTS_in_mid_graph",
+    "every_character_of_theta_integrals_local_matching": "BYPASS_EXISTS_in_mid_graph"
+   }
+  },
+  "miStar2_of_allTrue_alt_alt": {
+   "bfs_path": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "open0_of_unitary_group_hypotheses",
+    "open_orbit_of_unramified_exponents_alt",
+    "main_theorem_published_inputs_third_alt_alt",
+    "miStarRow_alt_alt",
+    "main_theorem_published_inputs_variant_alt_alt",
+    "miStarRowClosing_alt_alt",
+    "main_theorem_published_results_final_alt_alt",
+    "miStar_row_alt_alt",
+    "main_theorem_from_published_results_alt_alt_alt_alt_alt",
+    "miAt_of_truePack_alt_alt",
+    "main_theorem_from_published_results_alt_alt_alt_alt",
+    "miStar2_of_allTrue_alt_alt"
+   ],
+   "dominator_chain": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "open0_of_unitary_group_hypotheses",
+    "open_orbit_of_unramified_exponents_alt",
+    "main_theorem_published_inputs_third_alt_alt",
+    "miStarRow_alt_alt",
+    "main_theorem_published_inputs_variant_alt_alt",
+    "miStarRowClosing_alt_alt",
+    "main_theorem_published_results_final_alt_alt",
+    "miStar_row_alt_alt",
+    "main_theorem_from_published_results_alt_alt_alt_alt_alt",
+    "miAt_of_truePack_alt_alt",
+    "main_theorem_from_published_results_alt_alt_alt_alt",
+    "miStar2_of_allTrue_alt_alt"
+   ],
+   "dominated_subtree_size": {
+    "rhOfAll": 252121,
+    "allChi": 220879,
+    "everyCharacter": 220878,
+    "everyCharacter_of_row": 205127,
+    "every_character_of_literature_of_vWin": 172181,
+    "every_character_of_theta_integrals_local_matching": 115739,
+    "nonempty_hyps_definite_side_of_closed_bound": 97799,
+    "open0_of_unitary_group_hypotheses": 5151,
+    "open_orbit_of_unramified_exponents_alt": 5150,
+    "main_theorem_published_inputs_third_alt_alt": 4686,
+    "miStarRow_alt_alt": 4685,
+    "main_theorem_published_inputs_variant_alt_alt": 4507,
+    "miStarRowClosing_alt_alt": 4506,
+    "main_theorem_published_results_final_alt_alt": 4445,
+    "miStar_row_alt_alt": 4444,
+    "main_theorem_from_published_results_alt_alt_alt_alt_alt": 4180,
+    "miAt_of_truePack_alt_alt": 4178,
+    "main_theorem_from_published_results_alt_alt_alt_alt": 4177,
+    "miStar2_of_allTrue_alt_alt": 4176
+   },
+   "dominators_not_on_bfs_path": [],
+   "edge_evidence": [
+    {
+     "A": "rhOfAll",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "rhOfAll",
+     "B": "allChi",
+     "B_file": "Supplements/Kernels/MainTheorems.lean",
+     "B_decl": "allChi",
+     "tokens_in_A_body": [
+      "allChi"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "allChi",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "allChi",
+     "B": "everyCharacter",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "everyCharacter",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "B": "everyCharacter_of_row",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "everyCharacter_of_row",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "B": "every_character_of_literature_of_vWin",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "tokens_in_A_body": [
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_literature_of_vWin",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "A_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "B": "every_character_of_theta_integrals_local_matching",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "every_character_of_theta_integrals_local_matching",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_theta_integrals_local_matching",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "every_character_of_theta_integrals_local_matching",
+     "B": "nonempty_hyps_definite_side_of_closed_bound",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "nonempty_hyps_definite_side_of_closed_bound",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "B": "open0_of_unitary_group_hypotheses",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "open0_of_unitary_group_hypotheses",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "A_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "B": "open_orbit_of_unramified_exponents_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "open_orbit_of_unramified_exponents_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "open_orbit_of_unramified_exponents_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "A_decl": "open_orbit_of_unramified_exponents_alt",
+     "B": "main_theorem_published_inputs_third_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean",
+     "B_decl": "_root_.GlobalTheory.T.main_theorem_published_inputs_third_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.main_theorem_published_inputs_third_alt_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "main_theorem_published_inputs_third_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean",
+     "A_decl": "_root_.GlobalTheory.T.main_theorem_published_inputs_third_alt_alt",
+     "B": "miStarRow_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean",
+     "B_decl": "miStarRow_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.miStarRow_alt_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "miStarRow_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean",
+     "A_decl": "miStarRow_alt_alt",
+     "B": "main_theorem_published_inputs_variant_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean",
+     "B_decl": "_root_.GlobalTheory.T.main_theorem_published_inputs_variant_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.main_theorem_published_inputs_variant_alt_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "main_theorem_published_inputs_variant_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean",
+     "A_decl": "_root_.GlobalTheory.T.main_theorem_published_inputs_variant_alt_alt",
+     "B": "miStarRowClosing_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean",
+     "B_decl": "miStarRowClosing_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.miStarRowClosing_alt_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "miStarRowClosing_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean",
+     "A_decl": "miStarRowClosing_alt_alt",
+     "B": "main_theorem_published_results_final_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedResultsFinal.lean",
+     "B_decl": "_root_.GlobalTheory.T.main_theorem_published_results_final_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.main_theorem_published_results_final_alt_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "main_theorem_published_results_final_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedResultsFinal.lean",
+     "A_decl": "_root_.GlobalTheory.T.main_theorem_published_results_final_alt_alt",
+     "B": "miStar_row_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedResultsFinal.lean",
+     "B_decl": "miStar_row_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fam.miStar_row_alt_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "miStar_row_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedResultsFinal.lean",
+     "A_decl": "miStar_row_alt_alt",
+     "B": "main_theorem_from_published_results_alt_alt_alt_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAltAlt.lean",
+     "B_decl": "_root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "main_theorem_from_published_results_alt_alt_alt_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAltAlt.lean",
+     "A_decl": "_root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt_alt",
+     "B": "miAt_of_truePack_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAltAlt.lean",
+     "B_decl": "miAt_of_truePack_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fam.miAt_of_truePack_alt_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "miAt_of_truePack_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAltAlt.lean",
+     "A_decl": "miAt_of_truePack_alt_alt",
+     "B": "main_theorem_from_published_results_alt_alt_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAlt.lean",
+     "B_decl": "_root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "main_theorem_from_published_results_alt_alt_alt_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAlt.lean",
+     "A_decl": "_root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt",
+     "B": "miStar2_of_allTrue_alt_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAlt.lean",
+     "B_decl": "miStar2_of_allTrue_alt_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Fam.miStar2_of_allTrue_alt_alt"
+     ],
+     "A_has_first_alt": true,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    }
+   ],
+   "mid_graph_robustness": {
+    "allChi": "still_dominator_in_mid_graph",
+    "everyCharacter": "still_dominator_in_mid_graph",
+    "everyCharacter_of_row": "still_dominator_in_mid_graph",
+    "every_character_of_literature_of_vWin": "still_dominator_in_mid_graph",
+    "every_character_of_theta_integrals_local_matching": "still_dominator_in_mid_graph",
+    "nonempty_hyps_definite_side_of_closed_bound": "still_dominator_in_mid_graph",
+    "open0_of_unitary_group_hypotheses": "still_dominator_in_mid_graph",
+    "open_orbit_of_unramified_exponents_alt": "still_dominator_in_mid_graph",
+    "main_theorem_published_inputs_third_alt_alt": "still_dominator_in_mid_graph",
+    "miStarRow_alt_alt": "still_dominator_in_mid_graph",
+    "main_theorem_published_inputs_variant_alt_alt": "still_dominator_in_mid_graph",
+    "miStarRowClosing_alt_alt": "still_dominator_in_mid_graph",
+    "main_theorem_published_results_final_alt_alt": "still_dominator_in_mid_graph",
+    "miStar_row_alt_alt": "still_dominator_in_mid_graph",
+    "main_theorem_from_published_results_alt_alt_alt_alt_alt": "still_dominator_in_mid_graph",
+    "miAt_of_truePack_alt_alt": "still_dominator_in_mid_graph",
+    "main_theorem_from_published_results_alt_alt_alt_alt": "still_dominator_in_mid_graph"
+   }
+  },
+  "wire4F_alt": {
+   "bfs_path": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "every_character_of_green_v_win",
+    "zero_free_all_of_green_v_win",
+    "shape_closed_link_n_of_green",
+    "wire_sel_alt",
+    "wire4F_alt"
+   ],
+   "dominator_chain": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "every_character_of_green_v_win",
+    "zero_free_all_of_green_v_win",
+    "shape_closed_link_n_of_green",
+    "wire_sel_alt",
+    "wire4F_alt"
+   ],
+   "dominated_subtree_size": {
+    "rhOfAll": 252121,
+    "allChi": 220879,
+    "everyCharacter": 220878,
+    "everyCharacter_of_row": 205127,
+    "every_character_of_literature_of_vWin": 172181,
+    "every_character_of_theta_integrals_local_matching": 115739,
+    "every_character_of_green_v_win": 8325,
+    "zero_free_all_of_green_v_win": 8321,
+    "shape_closed_link_n_of_green": 7896,
+    "wire_sel_alt": 135,
+    "wire4F_alt": 130
+   },
+   "dominators_not_on_bfs_path": [],
+   "edge_evidence": [
+    {
+     "A": "rhOfAll",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "rhOfAll",
+     "B": "allChi",
+     "B_file": "Supplements/Kernels/MainTheorems.lean",
+     "B_decl": "allChi",
+     "tokens_in_A_body": [
+      "allChi"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "allChi",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "allChi",
+     "B": "everyCharacter",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "everyCharacter",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "B": "everyCharacter_of_row",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "everyCharacter_of_row",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "B": "every_character_of_literature_of_vWin",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "tokens_in_A_body": [
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_literature_of_vWin",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "A_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "B": "every_character_of_theta_integrals_local_matching",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "every_character_of_theta_integrals_local_matching",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_theta_integrals_local_matching",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "every_character_of_theta_integrals_local_matching",
+     "B": "every_character_of_green_v_win",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+     "B_decl": "UpperTheory.Top.every_character_of_green_v_win",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Top.every_character_of_green_v_win"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_green_v_win",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+     "A_decl": "UpperTheory.Top.every_character_of_green_v_win",
+     "B": "zero_free_all_of_green_v_win",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+     "B_decl": "UpperTheory.Top.zero_free_all_of_green_v_win",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Top.zero_free_all_of_green_v_win"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "zero_free_all_of_green_v_win",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+     "A_decl": "UpperTheory.Top.zero_free_all_of_green_v_win",
+     "B": "shape_closed_link_n_of_green",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+     "B_decl": "UpperTheory.Top.shape_closed_link_n_of_green",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Top.shape_closed_link_n_of_green"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "shape_closed_link_n_of_green",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+     "A_decl": "UpperTheory.Top.shape_closed_link_n_of_green",
+     "B": "wire_sel_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean",
+     "B_decl": "GlobalTheory.Top.wire_sel_alt",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.Top.wire_sel_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "wire_sel_alt",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean",
+     "A_decl": "GlobalTheory.Top.wire_sel_alt",
+     "B": "wire4F_alt",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Wire4F.lean",
+     "B_decl": "wire4F_alt",
+     "tokens_in_A_body": [
+      "_root_.Formalism.L2.Top4Wire2.wire4F_alt"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    }
+   ],
+   "mid_graph_robustness": {
+    "allChi": "still_dominator_in_mid_graph",
+    "everyCharacter": "still_dominator_in_mid_graph",
+    "everyCharacter_of_row": "still_dominator_in_mid_graph",
+    "every_character_of_literature_of_vWin": "still_dominator_in_mid_graph",
+    "every_character_of_theta_integrals_local_matching": "still_dominator_in_mid_graph",
+    "every_character_of_green_v_win": "still_dominator_in_mid_graph",
+    "zero_free_all_of_green_v_win": "still_dominator_in_mid_graph",
+    "shape_closed_link_n_of_green": "still_dominator_in_mid_graph",
+    "wire_sel_alt": "still_dominator_in_mid_graph"
+   }
+  },
+  "published_results_eigen": {
+   "bfs_path": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "published_results_eigen"
+   ],
+   "dominator_chain": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "published_results_eigen"
+   ],
+   "dominated_subtree_size": {
+    "rhOfAll": 252121,
+    "allChi": 220879,
+    "everyCharacter": 220878,
+    "everyCharacter_of_row": 205127,
+    "every_character_of_literature_of_vWin": 172181,
+    "published_results_eigen": 1808
+   },
+   "dominators_not_on_bfs_path": [],
+   "edge_evidence": [
+    {
+     "A": "rhOfAll",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "rhOfAll",
+     "B": "allChi",
+     "B_file": "Supplements/Kernels/MainTheorems.lean",
+     "B_decl": "allChi",
+     "tokens_in_A_body": [
+      "allChi"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "allChi",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "allChi",
+     "B": "everyCharacter",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "everyCharacter",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "B": "everyCharacter_of_row",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "everyCharacter_of_row",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "B": "every_character_of_literature_of_vWin",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "tokens_in_A_body": [
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_literature_of_vWin",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "A_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "B": "published_results_eigen",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.published_results_eigen",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.LiteratureTheorems.published_results_eigen"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    }
+   ],
+   "mid_graph_robustness": {
+    "allChi": "still_dominator_in_mid_graph",
+    "everyCharacter": "still_dominator_in_mid_graph",
+    "everyCharacter_of_row": "still_dominator_in_mid_graph",
+    "every_character_of_literature_of_vWin": "still_dominator_in_mid_graph"
+   }
+  },
+  "open0_of_unitary_group_hypotheses": {
+   "bfs_path": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "open0_of_unitary_group_hypotheses"
+   ],
+   "dominator_chain": [
+    "rhOfAll",
+    "allChi",
+    "everyCharacter",
+    "everyCharacter_of_row",
+    "every_character_of_literature_of_vWin",
+    "every_character_of_theta_integrals_local_matching",
+    "nonempty_hyps_definite_side_of_closed_bound",
+    "open0_of_unitary_group_hypotheses"
+   ],
+   "dominated_subtree_size": {
+    "rhOfAll": 252121,
+    "allChi": 220879,
+    "everyCharacter": 220878,
+    "everyCharacter_of_row": 205127,
+    "every_character_of_literature_of_vWin": 172181,
+    "every_character_of_theta_integrals_local_matching": 115739,
+    "nonempty_hyps_definite_side_of_closed_bound": 97799,
+    "open0_of_unitary_group_hypotheses": 5151
+   },
+   "dominators_not_on_bfs_path": [],
+   "edge_evidence": [
+    {
+     "A": "rhOfAll",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "rhOfAll",
+     "B": "allChi",
+     "B_file": "Supplements/Kernels/MainTheorems.lean",
+     "B_decl": "allChi",
+     "tokens_in_A_body": [
+      "allChi"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "allChi",
+     "A_file": "Supplements/Kernels/MainTheorems.lean",
+     "A_decl": "allChi",
+     "B": "everyCharacter",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "everyCharacter",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter",
+     "B": "everyCharacter_of_row",
+     "B_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "B_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "tokens_in_A_body": [
+      "UpperTheory.FinalTheorems.everyCharacter_of_row"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "everyCharacter_of_row",
+     "A_file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+     "A_decl": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+     "B": "every_character_of_literature_of_vWin",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "B_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "tokens_in_A_body": [
+      "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_literature_of_vWin",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+     "A_decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+     "B": "every_character_of_theta_integrals_local_matching",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "every_character_of_theta_integrals_local_matching",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    },
+    {
+     "A": "every_character_of_theta_integrals_local_matching",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "every_character_of_theta_integrals_local_matching",
+     "B": "nonempty_hyps_definite_side_of_closed_bound",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "B_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "tokens_in_A_body": [
+      "_root_.UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": true
+    },
+    {
+     "A": "nonempty_hyps_definite_side_of_closed_bound",
+     "A_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+     "A_decl": "nonempty_hyps_definite_side_of_closed_bound",
+     "B": "open0_of_unitary_group_hypotheses",
+     "B_file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+     "B_decl": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+     "tokens_in_A_body": [
+      "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses"
+     ],
+     "A_has_first_alt": false,
+     "B_module_in_import_closure_of_A": true,
+     "same_file": false
+    }
+   ],
+   "mid_graph_robustness": {
+    "allChi": "still_dominator_in_mid_graph",
+    "everyCharacter": "still_dominator_in_mid_graph",
+    "everyCharacter_of_row": "still_dominator_in_mid_graph",
+    "every_character_of_literature_of_vWin": "still_dominator_in_mid_graph",
+    "every_character_of_theta_integrals_local_matching": "still_dominator_in_mid_graph",
+    "nonempty_hyps_definite_side_of_closed_bound": "still_dominator_in_mid_graph"
+   }
+  }
+ },
+ "top_dominators_by_subtree": [
+  {
+   "name": "rhOfAll",
+   "depth": 0,
+   "size": 252121,
+   "idom": null,
+   "file": "Supplements/Kernels/MainTheorems.lean"
+  },
+  {
+   "name": "allChi",
+   "depth": 1,
+   "size": 220879,
+   "idom": "rhOfAll",
+   "file": "Supplements/Kernels/MainTheorems.lean"
+  },
+  {
+   "name": "everyCharacter",
+   "depth": 2,
+   "size": 220878,
+   "idom": "allChi",
+   "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean"
+  },
+  {
+   "name": "everyCharacter_of_row",
+   "depth": 3,
+   "size": 205127,
+   "idom": "everyCharacter",
+   "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean"
+  },
+  {
+   "name": "every_character_of_literature_of_vWin",
+   "depth": 4,
+   "size": 172181,
+   "idom": "everyCharacter_of_row",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean"
+  },
+  {
+   "name": "every_character_of_theta_integrals_local_matching",
+   "depth": 5,
+   "size": 115739,
+   "idom": "every_character_of_literature_of_vWin",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean"
+  },
+  {
+   "name": "nonempty_hyps_definite_side_of_closed_bound",
+   "depth": 6,
+   "size": 97799,
+   "idom": "every_character_of_theta_integrals_local_matching",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean"
+  },
+  {
+   "name": "hypotheses_nonempty_of_unramified_exponents_alt",
+   "depth": 7,
+   "size": 26575,
+   "idom": "nonempty_hyps_definite_side_of_closed_bound",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean"
+  },
+  {
+   "name": "topCovolSlim2_use_alt_alt",
+   "depth": 5,
+   "size": 15596,
+   "idom": "every_character_of_literature_of_vWin",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean"
+  },
+  {
+   "name": "vwin_of_row",
+   "depth": 4,
+   "size": 13860,
+   "idom": "everyCharacter_of_row",
+   "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean"
+  },
+  {
+   "name": "automorphic_window_of_inputs",
+   "depth": 5,
+   "size": 13859,
+   "idom": "vwin_of_row",
+   "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean"
+  },
+  {
+   "name": "v_window_of_depth_zero_residual_bc_cm",
+   "depth": 6,
+   "size": 13858,
+   "idom": "automorphic_window_of_inputs",
+   "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean"
+  },
+  {
+   "name": "v_window_of_literal_automorphy_n",
+   "depth": 7,
+   "size": 13857,
+   "idom": "v_window_of_depth_zero_residual_bc_cm",
+   "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean"
+  },
+  {
+   "name": "v_window_of_automorphy_csd_ss_mono_odd",
+   "depth": 8,
+   "size": 13856,
+   "idom": "v_window_of_literal_automorphy_n",
+   "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean"
+  },
+  {
+   "name": "vwin_of_hypotheses_H_E_alt",
+   "depth": 9,
+   "size": 12178,
+   "idom": "v_window_of_automorphy_csd_ss_mono_odd",
+   "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean"
+  },
+  {
+   "name": "allRows_of_open0_alt",
+   "depth": 8,
+   "size": 11841,
+   "idom": "hypotheses_nonempty_of_unramified_exponents_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean"
+  },
+  {
+   "name": "ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+   "depth": 7,
+   "size": 10415,
+   "idom": "nonempty_hyps_definite_side_of_closed_bound",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SurjectiveAndLowWeightOfUnramifiedExponents.lean"
+  },
+  {
+   "name": "ontoX_of_hypotheses_alt_alt",
+   "depth": 8,
+   "size": 10157,
+   "idom": "ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OntoXOfPrints.lean"
+  },
+  {
+   "name": "large_unramified_exponent_bundles_exist_alt",
+   "depth": 8,
+   "size": 9654,
+   "idom": "hypotheses_nonempty_of_unramified_exponents_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean"
+  },
+  {
+   "name": "member_bundles_large_unramified_exponents_alt",
+   "depth": 9,
+   "size": 9652,
+   "idom": "large_unramified_exponent_bundles_exist_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean"
+  },
+  {
+   "name": "every_character_of_green_v_win",
+   "depth": 6,
+   "size": 8325,
+   "idom": "every_character_of_theta_integrals_local_matching",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean"
+  },
+  {
+   "name": "zero_free_all_of_green_v_win",
+   "depth": 7,
+   "size": 8321,
+   "idom": "every_character_of_green_v_win",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean"
+  },
+  {
+   "name": "galoisLocalGlobalStrong_recParameter",
+   "depth": 3,
+   "size": 8037,
+   "idom": "everyCharacter",
+   "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean"
+  },
+  {
+   "name": "shape_closed_link_n_of_green",
+   "depth": 8,
+   "size": 7896,
+   "idom": "zero_free_all_of_green_v_win",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean"
+  },
+  {
+   "name": "topCovolG_alt_alt",
+   "depth": 6,
+   "size": 7686,
+   "idom": "topCovolSlim2_use_alt_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean"
+  },
+  {
+   "name": "deep_slim_use",
+   "depth": 6,
+   "size": 7172,
+   "idom": "topCovolSlim2_use_alt_alt",
+   "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/AhSlimU.lean"
+  },
+  {
+   "name": "deepStR_of_use",
+   "depth": 7,
+   "size": 7041,
+   "idom": "deep_slim_use",
+   "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/DeepStROfUse.lean"
+  },
+  {
+   "name": "good_tower_volume_theorem_bis",
+   "depth": 8,
+   "size": 5901,
+   "idom": "deepStR_of_use",
+   "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/GoodTowerVolumeTheoremBis.lean"
+  },
+  {
+   "name": "final_theorem_of_inputs_right",
+   "depth": 9,
+   "size": 5898,
+   "idom": "good_tower_volume_theorem_bis",
+   "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FinalTheoremOfInputsRightStatement.lean"
+  },
+  {
+   "name": "goodTower_volume_of_reduced",
+   "depth": 10,
+   "size": 5897,
+   "idom": "final_theorem_of_inputs_right",
+   "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FinalTheoremOfInputsRight.lean"
+  },
+  {
+   "name": "hServ_of_linkR",
+   "depth": 9,
+   "size": 5682,
+   "idom": "allRows_of_open0_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowHServOfLinkStatement.lean"
+  },
+  {
+   "name": "row_hServ_of_link_alt",
+   "depth": 10,
+   "size": 5681,
+   "idom": "hServ_of_linkR",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowHServOfLink.lean"
+  },
+  {
+   "name": "reciprocity_kernel_of_artin",
+   "depth": 11,
+   "size": 5677,
+   "idom": "row_hServ_of_link_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ServHRowLinkRStatement.lean"
+  },
+  {
+   "name": "servH_row_linkR_alt",
+   "depth": 12,
+   "size": 5676,
+   "idom": "reciprocity_kernel_of_artin",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ServHRowLinkR.lean"
+  },
+  {
+   "name": "bundle_bothParts_of_standardKernel_of_globalArtinReciprocity",
+   "depth": 13,
+   "size": 5670,
+   "idom": "servH_row_linkR_alt",
+   "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/BundleBothPartsOfStandardKernelOfGlobalArtinReciStatement.lean"
+  },
+  {
+   "name": "servH_row_of_artin",
+   "depth": 14,
+   "size": 5669,
+   "idom": "bundle_bothParts_of_standardKernel_of_globalArtinReciprocity",
+   "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/BundleBothPartsOfStandardKernelOfGlobalArtinReci.lean"
+  },
+  {
+   "name": "galoisRepresentations_of_thetaLift",
+   "depth": 4,
+   "size": 5627,
+   "idom": "galoisLocalGlobalStrong_recParameter",
+   "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean"
+  },
+  {
+   "name": "member_exists_baseLattice_alt",
+   "depth": 10,
+   "size": 5539,
+   "idom": "member_bundles_large_unramified_exponents_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsBaseLatticeOfPrime.lean"
+  },
+  {
+   "name": "exists_baseLattice_of_prime_alt",
+   "depth": 11,
+   "size": 5538,
+   "idom": "member_exists_baseLattice_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsBaseLatticeOfPrime.lean"
+  },
+  {
+   "name": "open0_of_unitary_group_hypotheses",
+   "depth": 7,
+   "size": 5151,
+   "idom": "nonempty_hyps_definite_side_of_closed_bound",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean"
+  },
+  {
+   "name": "open_orbit_of_unramified_exponents_alt",
+   "depth": 8,
+   "size": 5150,
+   "idom": "open0_of_unitary_group_hypotheses",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean"
+  },
+  {
+   "name": "good_tower_volume_theorem",
+   "depth": 11,
+   "size": 5131,
+   "idom": "goodTower_volume_of_reduced",
+   "file": "Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/GoodTowerVolumeTheoremStatement.lean"
+  },
+  {
+   "name": "goodTower_and_volume",
+   "depth": 12,
+   "size": 5130,
+   "idom": "good_tower_volume_theorem",
+   "file": "Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/GoodTowerVolumeTheorem.lean"
+  },
+  {
+   "name": "weighted_bound_rotated_uniform",
+   "depth": 7,
+   "size": 5053,
+   "idom": "nonempty_hyps_definite_side_of_closed_bound",
+   "file": "CompanionTheory/AutomorphicTheory/BesselWaveGrids/ThmBFinal.lean"
+  },
+  {
+   "name": "weighted_bound_rotated_uniform_of_hypsG",
+   "depth": 8,
+   "size": 5052,
+   "idom": "weighted_bound_rotated_uniform",
+   "file": "CompanionTheory/AutomorphicTheory/BesselWaveGrids/WeightedBoundRotatedUniformOfHypsG.lean"
+  },
+  {
+   "name": "uniform_bessel_rank_three_of_inputs",
+   "depth": 9,
+   "size": 5025,
+   "idom": "weighted_bound_rotated_uniform_of_hypsG",
+   "file": "CompanionTheory/AutomorphicTheory/BesselWaveGrids/WeightedBoundRotatedUniformOfCubicThreshold.lean"
+  },
+  {
+   "name": "weighted_bound_rotated_uniform_of_cubic_threshold",
+   "depth": 10,
+   "size": 5019,
+   "idom": "uniform_bessel_rank_three_of_inputs",
+   "file": "CompanionTheory/AutomorphicTheory/BesselWaveGrids/WeightedBoundRotatedUniformOfCubicThreshold.lean"
+  },
+  {
+   "name": "linkG_concrete5",
+   "depth": 9,
+   "size": 4885,
+   "idom": "shape_closed_link_n_of_green",
+   "file": "Formalism/LocalToGlobal/GroupLattices/LinkGConcreteNoKer.lean"
+  },
+  {
+   "name": "linkG_concrete_noKer",
+   "depth": 10,
+   "size": 4876,
+   "idom": "linkG_concrete5",
+   "file": "Formalism/LocalToGlobal/GroupLattices/LinkGConcreteNoKer.lean"
+  },
+  {
+   "name": "wave_bessel_period_threshold",
+   "depth": 11,
+   "size": 4870,
+   "idom": "weighted_bound_rotated_uniform_of_cubic_threshold",
+   "file": "CompanionTheory/AutomorphicTheory/BesselWaveGrids/WeightedBoundRotatedUniformOfCubicThreshold.lean"
+  },
+  {
+   "name": "link_of_local_closed",
+   "depth": 11,
+   "size": 4840,
+   "idom": "linkG_concrete_noKer",
+   "file": "Formalism/LocalToGlobal/GroupLattices/AdmissibleFamilyNoKernel.lean"
+  },
+  {
+   "name": "main_theorem_published_inputs_third_alt_alt",
+   "depth": 9,
+   "size": 4686,
+   "idom": "open_orbit_of_unramified_exponents_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean"
+  },
+  {
+   "name": "miStarRow_alt_alt",
+   "depth": 10,
+   "size": 4685,
+   "idom": "main_theorem_published_inputs_third_alt_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean"
+  },
+  {
+   "name": "ends0_alt",
+   "depth": 10,
+   "size": 4558,
+   "idom": "vwin_of_hypotheses_H_E_alt",
+   "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnEndsTop.lean"
+  },
+  {
+   "name": "main_theorem_published_inputs_variant_alt_alt",
+   "depth": 11,
+   "size": 4507,
+   "idom": "miStarRow_alt_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean"
+  },
+  {
+   "name": "miStarRowClosing_alt_alt",
+   "depth": 12,
+   "size": 4506,
+   "idom": "main_theorem_published_inputs_variant_alt_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean"
+  },
+  {
+   "name": "main_theorem_published_results_final_alt_alt",
+   "depth": 13,
+   "size": 4445,
+   "idom": "miStarRowClosing_alt_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedResultsFinal.lean"
+  },
+  {
+   "name": "miStar_row_alt_alt",
+   "depth": 14,
+   "size": 4444,
+   "idom": "main_theorem_published_results_final_alt_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedResultsFinal.lean"
+  },
+  {
+   "name": "main_theorem_from_published_results_alt_alt_alt_alt_alt",
+   "depth": 15,
+   "size": 4180,
+   "idom": "miStar_row_alt_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAltAlt.lean"
+  },
+  {
+   "name": "miAt_of_truePack_alt_alt",
+   "depth": 16,
+   "size": 4178,
+   "idom": "main_theorem_from_published_results_alt_alt_alt_alt_alt",
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAltAlt.lean"
+  }
+ ],
+ "dominator_decls": {
+  "MIstar2": {
+   "file": "Formalism/LocalToGlobal/IndefiniteReal/IsometricPeriodsOfUnitHypotheses.lean",
+   "decl_as_written": "MIstar2",
+   "subtree": 1,
+   "depth": 6,
+   "head": "def MIstar2 (eV : ∀ t, (Fin ((fc X.zs).Df1.nV t) → K) →ₗ[K] A.FR t) (sEE : X.EE →ₗ⋆[ℂ] (fc X.zs).Sp.HH) : Prop "
+  },
+  "SizeKRel": {
+   "file": "Formalism/SharpRestriction/ElevenLe.lean",
+   "decl_as_written": "SizeKRel",
+   "subtree": 1,
+   "depth": 10,
+   "head": "def SizeKRel : Prop "
+  },
+  "allChi": {
+   "file": "Supplements/Kernels/MainTheorems.lean",
+   "decl_as_written": "allChi",
+   "subtree": 220879,
+   "depth": 1,
+   "head": "theorem allChi : UpperTheory.EveryCharacter "
+  },
+  "everyCharacter": {
+   "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+   "decl_as_written": "UpperTheory.FinalTheorems.everyCharacter",
+   "subtree": 220878,
+   "depth": 2,
+   "head": "theorem UpperTheory.FinalTheorems.everyCharacter : UpperTheory.EveryCharacter "
+  },
+  "everyCharacter_of_row": {
+   "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+   "decl_as_written": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+   "subtree": 205127,
+   "depth": 3,
+   "head": "theorem UpperTheory.FinalTheorems.everyCharacter_of_row (h : UpperTheory.GalStar.Row0b fun h rc => UpperTheory.Zero.LLC.IsRecT h rc) : UpperTheory.EveryCharacter "
+  },
+  "every_character_of_green_v_win": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+   "decl_as_written": "UpperTheory.Top.every_character_of_green_v_win",
+   "subtree": 8325,
+   "depth": 6,
+   "head": "theorem UpperTheory.Top.every_character_of_green_v_win (hG : GlobalTheory.GLq.Green) (hV : UpperTheory.Top.VWin) (h : Nonempty (_root_.GlobalTheory.Fc.HypsAlt (fun 𝒞 => Closed 𝒞 fun Fm _ => LinkN Fm) _root_.GlobalTheory.Fc.DefiniteSideCondition)) : UpperTheory.EveryCharacter "
+  },
+  "every_character_of_literature_of_vWin": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+   "decl_as_written": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+   "subtree": 172181,
+   "depth": 4,
+   "head": "theorem UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) (hV : UpperTheory.Top.VWin) : UpperTheory.EveryCharacter "
+  },
+  "every_character_of_theta_integrals_local_matching": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+   "decl_as_written": "every_character_of_theta_integrals_local_matching",
+   "subtree": 115739,
+   "depth": 5,
+   "head": "theorem every_character_of_theta_integrals_local_matching (P : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses) (F : _root_.GlobalTheory.FunPr.ThetaLocalInputs) (hA : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree) (hM : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching) (hX : _root_.GlobalTheory.CovTop.CovolumeBoundOfX) (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (hV : VWin) : UpperTheory.EveryCharacter "
+  },
+  "main_theorem_from_published_results_alt_alt_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAlt.lean",
+   "decl_as_written": "_root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt",
+   "subtree": 4177,
+   "depth": 17,
+   "head": "theorem _root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → ∀ {B :"
+  },
+  "main_theorem_from_published_results_alt_alt_alt_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAltAlt.lean",
+   "decl_as_written": "_root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt_alt",
+   "subtree": 4180,
+   "depth": 15,
+   "head": "theorem _root_.GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → ∀ "
+  },
+  "main_theorem_published_inputs_third_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean",
+   "decl_as_written": "_root_.GlobalTheory.T.main_theorem_published_inputs_third_alt_alt",
+   "subtree": 4686,
+   "depth": 9,
+   "head": "theorem _root_.GlobalTheory.T.main_theorem_published_inputs_third_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → HeckeCharacter"
+  },
+  "main_theorem_published_inputs_variant_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean",
+   "decl_as_written": "_root_.GlobalTheory.T.main_theorem_published_inputs_variant_alt_alt",
+   "subtree": 4507,
+   "depth": 11,
+   "head": "theorem _root_.GlobalTheory.T.main_theorem_published_inputs_variant_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → GlobalTheory"
+  },
+  "main_theorem_published_results_final_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedResultsFinal.lean",
+   "decl_as_written": "_root_.GlobalTheory.T.main_theorem_published_results_final_alt_alt",
+   "subtree": 4445,
+   "depth": 13,
+   "head": "theorem _root_.GlobalTheory.T.main_theorem_published_results_final_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → GlobalTheory."
+  },
+  "miAt_of_truePack_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAltAlt.lean",
+   "decl_as_written": "miAt_of_truePack_alt_alt",
+   "subtree": 4178,
+   "depth": 16,
+   "head": "theorem miAt_of_truePack_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi : For"
+  },
+  "miStar2_of_allTrue_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremFromPublishedResultsAltAltAltAlt.lean",
+   "decl_as_written": "miStar2_of_allTrue_alt_alt",
+   "subtree": 4176,
+   "depth": 18,
+   "head": "theorem miStar2_of_allTrue_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → ∀ {B : GlobalTheory.Mem.Base} {X : GlobalTheory.Mem.P"
+  },
+  "miStarRowClosing_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsVariant.lean",
+   "decl_as_written": "miStarRowClosing_alt_alt",
+   "subtree": 4506,
+   "depth": 12,
+   "head": "theorem miStarRowClosing_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → GlobalTheory.Core.Rk.RowDiag (fun D L C' => GlobalTheor"
+  },
+  "miStarRow_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean",
+   "decl_as_written": "miStarRow_alt_alt",
+   "subtree": 4685,
+   "depth": 10,
+   "head": "theorem miStarRow_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → HeckeCharacterZeroLocus.SiegelWeilU.SiegelWeilUnitaryConvergen"
+  },
+  "miStar_row_alt_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedResultsFinal.lean",
+   "decl_as_written": "miStar_row_alt_alt",
+   "subtree": 4444,
+   "depth": 14,
+   "head": "theorem miStar_row_alt_alt : GlobalTheory.Published.HarishChandraFinite → GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.DiscreteSeriesCover → GlobalTheory.Published.HarishChandraModules → GlobalTheory.Published.CasselmanWallach → GlobalTheory.Hk3.HoweUnram → GlobalTheory.Published.WeilRepresentationUnitaryPair → GlobalTheory.Published.WeilSiegelFormulaUnitary → GlobalTheory.Published.SiegelWeilUnitaryConvergent → _root_.GlobalTheory.Published.DoublingMethodLocalZetaIntegrals → GlobalTheory.Published.UnramifiedDoublingGL → GlobalTheory.Published.DiscreteSeriesClassification → GlobalTheory.Published.StrongApproxSU → GlobalTheory.Core.Rk.RowDiag (fun D L C' => GlobalTheory.Core"
+  },
+  "nonempty_hyps_definite_side_of_closed_bound": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+   "decl_as_written": "nonempty_hyps_definite_side_of_closed_bound",
+   "subtree": 97799,
+   "depth": 6,
+   "head": "theorem nonempty_hyps_definite_side_of_closed_bound : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses → _root_.GlobalTheory.FunPr.ThetaLocalInputs → GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree → GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching → _root_.GlobalTheory.CovTop.CovolumeBoundOfX → ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists), (∀ cDep : ℝ, _root_.GlobalTheory.Fc.RL.LinkedAt (_root_.GlobalTheory.Mem.Top.Bl.parametersOfDependence hL cDep) (fun Q L => _root_.GlobalTheory.Fc.R1.SlotNormCondition Q L fun 𝒞 => Formalism.MainNotions.Closed 𝒞 fun Fm _ => _root_.GlobalTheory.NLink.BoundAtTwoThreeFamilyFonAlt Fm)) → Nonempty"
+  },
+  "open0_of_unitary_group_hypotheses": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+   "decl_as_written": "_root_.GlobalTheory.T.open0_of_unitary_group_hypotheses",
+   "subtree": 5151,
+   "depth": 7,
+   "head": "theorem _root_.GlobalTheory.T.open0_of_unitary_group_hypotheses : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses → ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (cDep : ℝ), _root_.GlobalTheory.Fc.S0.OpenParameterStatements (_root_.GlobalTheory.Mem.Top.Bl.parametersOfDependence hL cDep) "
+  },
+  "open_orbit_of_unramified_exponents_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+   "decl_as_written": "open_orbit_of_unramified_exponents_alt",
+   "subtree": 5150,
+   "depth": 8,
+   "head": "theorem open_orbit_of_unramified_exponents_alt : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses → ∀ (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (cDep : ℝ), _root_.GlobalTheory.Fc.S0.OpenParameterStatements (_root_.GlobalTheory.Mem.Top.Bl.parametersOfDependence hL cDep) "
+  },
+  "published_results_eigen": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+   "decl_as_written": "UpperTheory.LiteratureTheorems.published_results_eigen",
+   "subtree": 1808,
+   "depth": 5,
+   "head": "theorem UpperTheory.LiteratureTheorems.published_results_eigen (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : _root_.GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses where clozelCohomological "
+  },
+  "rhOfAll": {
+   "file": "Supplements/Kernels/MainTheorems.lean",
+   "decl_as_written": "rhOfAll",
+   "subtree": 252121,
+   "depth": 0,
+   "head": "theorem rhOfAll : RiemannHypothesis "
+  },
+  "shape_closed_link_n_of_green": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+   "decl_as_written": "UpperTheory.Top.shape_closed_link_n_of_green",
+   "subtree": 7896,
+   "depth": 8,
+   "head": "theorem UpperTheory.Top.shape_closed_link_n_of_green : GlobalTheory.GLq.Green → _root_.GlobalTheory.Fc.TopShapeAlt True True (fun 𝒞 => Closed 𝒞 fun Fm _ => LinkN Fm) UpperTheory.Top.TopG "
+  },
+  "sizes_sizeKRel": {
+   "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowSizeKRelStatement.lean",
+   "decl_as_written": "_root_.GlobalTheory.T.sizes_sizeKRel",
+   "subtree": 4,
+   "depth": 9,
+   "head": "theorem _root_.GlobalTheory.T.sizes_sizeKRel : SzRow (fun _ _ L => SizeKRel L) "
+  },
+  "szRow_numAt": {
+   "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowNumAt.lean",
+   "decl_as_written": "szRow_numAt",
+   "subtree": 121,
+   "depth": 7,
+   "head": "theorem szRow_numAt : SzRow (fun C D L => HostArith D.host → Nonempty (NumAt C L) ∧ ChTT_at L ∧ ChCode_at L 3 C.P.CF) "
+  },
+  "szRow_sizeKRel": {
+   "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowSizeKRel.lean",
+   "decl_as_written": "szRow_sizeKRel",
+   "subtree": 2,
+   "depth": 10,
+   "head": "theorem szRow_sizeKRel : SzRow (fun _ _ L => SizeKRel L) "
+  },
+  "szRow_sizesAt": {
+   "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowElevenLeSplitBound.lean",
+   "decl_as_written": "szRow_sizesAt",
+   "subtree": 30,
+   "depth": 8,
+   "head": "theorem szRow_sizesAt : SzRow (fun _ _ L => SizesAt L) "
+  },
+  "wire4F_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Wire4F.lean",
+   "decl_as_written": "wire4F_alt",
+   "subtree": 130,
+   "depth": 10,
+   "head": "theorem wire4F_alt [∀ {eps : ℝ} (Fm : FamP eps) (x : ℝ) (i : Fm.Ix x), IsTotallyComplex (Fm.D x i).what₂.LL] (selI : _root_.Formalism.L2.Top4.IndefiniteRealisationChoice' 𝒜 sel selS selP selDH selC selK) (hPA : _root_.Formalism.L2.Top4.AllRealisationsPrimitive sel selI) (OneMapRow : ∀ {eps : ℝ} (Fm : FamP eps) (hc : 𝒜 Fm) (x : ℝ) (hx : Fm.x1 < x) (h : (sel Fm hc).1 ≤ x) (i : Fm.Ix x), Prop) (Cabs : ℝ) (hCabs : 1 ≤ Cabs) (hTw : ∀ {eps : ℝ} (Fm : FamP eps) (hc : 𝒜 Fm) (x : ℝ) (hx : Fm.x1 < x) (h : (sel Fm hc).1 ≤ x) (i : Fm.Ix x), TieTwRec (Fm.L x i) (selP Fm hc x hx h i).1.S0.Tw) (hD0 : ∀ {eps : ℝ} (Fm : FamP eps) (hc : 𝒜 Fm) (x : ℝ) (hx : Fm.x1 < x) (h : (sel Fm hc).1 ≤ x) (i : Fm.Ix x), (Fm"
+  },
+  "wire_sel_alt": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean",
+   "decl_as_written": "GlobalTheory.Top.wire_sel_alt",
+   "subtree": 135,
+   "depth": 9,
+   "head": "theorem GlobalTheory.Top.wire_sel_alt : ∀ (𝒜 : FamClass) (sel : _root_.Formalism.L2.TwistSelection 𝒜) (selS : _root_.Formalism.L2.Top4.SelectionSpectralCondition 𝒜 sel) (selP : _root_.Formalism.L2.Top4.BaseLevelTiedChoiceAlt 𝒜 sel) (selDH : _root_.Formalism.L2.Top3.SelectionDefiniteHeightCondition 𝒜 sel) (selC : _root_.Formalism.L2.Top4.ColumnChoiceCompatibleSelection 𝒜 sel selP) (selB : _root_.Formalism.L2.Top4.SelectionBundle 𝒜 sel selS selP selDH selC) (hTw : ∀ {eps : ℝ} (Fm : FamP eps) (hc : 𝒜 Fm) (x : ℝ) (hx : Fm.x1 < x) (h : (sel Fm hc).1 ≤ x) (i : Fm.Ix x), Formalism.L2.DIV.TieTwRec (Fm.L x i) (selP Fm hc x hx h i).1.S0.Tw) (hPA : _root_.Formalism.L2.Top4.AllRealisationsPrimitive sel "
+  },
+  "zero_free_all_of_green_v_win": {
+   "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+   "decl_as_written": "UpperTheory.Top.zero_free_all_of_green_v_win",
+   "subtree": 8321,
+   "depth": 7,
+   "head": "theorem UpperTheory.Top.zero_free_all_of_green_v_win (hG : GlobalTheory.GLq.Green) (hV : UpperTheory.Top.VWin) (h : Nonempty (_root_.GlobalTheory.Fc.HypsAlt (fun 𝒞 => Closed 𝒞 fun Fm _ => LinkN Fm) _root_.GlobalTheory.Fc.DefiniteSideCondition)) : Formalism.HC.ZeroFreeAll "
+  }
+ },
+ "strict_dropped_edges_from_reachable_into_ambiguous_names": 6121791
+}

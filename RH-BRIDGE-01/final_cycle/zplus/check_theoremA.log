@@ -1,0 +1,19 @@
+Part1: instances=4000 violations=0 max(lhs-a)=9.992e-16
+  ratio old/new bound on (alpha,e)-part: min=1.30 median=1.97
+Part2: integrated sqrt(e)-bracket, old 4*sqrt(e)*H  vs  new 2/(1-sqrt e)*2*sqrt(e*u)*(sqrt(u+H)-sqrt(u))
+  e = sg^2/2 (e=2 e0, sqrt(e0)<=sg/2), eta = 5 sg (+3 sqrt(de) ignored), sg in {0.05, 0.01, 0.001}
+  sg=0.05   u=1    H=1    sqrt(e)-part old=0.1414 new=0.06073 | total (eta+sqrt e part) old=0.3914 new=0.3107 ratio=1.260
+  sg=0.05   u=1    H=10   sqrt(e)-part old=1.414 new=0.3396 | total (eta+sqrt e part) old=3.914 new=2.84 ratio=1.378
+  sg=0.05   u=1    H=100  sqrt(e)-part old=14.14 new=1.327 | total (eta+sqrt e part) old=39.14 new=26.33 ratio=1.487
+  sg=0.05   u=10   H=1    sqrt(e)-part old=0.1414 new=0.07156 | total (eta+sqrt e part) old=0.3914 new=0.3216 ratio=1.217
+  sg=0.05   u=0.1  H=10   sqrt(e)-part old=1.414 new=0.1327 | total (eta+sqrt e part) old=3.914 new=2.633 ratio=1.487
+  sg=0.01   u=1    H=1    sqrt(e)-part old=0.02828 new=0.0118 | total (eta+sqrt e part) old=0.07828 new=0.0618 ratio=1.267
+  sg=0.01   u=1    H=10   sqrt(e)-part old=0.2828 new=0.06599 | total (eta+sqrt e part) old=0.7828 new=0.566 ratio=1.383
+  sg=0.01   u=1    H=100  sqrt(e)-part old=2.828 new=0.2578 | total (eta+sqrt e part) old=7.828 new=5.258 ratio=1.489
+  sg=0.01   u=10   H=1    sqrt(e)-part old=0.02828 new=0.0139 | total (eta+sqrt e part) old=0.07828 new=0.0639 ratio=1.225
+  sg=0.01   u=0.1  H=10   sqrt(e)-part old=0.2828 new=0.02578 | total (eta+sqrt e part) old=0.7828 new=0.5258 ratio=1.489
+  sg=0.001  u=1    H=1    sqrt(e)-part old=0.002828 new=0.001172 | total (eta+sqrt e part) old=0.007828 new=0.006172 ratio=1.268
+  sg=0.001  u=1    H=10   sqrt(e)-part old=0.02828 new=0.006557 | total (eta+sqrt e part) old=0.07828 new=0.05656 ratio=1.384
+  sg=0.001  u=1    H=100  sqrt(e)-part old=0.2828 new=0.02562 | total (eta+sqrt e part) old=0.7828 new=0.5256 ratio=1.489
+  sg=0.001  u=10   H=1    sqrt(e)-part old=0.002828 new=0.001381 | total (eta+sqrt e part) old=0.007828 new=0.006381 ratio=1.227
+  sg=0.001  u=0.1  H=10   sqrt(e)-part old=0.02828 new=0.002562 | total (eta+sqrt e part) old=0.07828 new=0.05256 ratio=1.489

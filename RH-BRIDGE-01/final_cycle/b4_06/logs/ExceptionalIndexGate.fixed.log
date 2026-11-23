@@ -1,0 +1,14 @@
+--- compile: lake env lean /home/serge/h12/b4_06/fixed/ExceptionalIndexGate.lean
+/home/serge/h12/b4_06/fixed/ExceptionalIndexGate.lean:62:2: error: linarith failed to find a contradiction
+r j d : ℕ
+hj : j ≤ n1 r
+h : 4 * j + 1 = d * p r
+hmul : 4 * n1 r = p r * (p r + 1)
+hnot : ¬d ≤ p r + 1
+hgt : p r + 2 ≤ d
+hp : 0 < p r
+hmul_le : (p r + 2) * p r ≤ d * p r
+hleft : 4 * j + 1 ≤ 4 * n1 r + 1
+⊢ False
+failed
+EXIT_CODE_FIXED=1

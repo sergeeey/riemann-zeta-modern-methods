@@ -1,0 +1,7 @@
+--- compile+axioms: lake env lean /home/serge/h12/b4_06/fixed/ResonanceParameters.axioms.lean
+'H12.B4.exceptional_quadratic' depends on axioms: [propext]
+'H12.B4.resonance_decomposition' depends on axioms: [propext]
+'H12.B4.isolated_exceptional_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'H12.B4.first_index_lt_prime' depends on axioms: [propext, Quot.sound]
+'H12.B4.first_resonance_identity' depends on axioms: [propext]
+EXIT_CODE_AXIOMS=0

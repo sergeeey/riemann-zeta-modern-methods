@@ -1,0 +1,10 @@
+PASS: valuation uniqueness and p*phi[q]=-1 for 14 primes p<=103
+PASS: p*a[n1]=-a[n0] mod p for 3 residue 1
+PASS: p*a[n1]=-a[n0] mod p for 7 residue 4
+PASS: p*a[n1]=-a[n0] mod p for 11 residue 10
+PASS: p*a[n1]=-a[n0] mod p for 19 residue 12
+PASS: p*a[n1]=-a[n0] mod p for 23 residue 21
+PASS: p*a[n1]=-a[n0] mod p for 31 residue 13
+python_version: Python 3.13.5
+lean_available: NO
+lake_available: NO

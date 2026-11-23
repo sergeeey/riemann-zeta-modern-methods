@@ -1,0 +1,4 @@
+59c59
+<   have hp : 0 < p r := by simp [p]
+---
+>   have hp : 3 ≤ p r := by dsimp [p]; omega

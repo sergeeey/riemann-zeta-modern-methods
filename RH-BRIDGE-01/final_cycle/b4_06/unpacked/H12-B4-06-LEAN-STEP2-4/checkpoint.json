@@ -1,0 +1,8 @@
+{
+  "status": "PARTIAL",
+  "kernel_checked": false,
+  "mathematical_scope": "index identities / finite p-adic checks; not B4",
+  "input": "H12-PADIC-B4-06-PROOF.md",
+  "next": "compile ResonanceParameters.lean, prove rational integrality and unit residue at q without sorry",
+  "checks": "14 primes valuation; 6 primes wp residue"
+}

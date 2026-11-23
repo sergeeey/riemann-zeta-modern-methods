@@ -1,0 +1,2 @@
+--- compile: lake env lean /home/serge/h12/b4_06/fixed/ResonanceParameters.lean
+EXIT_CODE_FIXED=0

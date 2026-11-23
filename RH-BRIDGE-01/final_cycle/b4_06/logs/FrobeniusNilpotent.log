@@ -1,0 +1,6 @@
+--- compile as-is: lake env lean /home/serge/h12/b4_06/src/FrobeniusNilpotent.lean
+
+real	0m6.295s
+user	0m3.274s
+sys	0m2.113s
+EXIT_CODE_AS_IS=0

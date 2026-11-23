@@ -1,0 +1,81 @@
+## rhOfAll (subtree 252121, 13659 dom-children)
+    220879  allChi
+      1196  toCore
+       885  field_outright
+       836  deRham_potentiallySemistable
+       419  naturality
+       403  siegelCore
+       263  rsPole
+       261  exists_kernel_eq_conv_of_aeval_laplacian
+       172  reciprocity_lubinTate
+## allChi (subtree 220879, 1 dom-children)
+    220878  everyCharacter
+## everyCharacter (subtree 220878, 2978 dom-children)
+    205127  everyCharacter_of_row
+      8037  galoisLocalGlobalStrong_recParameter
+       512  zarhinGeometric_of_semistableReduction
+       311  holLeadB
+       243  b7
+       181  exists_neutral_group_model'
+       170  semistableReductionSt
+       164  exists_degenerationData_uniformisation_of_torsionCount
+       108  thetaSystem_hasTests_of_real_point
+## everyCharacter_of_row (subtree 205127, 5353 dom-children)
+    172181  every_character_of_literature_of_vWin
+     13860  vwin_of_row
+      1005  globalEulerChar_full
+       922  abelianScheme_hom_lifting_nilpotent_dividedPowers
+       732  rests
+       689  harishChandraFinite
+       599  baseChangeN
+       515  gsBaseCase
+       501  norm_right
+## every_character_of_literature_of_vWin (subtree 172181, 7431 dom-children)
+    115739  every_character_of_theta_integrals_local_matching
+     15596  topCovolSlim2_use_alt_alt
+      2671  toroidalForFanKS
+      2405  published_results_arithmetic
+      1808  published_results_eigen
+      1608  theta_integrals_agree_and_local_matching_of_literature
+      1470  published_results_first
+      1061  partI_of_semistableReduction
+      1030  siegel_toroidal_integral_of_literature
+## every_character_of_theta_integrals_local_matching (subtree 115739, 3323 dom-children)
+     97799  nonempty_hyps_definite_side_of_closed_bound
+      8325  every_character_of_green_v_win
+       459  at23_family_alt
+       285  FoldOKC_holds
+       239  massConst_succ
+       235  explicit_bound_family
+       200  volume_mass_of_genus_rank
+       185  second_branch_all_members
+       175  split_bound_eleven_one
+## nonempty_hyps_definite_side_of_closed_bound (subtree 97799, 10006 dom-children)
+     26575  hypotheses_nonempty_of_unramified_exponents_alt
+     10415  ontoX_and_lamLow_of_unitaryGroupHypotheses'
+      5151  open0_of_unitary_group_hypotheses
+      5053  weighted_bound_rotated_uniform
+      2672  weightsFam_of
+      2364  fourier_coefficient_fit_of_join_alt
+      2154  functionalsSeparate_of_howeUnram_of_siegelWeil
+      2082  thetaLift_row_properties_conj
+      1921  twisted_multiplicity_one
+## hypotheses_nonempty_of_unramified_exponents_alt (subtree 26575, 933 dom-children)
+     11841  allRows_of_open0_alt
+      9654  large_unramified_exponent_bundles_exist_alt
+       416  final_alt_alt
+       308  trueColumnChoice_exists_standardChainData
+       276  hyps_e_third_layer_ser_n_of_geometric_galois
+       233  exists_liftForms_adelic_decoratedLattices
+       207  exists_galSide_cf_eq_cgTrue_at_members
+       176  match_idx
+       171  Conclusion1_alt_alt_alt
+## open0_of_unitary_group_hypotheses (subtree 5151, 1 dom-children)
+      5150  open_orbit_of_unramified_exponents_alt
+## vwin_of_row (subtree 13860, 1 dom-children)
+     13859  automorphic_window_of_inputs
+## every_character_of_green_v_win (subtree 8325, 4 dom-children)
+      8321  zero_free_all_of_green_v_win
+         1  imprimitive
+         1  ZeroFreeAll
+         1  ZeroFreeOn

@@ -1,0 +1,10 @@
+{
+  "mission": "H12-B4-06-FROBENIUS-04",
+  "status": "PARTIAL",
+  "mathematical_claim": "For char p ring R, x^p=0, F=1+x, F^p=1, F^(p(p+1))=1; with G inverse F, F*G^(p(p+1))=F",
+  "lean_file": "FrobeniusNilpotent.lean",
+  "lean_kernel_checked": false,
+  "test_count": 120,
+  "test_primes_count": 24,
+  "next_required": "Compile Lean file in H12 Lake environment and implement quotient ring reduction/coefficient bridge; no Main rebuild"
+}
